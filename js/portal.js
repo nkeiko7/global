@@ -115,7 +115,7 @@ $(window).on("load resize", function(){
 		itemWidth = $(e).find("li").width(),
 		itemMargin = parseInt($(e).find("li").css("margin-right")),
 		itemsPerSingleView = Math.floor(viewport/(itemWidth + itemMargin)),
-		endMargin = w > 768 ? itemMargin : - itemMargin,
+		endMargin = w > 767 ? itemMargin : - itemMargin,
 		remainder = ((($(e).find("li").length % itemsPerSingleView)-1) * (itemWidth + itemMargin) - endMargin) + ((itemsPerSingleView + 1) * (itemWidth + itemMargin) - viewport);
 		return (Math.floor($(e).find("li").length / itemsPerSingleView)-1) + (remainder / ((itemWidth + itemMargin) * itemsPerSingleView));
 	}
