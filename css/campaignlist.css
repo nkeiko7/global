@@ -1,0 +1,79 @@
+#globalHeader {position: relative;}
+#globalHeader .wrapper {position: absolute;}
+
+#main {
+	background: none; height: auto; width: 80%; padding-top: 80px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;}
+
+#main h1 {font-size: 17px; font-weight: normal; margin: 0 0 2em; line-height: 1; color: #333;}
+#main section {margin-bottom: 20px;}
+#main section + section {padding-top: 2em; border-top: 1px solid #ddd;}
+#main section ul {list-style: none; margin: 0 auto; margin-right: -20px; padding: 0; letter-spacing: -.40em;}
+#main section li {letter-spacing: normal;} 
+
+.contentSection {width: 100%;}
+.contentSection img {
+	width: 100%;
+	height: auto;	
+	border: 0;
+	vertical-align: bottom;
+}
+
+#main section li {display: inline-block; margin: 0 2% 4% 0; vertical-align: top; width: 23%; font-size: 14px;}
+
+nav#categorySelect {margin-bottom: 30px; display: none;}
+#main section ul#filters {text-align: center; margin: 0 auto;} 
+#main section #filters li {display: inline; margin: 0 5px; padding: 5px 5px 10px; cursor: pointer; width: auto;}
+#filters li:hover {color: #999;}
+#filters li.current {border-bottom: 1px solid #ccc;}
+
+#globalHeader:after,
+#main:after,
+section.contentSection:after,
+#filters:after {
+    content: '';
+    clear: both;
+    display:table
+}
+
+/* header */
+#siteName {z-index: 1001; top: 3px; left: 0; margin: 0; position: absolute;}
+#siteName img {width: 78px; height: 19px;}
+.cancel {display: none;}
+#globalHeader .wrapper ul {padding-left: 20%;}
+#globalHeader .wrapper li a {text-shadow: none; color: #191919;}
+
+
+@media screen and (max-width: 1245px) {
+	#main section li li {width: 22.5%;}
+}
+
+@media screen and (max-width: 934px) {
+	#main {width: 90%; margin: 0 auto;}
+	#main section ul  {width: 100%;}
+	#main section li {width: 30%; height: auto;  margin: 0 20px 20px 0;}
+	#filters li {font-size: 14px; white-space: nowrap; padding: 5px 5px 2px; display: inline-block;}
+}
+
+@media only screen and (max-width : 767px){
+	#main {margin-top: 0;}
+	#main section li {width: 47%; height: auto; margin: 0 15px 15px 0;}
+	#main section li:nth-child(2n + 0) {margin-right: 0;}
+	#siteName {width: 78px; position: absolute; top: 0; left: 50%; margin: 0 0 0 -58px; z-index: 10;}
+	#hGlobalNav h1 {display: block; text-indent: -9999px; background: url(/img/menu.png) no-repeat center center; width: 15px; height: 12px; background-size: 15px 12px; position: absolute; top: 0; left: 0; padding: 15px; margin: 0; cursor: pointer;}
+	#globalHeader .headerWrap {width: 100%;}
+	#globalHeader #hGlobalNav .wrapper {background: rgba(0,0,0,.7); position: fixed; z-index: 1000; width: 100%; height: 100%; color: #fff; font-size: 16px; padding: 0; box-sizing: border-box;}
+	#globalHeader .wrapper a {color: #fff;}
+	#globalHeader .wrapper ul {padding-left: 0;}
+	#globalHeader .wrapper li {float: none;}
+	#globalHeader .wrapper li a {color: #fff;}
+	#globalHeader #hGlobalNav .wrapper {display: none;}
+	.cancel {display: block; cursor: pointer;}
+	#globalHeader .wrapper li a {border-bottom: 1px solid rgba(255,255,255,0.1); display: block; padding: 10px 15px;}
+}
+
+
+

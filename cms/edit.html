@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Author" content="Ryohin Keikaku Co., Ltd.">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<title>Edit Configurations | MUJI CMS</title>
+
+<link rel="stylesheet" href="../css/normalize.css">
+
+<style>
+body {font-family: "helvetica";}
+header h1 {font-size: 16px; padding: 15px 20px; margin: 0; background: #000; color: #fff;}
+header ul {float: right; margin: 20px;}
+header li {display: inline; margin-left: 10px;}
+#region {margin: 20px;}
+.main {padding: 0 20px 20px;}
+.main h1 {font-size: 32px;}
+
+.main>section {margin: 40px 0; padding-top: 10px; border-top: 1px solid #ccc;}
+
+.main>section h1 {font-size: 20px; margin-bottom: 40px;}
+
+#meta section {display: inline-block; margin-right: 20px;}
+#meta #desc {display: block;}
+
+label {display: block; margin-bottom: 5px; margin-top: 20px;}
+label a {background: #7f0019; color: #fff; border-radius: 50%; display: inline-block; width: 12px; text-align: center; font-size: 12px; text-decoration: none; padding: 2px; line-height: 1;}
+
+input {padding: 10px; border: 1px solid #ccc; background: #eee; border-radius: 4px;}
+
+textarea {width: 640px; height: 100px; padding: 10px; border: 1px solid #ccc; background: #eee; border-radius: 4px;}
+
+section ul {padding: 0; margin: 0; background: #f7f7f7; padding: 20px; border-radius: 4px; border: 1px solid #eee;}
+
+li {list-style: none;}
+
+input {margin-right: 10px; margin-bottom: 20px;}
+
+input[type="url"] {width: 300px;}
+input[type="number"] {width: 2em; text-align: center;}
+
+.submit {text-align: center;}
+.submit input {width: 100px; background: #333; color: #fff;}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>MUJI Global Contents Management System</h1>
+<ul>
+	<li>Japan</li>
+	<li><a href="">logout</a></li>
+	<li><a href="">help</a></li>
+</ul>
+
+<select id="region">
+<option>JP</option>
+<option>CN</option>
+<option>TW</option>
+<option>HK</option>
+<option>HK-EN</option>
+<option>UK</option>
+<option>US</option>
+<option>KW</option>
+<option>ES</option>
+<option>ID</option>
+</select>
+</header>
+
+<div class="main">
+
+<h1>Edit Configurations</h1>
+<p class="annotation">* Saved configuration will be uploaded as const_.js, const_.php.</p>
+
+<section id="meta">
+
+	<section>
+	<label>Country <a href="">?</a></label>
+	<input type="text" value="日本">
+	</section>
+
+	<section>
+	<label>Language <a href="">?</a></label>
+	<input type="text" value="日本語">
+	</section>
+
+	<section>
+	<label>Sitename <a href="">?</a></label>
+	<input type="text" value="無印良品">
+	</section>
+
+	<section id="desc">
+	<label>Description <a href="">?</a></label>
+	<textarea>無印良品ネットストア、店舗情報、くらしの良品研究所、商品情報や、無印良品の家、無印良品のキャンプ場、Cafe&Meal MUJIなどの関連事業をご紹介します。</textarea>
+	</section>
+
+</section>
+
+<section>
+<h1>HEADER NAVIGATION</h1>
+
+<ul>
+	<li><input type="text" value="ネットストア"><input type="url" value="http://www.muji.com/jp/store/"><input type="number" value="1"><button>-</button></li>
+	<li><input type="text" value="店舗情報"><input type="url" value="http://www.muji.com/shop/?c=jp"><input type="number" value="2"><button>-</button></li>
+	<li><input type="text" value="くらしの良品研究所"><input type="url" value="http://www.muji.com/jp/lab/"><input type="number" value="3"><button>-</button></li>
+	<li><input type="text" value="イベント情報"><input type="url" value="http://www.muji.com/jp/event/"><input type="number" value="4"><button>-</button></li>
+	<li><input type="text" value="お問い合わせ"><input type="url" value="http://www.muji.com/jp/support/"><input type="number" value="5"><button>-</button></li>
+	<li><button>+ Add</button></li>
+</ul>
+
+</section>
+
+<section>
+<h1><input type="checkbox" checked> SEARCH</h1>
+<input type="text" value="商品検索"><input type="url" value="http://www.muji.com/service-bin/search.php">
+</section>
+
+<section>
+<h1>BILL BOARD</h1>
+
+<input type="text" value="MUJI to GO"><input type="url" value="http://www.muji.com/mujitogo/"><input type="url" value="http://img.muji.com/jp/mujitogo/a.jpg"><br>
+<textarea>（MUJI to GOについての説明文章）</textarea>
+
+
+</section>
+
+
+<section>
+<h1><input type="checkbox" checked> PRODUCT</h1>
+
+<input type="text" value="商品情報"><input type="url" value="http://www.muji.com/jp/store/">
+
+<ul>
+	<li><input type="text" value="家具"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="1"><button>-</button></li>
+	<li><input type="text" value="家電"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="2"><button>-</button></li>
+	<li><input type="text" value="婦人"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="3"><button>-</button></li>
+	<li><input type="text" value="紳士"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="4"><button>-</button></li>
+	<li><input type="text" value="子供"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="5"><button>-</button></li>
+	<li><input type="text" value="文房具"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="6"><button>-</button></li>
+	<li><input type="text" value="食品"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="7"><button>-</button></li>
+	<li><button>+ Add</button></li>
+</ul>
+
+</section>
+
+<section>
+<h1><input type="checkbox" checked> CAMPAIGN</h1>
+
+<input type="text" value="キャンペーン／特集"><input type="url" value="http://www.muji.com/jp/campaign/">
+
+<ul>
+	<li><input type="text" value="アロマディフューザー"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="1"><button>-</button></li>
+	<li><input type="text" value="ちょうどいい気持ち　麻"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="2"><button>-</button></li>
+	<li><input type="text" value="キッチン家電2014"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="3"><button>-</button></li>
+</ul>
+
+</section>
+
+<section>
+<h1><input type="checkbox" checked> EVENT</h1>
+
+<input type="text" value="イベント情報"><input type="url" value="http://www.muji.com/jp/event/">
+
+<ul>
+	<li><input type="text" value="インテリア大受注祭"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="1"><button>-</button></li>
+	<li><input type="text" value="DIY感覚アトラクション MAKE MUJI"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="2"><button>-</button></li>
+	<li><input type="text" value="家づくり見学会"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="3"><button>-</button></li>
+	<li><input type="text" value="バランス肌用スキンケアシリーズ体験会"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url"
+	<li><button>+ Add</button></li>
+</ul>
+
+</section>
+
+<section>
+<h1><input type="checkbox" checked> LABORATORY</h1>
+
+<input type="text" value="くらしの良品研究所"><input type="url" value="http://www.muji.com/jp/lab/">
+
+<ul>
+	<li><input type="text" value="コラム 屋台の楽しみ"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="1"><button>-</button></li>
+	<li><input type="text" value="IDEAPARK"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="2"><button>-</button></li>
+	<li><input type="text" value="コラム 子どもの食器"><input type="url" value="http://www.muji.com/jp/store/S10000"><input type="url" value="http://img.muji.com/jp/product/a.jpg"><input type="number" value="3"><button>-</button></li>
+</ul>
+
+</section>
+
+<section class="submit">
+<input type="button" value="update"><input type="button" value="save"><input type="button" value="revert">
+</section>
+
+</div>
+
+</body>
+
+</html>

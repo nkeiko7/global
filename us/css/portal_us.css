@@ -1,0 +1,8 @@
+.mainCampaignBack {background:url(/us/img/main_mujitosleep.jpg) no-repeat center center;}
+.titleContainer h1 img {width: 30%;}
+
+@media only screen and (min-width : 769px){
+	#hGlobalNav ul {width: 60%;}
+	#siteName {z-index: 1001; top: 20px; left: 0; margin: 0; position: absolute; background: url(/img/logo_w.png) no-repeat; background-size: 78px 19px; text-indent: -9999px; width: 78px;}
+	#globalHeader .wrapper ul {padding-left: 130px;}
+}

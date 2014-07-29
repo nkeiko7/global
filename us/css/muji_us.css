@@ -1,0 +1,5 @@
+body {color:#333; font: 14px/1.5;  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;}
+
+#siteName {background:url(/img/logo_w.png) no-repeat; background-size: 78px 19px; text-indent: -9999px; width: 78px; position: absolute; top: 15px; left: 50%; margin: 0 0 0 -39px; z-index: 10;}
+
+.country a {background: url(/us/img/flag_us.png) no-repeat left center; background-size: 18px 12px;}
