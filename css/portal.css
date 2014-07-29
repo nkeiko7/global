@@ -172,9 +172,9 @@ footer nav.another li a {color: #ccc;}
 	#main #product li {
 		font-size: 13px;
     line-height: 1.1;
-    width: 105px;
+    width: 106px;
     text-align: center;
-    margin-right: 12px;
+    margin-right: 15px;
 	}	
 	
 	#mapMask {display: block; position: absolute; z-index: 1001; width: 100%; height: 162px;}
