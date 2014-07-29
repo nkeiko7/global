@@ -99,37 +99,34 @@ $(window).on("load resize", function(){
 //flipsnap
 $(window).on("load resize", function(){
 	$("#product .next").removeClass("desabled");
-	var pDistance, pMaxPoint, cDistance, cMaxPoint, lDistance, lMaxPoint, eDistance, eMaxPoint, iDistance, iMaxPoint;
-  var w = $(window).width();
-	  if (w > 768) {
-	  //alert(w);
-	  	pDistance = 236;
-			pMaxPoint = 1;
-			cDistance = 251;
-			cMaxPoint = 2;
-			lDistance = 251;
-			lMaxPoint = 4;
-			eDistance = 251;
-			eMaxPoint = 2;
-			iDistance = 280;
-			iMaxPoint = 2;
-//	  } else if (w > 1254) {
-		  
-	  } else {
-	  	pDistance = 236;
-	  	pMaxPoint = 4;
-			cDistance = 275;
-			lDistance = 275;
-			eDistance = 275;
-			iDistance = 275;
-			iMaxPoint = 4;
-	  }
 
-	var flipsnapProduct = Flipsnap('#product .flipsnap', {distance:pDistance, maxPoint:pMaxPoint});
-	var flipsnapCampaign = Flipsnap('#campaign .flipsnap', {distance:cDistance, maxPoint:cMaxPoint});
-	var flipsnapLab = Flipsnap('#lab .flipsnap', {distance:lDistance, maxPoint:lMaxPoint});
-	var flipsnapEvent = Flipsnap('#event .flipsnap', {distance:eDistance, maxPoint:eMaxPoint});
-	var flipsnapInfo = Flipsnap('#information .flipsnap', {distance:iDistance, maxPoint:iMaxPoint});
+	var w = $(window).width();
+
+	var distance = function(e) {
+		var viewport = $(".viewport").width(),
+		itemWidth = $(e).find("li").width(),
+		itemMargin = parseInt($(e).find("li").css("margin-right")),
+		itemsPerSingleView = Math.floor(viewport/(itemWidth + itemMargin));
+		return (itemWidth + itemMargin) * itemsPerSingleView;
+	}
+
+	var maxPoint = function(e) {
+		var viewport = $(".viewport").width(),
+		itemWidth = $(e).find("li").width(),
+		itemMargin = parseInt($(e).find("li").css("margin-right")),
+		itemsPerSingleView = Math.floor(viewport/(itemWidth + itemMargin)),
+		endMargin = w > 768 ? itemMargin : - itemMargin,
+		remainder = ((($(e).find("li").length % itemsPerSingleView)-1) * (itemWidth + itemMargin) - endMargin) + ((itemsPerSingleView + 1) * (itemWidth + itemMargin) - viewport);
+		return (Math.floor($(e).find("li").length / itemsPerSingleView)-1) + (remainder / ((itemWidth + itemMargin) * itemsPerSingleView));
+	}
+
+
+
+	var flipsnapProduct = Flipsnap('#product .flipsnap', {distance:distance("#product"), maxPoint:maxPoint("#product")});
+	var flipsnapCampaign = Flipsnap('#campaign .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#campaign")});
+	var flipsnapLab = Flipsnap('#lab .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#lab")});
+	var flipsnapEvent = Flipsnap('#event .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#event")});
+	var flipsnapInfo = Flipsnap('#information .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#information")});
 	
 	if($("#product").length){
 		var $next = $('#product .next').click(function() {

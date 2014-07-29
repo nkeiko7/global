@@ -378,7 +378,7 @@
 	<script src="/js/portal.js"></script>
 	
 	<script src="/js/lib/jquery.scrollTo.js"></script>
-	<script src="/js/lib/flipsnap.min.js"></script>
+	<script src="/js/lib/flipsnap.fix.js"></script>
 	
 	<script>
 		$(function(){
@@ -431,6 +431,9 @@ $(function(){
 	if(totalVisit > 10) {
 		for (var i in visit) {
 			visit[i] = Math.floor(visit[i]/2);
+			if(visit[i] == 0) {
+				delete visit[i];
+			}
 		}
 		$.cookie("visit", visit, { expires: 90, path: '/jp/' });
 	}
