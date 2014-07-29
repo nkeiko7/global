@@ -3,7 +3,7 @@
 
 @media only screen and (min-width : 769px){
 	#hGlobalNav ul {width: 60%;}
-	#siteName {z-index: 1001; top: 3px; left: 0; margin: 0; position: absolute; line-height: 1.3;}
+	#siteName {z-index: 1001; top: 3px; left: 0; margin: 0; position: absolute; line-height: 1.2;}
 	#siteName img {width: 78px; height: 19px;}
 	#globalHeader .wrapper ul {padding-left: 20%;}
 }
