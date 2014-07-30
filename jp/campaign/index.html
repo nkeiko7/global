@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>無印良品</title>
@@ -195,7 +195,7 @@ console.log($.cookie("visit"));
 			<li class="element-item food"><a href="http://curry.muji.net/" data-category="food" data-panelrank="1"><img src="/jp/img/panel/event_curry.jpg" alt="カレーなる無印良品"><br><span class="title"></span></a></li>
 			<li class="element-item house"><a href="http://www.muji.net/ie/campaign/140602/" data-category="house" data-panelrank="0"><img src="/jp/img/panel/ie_140731_01.jpg" alt=""><br><span class="title">家つくり応援フェア</span></a></li>
 			<li class="element-item"><a href="http://www.muji.net/message/" data-category="" data-panelrank="0"><img src="/jp/img/panel/message14.jpg" alt=""><br><span class="title">無印良品からのメッセージ<br>自然、当然、無印。</span></a></li>
-			<li class="element-item lab"><a href="http://idea.muji.net/project/interior/" data-category="lab" data-panelrank="0"><img src="/jp/img/panel/feature_140731_01.jpg" alt=""><br><span class="title">ぜんぶ、無印良品で暮らそう。<br>無料で「お部屋まるごと大改造」したい人、募集。</span></a></li>
+			<li class="element-item lab"><a href="http://idea.muji.net/project/interior/" data-category="lab" data-panelrank="0"><img src="/jp/img/panel/feature_140731_01.jpg" alt=""><br><span class="title">無料で「お部屋まるごと大改造」したい人、募集。</span></a></li>
 			<li class="element-item garment"><a href="http://www.muji.net/wool2014/" data-category="garment" data-panelrank="0"><img src="/jp/img/panel/woolwoolwool.jpg" alt=""><br><span class="title"></span></a></li>
 			<li class="element-item houseware"><a href="http://www.muji.net/electronics/" data-category="houseware"><img src="/jp/img/panel/electronics_520.jpg" alt=""><br><span class="title">キッチン家電2014</span></a></li>
 			<li class="element-item"><a href="http://www.muji.net/summer2014/"><img src="/jp/img/panel/c14053001_520.jpg" alt=""><br><span class="title">わた、しわ、めん</span></a></li>
@@ -292,7 +292,7 @@ console.log($.cookie("visit"));
     var count = 15;
     var winWidth = $(window).width();
     var checkFlag;
-    if(winWidth <= 320) {
+    if(winWidth <= 767) {
     
      $('section li .title').each(function() {
         var thisText = $(this).text();
@@ -313,11 +313,11 @@ console.log($.cookie("visit"));
     }
     function winWidthCheck() {
         winWidth = $(window).width();
-        if((winWidth <= 320) && (checkFlag == 'hide')) {
+        if((winWidth <= 767) && (checkFlag == 'hide')) {
             $('section li .title .hide').hide();
             $('section li .title .omit').fadeIn();
             checkFlag = 'show';
-        } else if((winWidth > 320) && (checkFlag == 'show')) {
+        } else if((winWidth > 767) && (checkFlag == 'show')) {
             $('section li .title .hide').fadeIn();
             $('section li .title .omit').hide();
             checkFlag = 'hide';
