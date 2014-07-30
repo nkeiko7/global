@@ -81,14 +81,14 @@
 		} else {
 			$("#hGlobalNav .wrapper").hide();
 			
-			$("#main").removeClass("blur");
+			$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			$("#hGlobalNav h1").on("click", function(){
-				$("#hGlobalNav .wrapper").slideDown();
-				$("#main").addClass("blur");
+				$("#hGlobalNav .wrapper").show();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").addClass("blur");
 			});
 			$("#hGlobalNav .cancel").on("click", function(e){
-				$("#hGlobalNav .wrapper").slideUp();
-				$("#main").removeClass("blur");
+				$("#hGlobalNav .wrapper").hide();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			});
 	
     }
@@ -164,7 +164,7 @@ $(function(){
 		<div class="wrapper">
 			<div class="cancel"></div>
 			<ul>
-				<li class="home"><a href="http://www.muji.com/jp/">ホーム</a></li>
+				<li class="home"><a href="/jp/">ホーム</a></li>
 				<li><a href="http://www.muji.net/store/">ネットストア</a></li>
 				<li><a href="http://www.muji.net/event/">イベント</a></li>
 				<li><a href="http://www.muji.net/lab/">くらしの良品研究所</a></li>

@@ -27,7 +27,7 @@ $(window).on("load resize", function(){
 		} else {
 			$("#hGlobalNav .wrapper").hide();
 			
-			$("#main").removeClass("blur");
+			$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			$("#hAccount .avater").on("click", function(){
 				$("#hAccount .wrapper").show();
 				$("#main").addClass("blur");
