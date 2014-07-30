@@ -1,3 +1,13 @@
+#globalHeader{
+	height: 90px; position: absolute; z-index: 100; width: 100%;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMiIvPgogICAgPHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(40%,rgba(0,0,0,0.2)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.2) 40%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+}
 #main #mainCampaign {overflow: hidden; margin: 0 auto 50px; height: 500px; width: 100%; background: #f7f7f7; text-align: center;}
 #skip {content: ""; display: block; width: 20px; height: 20px; border: solid #fff; border-width: 0 1px 1px 0; -webkit-transform:rotate(45deg); transform: rotate(45deg); position: absolute; left: 50%; margin-left: -10px;}
 
@@ -129,7 +139,7 @@ font-size: small;
 color: #999;}
 
 #copyright {color: #ccc; width: 80%; margin: 0 auto; text-align: left;}
-.copyright {display: inline-block; float: left; padding: 10px 0;}
+.copyright {display: inline-block; float: left; padding: 10px 0; color: #888;}
 footer nav.another ul {padding: 0;}
 footer nav.another li {width: auto; padding-left: 15px;}
 footer nav.another li a {color: #ccc;}
@@ -196,7 +206,7 @@ footer nav.another li a {color: #ccc;}
 	footer ul:after {content: ''; display: block; clear: both;}
 	footer li {float: left; width: 50%;}
 	footer nav.another ul {padding: 0;}
-	footer nav.another li {float: none; width: 100%; padding-left: 0;}
+	footer nav.another li {width: 50%; padding-left: 0;}
 	footer li a {color: #e7e7e7; display: block; padding: 10px 0;}
 	footer nav.another li a {color: #ccc;}
 	
@@ -204,7 +214,7 @@ footer nav.another li a {color: #ccc;}
 	.copyright {display: block; float: none;}
 	.avater,
 	#hSearch h1,
-	#skip {z-index: 101;}
+	#skip {z-index: 50;}
 	#shoplist {display: none;}
 	p.controls {display: none;}
 	.accountNotification img {vertical-align: middle; width: 30px; height: auto;}
@@ -247,8 +257,10 @@ footer nav.another li a {color: #ccc;}
 		-webkit-box-sizing: border-box; 
 		-moz-box-sizing: border-box; 
 		box-sizing: border-box;
+		left: 0;
 	}
 	#globalHeader .headerWrap {width: 80%; margin: 0 auto; position: relative;}
+	#globalHeader .wrapper ul {margin: 10px;}
 	#globalHeader .wrapper li {list-style: none; float: left;}
 	#globalHeader .wrapper li.home {display: none;}
 	#globalHeader .wrapper li a {border: 0; text-shadow: 1px 1px 3px rgba(0,0,0,.5); }
@@ -309,10 +321,10 @@ footer nav.another li a {color: #ccc;}
 	  font-weight: bold;
 	}
 	
-	#hSearch .wrapper {display: block;}
+	#hSearch .wrapper {display: block; left: 0;}
 	#globalHeader #hSearch .wrapper ul {display: none;}
 	#hSearch input[type="search"] {
-		z-index: 1001; width: 150px; border: 0; border-radius: 15px; position: absolute; right: 20%; top: 15px;
+		z-index: 1001; width: 150px; border: 0; border-radius: 15px; position: absolute; right: 10%; top: 20px;
 		background: url(/img/icon_search_w.png) no-repeat 10px center rgba(255,255,255,.2);
 		background-size: 18px 19px;
 		padding-left: 35px;

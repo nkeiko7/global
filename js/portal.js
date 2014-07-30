@@ -29,35 +29,32 @@ $(window).on("load resize", function(){
 			
 			$("#main").removeClass("blur");
 			$("#hAccount .avater").on("click", function(){
-				$("#hAccount .wrapper").slideDown();
+				$("#hAccount .wrapper").show();
 				$("#main").addClass("blur");
 			});
 			$("#hAccount .cancel").on("click", function(e){
-				$("#hAccount .wrapper").slideUp();
+				$("#hAccount .wrapper").hide();
 				$("#main").removeClass("blur");
 			});
 			$("#hGlobalNav h1").on("click", function(){
-				$("#hGlobalNav .wrapper").slideDown();
-				$("#main").addClass("blur");
+				$("#hGlobalNav .wrapper").show();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").addClass("blur");
 			});
 			$("#hGlobalNav .cancel").on("click", function(e){
-				$("#hGlobalNav .wrapper").slideUp();
-				$("#main").removeClass("blur");
+				$("#hGlobalNav .wrapper").hide();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			});
 	
 			$("#hSearch h1").on("click", function(){
-				$("#hSearch .wrapper").slideDown("slow",function(){
-					$("#hSearch input[type='search']").focus();
-				});
-				$("#main").addClass("blur");
+				$("#hSearch .wrapper").show();
+				$("#hSearch input[type='search']").focus();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").addClass("blur");
 			});
 			$("#hSearch .cancel").on("click", function(e){
-				$("#hSearch .wrapper").slideUp();
-				$("#main").removeClass("blur");
+				$("#hSearch .wrapper").hide();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			});
     }	
-
-	//});
 	
 	$(function(){
     var _window = $(window);
