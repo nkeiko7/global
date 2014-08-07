@@ -2,7 +2,6 @@ $(window).on("load resize", function(){
   var w = $(window).width();
   if (w > 768) {
   $(function(){
-  	$("#hGlobalNav .wrapper").show();
 		FastClick.attach(document.body);
 
 		$("#hAccount .avater").on("click", function(){
@@ -24,9 +23,7 @@ $(window).on("load resize", function(){
 		});
 		});
 		
-		} else {
-			$("#hGlobalNav .wrapper").hide();
-			
+		} else {			
 			$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			$("#hAccount .avater").on("click", function(){
 				$("#hAccount .wrapper").show();
@@ -94,6 +91,7 @@ $(window).on("load resize", function(){
 
 
 //flipsnap
+if (cssua.ua.ie == undefined || cssua.ua.ie > 8.0) {
 $(window).on("load resize", function(){
 	$("#product .next").removeClass("desabled");
 
@@ -191,3 +189,4 @@ $(window).on("load resize", function(){
 	}
 
 });
+}

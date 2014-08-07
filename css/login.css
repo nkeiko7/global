@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* CLEARFIX */
+section#mujinetMember,
+.contentWrap {zoom: 1;}
+section#mujinetMember:after,
+.contentWrap:after {content: "."; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; line-height: 0;}
+
+#siteName a {width: 78px;}
+#siteName a:hover {background-position: -155px -18px;}
+
+#main {width: 700px; margin: 0 auto;}
+
+.lead {font-size: 14px; line-height: 1.6; margin-bottom: 10px;}
+.annotation, .item p.annotation {font-size: 11px; color: #999;}
+
+.relatedLink {margin-top:15px; margin-bottom: 15px;}
+.relatedLink a {display: inline-block; background: url(/img/common/arrow_right.png) no-repeat 14px 50%; border: 1px solid #ccc; padding: 7px 14px 7px 28px; text-decoration: none; font-weight: bold;}
+.relatedLink a:hover {border: 1px solid #7F0019;}
+
+#title {font-size: 28px; font-weight: bold; margin: 30px 0;}
+
+.submit {text-align: center; clear: both;}
+.submit button {padding: 8px 30px; background: #333; color: #fff; border-radius: 4px; border: 0; cursor: pointer; font-weight: bold;}
+.submit button:hover {background: #7f0019;}
+
+.block {background: #f7f7f7; border-radius: 5px; padding: 0 0 15px; box-shadow: 0 1px 2px rgba(0,0,0,.2);}
+.notice {font-size: 12px; margin-top: 15px;}
+.notice li {list-style: disc outside none; margin-bottom: 0.5em; margin-left: 15px;}
+
+#mujiPassport, #mujinetMember {margin-bottom: 30px; /*padding-top: 10px;*/ font-size: 14px; margin-right: 2px;}
+section h1 {font-size: 14px; font-weight: bold; background: #888; color: #fff; padding: 5px 15px; border-radius: 5px 5px 0 0; text-align: center;}
+.contentWrap {padding: 0 15px;}
+section .asterisk {text-indent: -1em; padding-left: 1em;}
+.passportId, .passportPin, .submit, .passportApp, .mail, .password, .memberRegister {margin-bottom: 15px;}
+section section:after {content: ""; display: block; clear: both;}
+section label {background: none; color: #333; padding: 0; line-height: 1.6; font-size: 14px; text-align: left; margin: 0 0 4px 0; font-weight: bold; display: block;}
+section input {width: 300px;}
+
+.autoLogin {margin: 10px 0;}
+section .autoLogin label {font-weight: normal;}	
+section .autoLogin input {width: auto; margin-right: 10px;}	
+
+.passportApp, .memberRegister {width: 310px; float: left; text-align: center; margin: 15px 0 0;}
+.passportApp #storeLink {display: inline-block;}
+.passportApp #storeLink li {float: left; margin: 0 5px; text-align: center;}
+.passportApp ul.notice, .memberRegister ul.notice {text-align: left;}
+
+.memberRegister a {padding: 5px 20px; background: #333; color: #fff; border-radius: 4px; border: 0; cursor: pointer; text-decoration: none; display: inline-block; width: 160px; text-align: center;}
+.memberRegister a:hover {background: #7f0019;}
+
+.authentication {width: 310px; float: left; border-right: 1px solid #ddd; padding-right: 15px; margin-right: 20px; margin-top: 15px;}
+
+.registration {width: 320px; float: right; position: relative; min-height: 200px;}
+.passportApp, .memberRegister {position: absolute; top: 50%; margin-top: -50px;}
+
+#copyright {border-top: 1px solid #666666; margin-top: 15px;}
+
+.complete p {font-size: 18px; margin-bottom: 30px; text-align: center;}
+.complete p br {display: none;}
+.complete .num {font-weight: bold; font-size: 20px; margin-left: 5px; margin-right: 3px;}
+
+.pcOnly {display: block;}
+.mobileOnly {display: none;}
+
+#navheader {
+  border-top: 2px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  position: relative;
+  z-index: 300;
+}
+#navheader #nav {
+  overflow: auto;
+  background-color: white;
+  height: 24px;
+  padding: 3px 20px;
+  line-height: 24px;
+  margin: 0 auto;
+  width: 880px;
+}
+#navheader #nav ul.menulist {
+  list-style: none;
+  float: left;
+}
+#navheader #nav ul.menulist li {
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  background: url("../images/nav_sep.gif") no-repeat right center;
+  padding-right: 19px;
+  padding-left: 6px
+}
+#navheader #nav ul.menulist li:first-child {
+	padding-left: 0
+}
+#navheader #nav ul.menulist li.last {
+  background: none;
+}
+#navheader #nav ul.menulist li.current a {
+  color: #0b0b0b;
+}
+#navheader #nav ul.menulist li.current a:hover {
+  color: #0b0b0b;
+}
+#navheader #nav ul.menulist li a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+#navheader #nav ul.menulist li a:hover {
+  color: #7f0019;
+}

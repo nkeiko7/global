@@ -285,6 +285,7 @@
 			<button class="next">next</button>
 		</p>
 	</section>
+	
 </div><!-- #main -->
 
 <aside id="misc">
@@ -351,95 +352,39 @@
 	</ul>
 	</nav>
 </p>
+
+
 </footer>
-
-	<aside id="review">
-	<a href="#" class="title">フィードバック</a>
-	<div class="replyReview">
-		<p class="lead">このページについてのご意見を<br>お聞かせください。</p>
-		<p class="replyFinish">ありがとうございました。</p>
-		<div class="close"><img src="http://www.muji.com/img/icon_close.png"></div>
-		<textarea placeholder="" id="suggestion"></textarea><br>
-		<button class="submit submitBtn">送信</button>
-		<div class="note">※返信はいたしかねます</div>
-	</div>	
-</aside>
-
-<style>
-	body {position: relative;}
-	#review {margin: 0; line-height: 1.5; position: fixed; bottom: 0; right: 0; padding: 0; z-index: 9999; margin: 0; /* color: #fff; */}
-	#review a {text-decoration: none;}
-	#review p {font-size: 14px; margin: 0 0 10px;}
-	#review .replyReview,
-	#review .replyFinish {display: none;}
-	#review .replyReview {background: #ccc; margin: 0; padding: 10px 20px;}
-	#review img {vertical-align: middle; margin-left: 3px;}
-	#review .title {
-	display: block; padding: 8px 10px; color: #fff; border-radius: 8px 0 0 0; font-size: 12px; border: 0; width: auto;
-	background: rgba(102,102,102,.6);
-  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#77000000,EndColorStr=#77000000);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#77000000,EndColorStr=#77000000)";
-	}
-	#review .title:not(:target){ filter: none; -ms-filter: none;}
-	#review .title.show {background: #ccc; width: 290px;}
-	#review .submit {display: inline-block; margin: 10px 10px 0 0; padding: 10px 20px; background: #666; color: #fff; border-radius: 3px; font-size: 14px; border: 0; float: left;}
-	#review .submit:hover {background: #999;}
-	#review textarea {width: 260px; height: 100px; color: #000; outline: none;}
-	#review button {cursor: pointer;}
-	#review .close {position: absolute; top: 0; right: 5px; padding: 10px; cursor: pointer;}
-	#review .note {font-size: 13px; color: #444; margin-top: 20px;}
-	#review .replyReview:after {content: ""; clear: both; display: block;}
-</style>
-
 
 	<script src="/js/lib/modernizr.custom.47384.js"></script>
 	<script src="/js/lib/cssua.js"></script>
 	<script src="/js/lib/fastclick.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	
-	<!--[if gt IE 8]><!-->
-		<script src="/js/lib/flipsnap.fix.js"></script>
-	<!--<![endif]-->
-	
-	<!--[if !IE]><!-->
+	<!-- [if gt IE 9]><!-->
 		<script src="/js/lib/map.js"></script>
 	<!--<![endif]-->
 	
 	<script src="/js/portal.js"></script>
-	<script src="/js/lib/jquery.scrollTo.js"></script>
 	
+	<script src="/js/lib/jquery.scrollTo.js"></script>
+	<script src="/js/lib/flipsnap.fix.js"></script>
 	
 	<script>
-		//FastClick
-		if (cssua.ua.mobile) {
 		$(function(){
-			var selectors = [
-			  document.getElementById("hGlobalNav").getElementsByTagName("h1")[0],
-			  document.getElementById("hSearch").getElementsByTagName("h1")[0],
-			  document.getElementsByClassName("cancel")[0],
-			  document.getElementsByClassName("prev")[0],
-			  document.getElementsByClassName("next")[0],
-			  document.getElementsByClassName("avater")[0]
-			];
-						
-			for(var i = 0, sLen = selectors.length; i < sLen; i++ ) {
-			  if(selectors[i] != undefined){
-				 		FastClick.attach(selectors[i]);
-				 }
-			}
-		});
-		}
+	FastClick.attach(document.body);
+	});
 		
-		MAP_LIMIT_SHOPLIST = 10; /* Maximum number of stores list */
-		MAP_LIMIT_MARKER = 100; /* Maximum number of stores placed on the map */
-		MAP_IMG_MARKER = "/img/marker_red_default.png";
-		MAP_IMG_SELF_POS = "/img/self_position.png";
-		MAP_MARKER_LINK_URL = "http://www.muji.net/shop/?";
-		MAP_SHOPLIST_JSON_URL = "http://www.muji.com/storelocator/?c=gl&lang=LC&_ACTION=_SEARCH";
-		MAP_DEFAULT_ZOOM = 12;
-		MAP_DEFAULT_LAT = 35.675858;
-		MAP_DEFAULT_LON = 139.765153;
-		MAP_LOAD_DIV_ID = "map";
+	MAP_LIMIT_SHOPLIST = 10; /* Maximum number of stores list */
+	MAP_LIMIT_MARKER = 100; /* Maximum number of stores placed on the map */
+	MAP_IMG_MARKER = "/img/marker_red_default.png";
+	MAP_IMG_SELF_POS = "/img/self_position.png";
+	MAP_MARKER_LINK_URL = "http://www.muji.net/shop/?";
+	MAP_SHOPLIST_JSON_URL = "http://www.muji.com/storelocator/?c=gl&lang=LC&_ACTION=_SEARCH";
+	MAP_DEFAULT_ZOOM = 12;
+	MAP_DEFAULT_LAT = 35.675858;
+	MAP_DEFAULT_LON = 139.765153;
+	MAP_LOAD_DIV_ID = "map";
  	</script>
 
 	<script src="/js/lib/jquery.cookie.js"></script>
@@ -495,18 +440,11 @@ $(function(){
 			"category":"togo"
 		},
 		{
-			"title":"夏のアイテムがお買い得",
-			"src":"/jp/img/panel/x00001_520.png",
-			"href":"http://www.muji.net/store/cmdty/section/X00001",
+			"title":"家つくり応援フェア",
+			"src":"/jp/img/panel/ie_140731_01.jpg",
+			"href":"http://www.muji.net/ie/campaign/140602/",
 			"panelRank":0,
-			"category":"sale"
-		},
-		{
-			"title":"ぜんぶ、無印良品で暮らそう。<br>無料で「お部屋まるごと大改造」したい人、募集。",
-			"src":"/jp/img/panel/feature_140731_01.jpg",
-			"href":"http://idea.muji.net/project/interior/",
-			"panelRank":0,
-			"category":"lab"
+			"category":"house"
 		},
 		{
 			"title":"カレーなる無印良品",
@@ -517,24 +455,17 @@ $(function(){
 			"category":"food"
 		},
 		{
-			"title":"無印良品の家<br>家つくり見学会",
-			"src":"/jp/img/panel/140801_ie_640.png",
-			"href":"http://www.muji.net/ie/campaign/140801/",
-			"panelRank":0,
-			"category":"ie"
-		},
-		{
-			"title":"",
-			"src":"/jp/img/panel/woolwoolwool.jpg",
-			"href":"http://www.muji.net/wool2014/",
-			"panelRank":0,
-			"category":"garment"
-		},
-		{
 			"title":"無印良品からのメッセージ<br>自然、当然、無印。",
 			"src":"/jp/img/panel/message14.jpg",
 			"href":"http://www.muji.net/message/",
 			"panelRank":0
+		},
+		{
+			"title":"ぜんぶ、無印良品で暮らそう。<br>無料で「お部屋まるごと大改造」したい人、募集。",
+			"src":"/jp/img/panel/feature_140731_01.jpg",
+			"href":"http://idea.muji.net/project/interior/",
+			"panelRank":0,
+			"category":"lab"
 		},
 		{
 			"title":"MUJI CARD<br>WEB入会キャンペーン",
@@ -542,20 +473,6 @@ $(function(){
 			"href":"http://www.muji.net/mujicard/",
 			"panelRank":0,
 			"category":"card"
-		},
-		{
-			"title":"キッチン家電2014",
-			"src":"/jp/img/panel/electronics_520.jpg",
-			"href":"http://www.muji.net/electronics/",
-			"panelRank":0,
-			"category":"houseware"
-		},
-		{
-			"title":"MUJI meets IDEE",
-			"src":"http://img.muji.net/img/store/panel/muji-meets-idee_520.jpg",
-			"href":"http://www.muji.net/muji-meets-idee/",
-			"panelRank":0,
-			"category":"idee"
 		}
 	];
 
@@ -596,23 +513,21 @@ $("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='
 
 	var event = [
 		{
-			"title":"「リトル・フォレスト」× Café&Meal MUJI<br>コラボメニュー販売",
-			"src":"http://www.muji.net/img/events/140801_cafemeal_640.jpg",
-			"href":"http://www.muji.net/cafemeal/news/news/025252.html",
-			"panelRank":0,
-			"category":"cafe"
+			"title":"雑誌「カメラ日和」 こどもの写真の撮り方ワークショップ",
+			"src":"/jp/img/panel/140731_camerabiyori_640.jpg",
+			"href":"http://www.muji.net/mt/events/025146.html",
+			"panelRank":0
 		},
 		{
-			"title":"無印良品の家<br>耐震住宅トークセッション",
-			"src":"http://www.muji.net/img/events/140804_ie_640.jpg",
-			"href":"http://www.muji.net/mt/events/event/025264.html",
-			"panelRank":0,
-			"category":"ie"
+			"title":"水のつみきで遊ぼう！ ワークショップ",
+			"src":"/jp/img/panel/140731_mizunotumiki_640.jpg",
+			"href":"http://www.muji.net/mt/events/025129.html",
+			"panelRank":0
 		},
 		{
-			"title":"石こうでつくるオリジナルチョークワークショップ",
-			"src":"http://www.muji.net/mt/events/img/140801_chalk.jpg",
-			"href":"http://www.muji.net/mt/events/event/025257.html",
+			"title":"こどものかみがたワークショップ",
+			"src":"/jp/img/panel/140731_kamigata_640.jpg",
+			"href":"http://www.muji.net/mt/events/025041.html",
 			"panelRank":0,
 			"category":"kids"
 		},
@@ -629,21 +544,7 @@ $("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='
 			"href":"http://www.muji.net/camp/news/2014/07/post_200.html",
 			"panelRank":0,
 			"category":"camp"
-		},
-		{
-			"title":"水のつみきで遊ぼう！ ワークショップ",
-			"src":"/jp/img/panel/140731_mizunotumiki_640.jpg",
-			"href":"http://www.muji.net/mt/events/event/025129.html",
-			"panelRank":0
-		},
-		{
-			"title":"こどものかみがたワークショップ",
-			"src":"/jp/img/panel/140731_kamigata_640.jpg",
-			"href":"http://www.muji.net/mt/events/event/025041.html",
-			"panelRank":0,
-			"category":"kids"
-		},		
-		
+		}
 	];
 
 
@@ -698,44 +599,6 @@ $("#event ul").append("<li><a href='" + event[i].href + "' data-category='"+ cat
 //console.log(campaign);
 //console.log(event);
 
-});
-</script>
-
-<script>
-//feedback
-$(function() { 
-	$("#review .title").on("click",function(e){
-		$("#review .replyReview").show();
-		$("textarea#suggestion").focus();
-		$("#review .title").addClass('show');
-		e.preventDefault();
-	});
-	$("#review .close").on("click",function(){
-		$("#review .replyReview").hide();
-		$("#review .title").removeClass('show');
-	});	
-	$("#review .submitBtn").on("click",function(){
-		$("#review textarea, #review .lead, #review .submitBtn, #review .note").hide();
-		$("#review p.replyFinish").show();
-		var suggestion = $("#suggestion").val();
-		var data = "suggestion=" + suggestion;
-		data += "&ua=" + navigator.userAgent
-		
-		$.ajax({
-			type: "POST",
-			url: "/service-bin/portal_suggestion/portal_suggestion_get.php",
-			data: data,
-			
-			success: function(data){
-				//console.log("success");
-			},
-			error: function(data){
-				//console.log("fail");
-				
-			}
-		});
-		
-	});
 });
 </script>
 

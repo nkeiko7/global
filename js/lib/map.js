@@ -1,12 +1,3 @@
-/**
- * CssUserAgent (cssua.js) v2.1.28
- * http://cssuseragent.org
- * 
- * Copyright (c)2006-2014 Stephen M. McKamey.
- * Licensed under The MIT License.
- */
-/*jshint smarttabs:true, regexp:false, browser:true */
-
 var shops;
 var activeMarker = null;
 var gMapMarkers = new Array();
@@ -107,6 +98,8 @@ function searchNearBy () {
 			$("#shoplist").addClass("getGeolocation");
 			$("#mapMask").addClass("getGeolocation");
 		
+			gBLoadFirstTime = true;
+			
 			// マップをロード
 			var mapOptions = {
 				zoom: map.getZoom(),

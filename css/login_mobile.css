@@ -1,0 +1,496 @@
+@charset "UTF-8";
+
+/* CLEARFIX */
+.mobileOnly {zoom: 1;}
+.mobileOnly:after {content: "."; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; line-height: 0;}
+
+body #headerbar #logo a {display: block; width: 76px; height: 40px; background: url(http://www.muji.net/m/img/header.png) no-repeat left top; -webkit-background-size: 76px 40px; margin-left: 10px;}
+
+.notice a {text-decoration: underline;}
+
+body #main {width: 320px; margin: 10px auto 0;}
+
+body #main .block, body .passportApp, body .memberRegister  {width: 100%;}
+body .passportApp a, body .memberRegister a {font-size: 13px;}
+
+body #main #mujiPassport, body #main #mujinetMember {width: 300px; margin: 0 10px 30px;}
+
+body #main section h1 {background: #888;}
+body #main section section h1 {background: none; padding-left: 0;}
+body #main section input {width: 265px;}
+body #main section .autoLogin input {width: auto;}
+
+body #main  .authentication, body #main .registration {width: auto;}
+body #main  .authentication {border-right: none; margin-right: 0;}
+body #main .registration {border-top: 1px solid #ddd; margin-top: 15px; min-height: 50px; position: static;}
+body #main .passportApp, body #main .memberRegister {position: static; top: auto; margin-top: 15px;}
+
+body #main .passportApp #storeLink li {margin: 0;}
+body #main .passportApp #storeLink li #itunesstore {margin-right: 5px;}
+
+body #main .complete {margin: 15px 10px 0 15px;}
+body #main .complete p {font-size: 14px; margin-bottom: 20px;}
+body #main .complete p br {display: block;}
+body #main .complete .num {font-size: 18px; margin-left: 0;}
+
+.pcOnly {display: none;}
+.mobileOnly {display: block;}
+
+/* header */
+.btn, .bdr-btn {
+  padding: 5px 7px;
+  line-height: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.bdr-btn {
+  display: inline-block;
+  border: 1px #bbbbbb solid;
+  font-size: 13px;
+  font-family: Helvetica, Sans-Serif;
+}
+
+/* header */
+header #headerbar {
+  position: relative;
+  z-index: 1000;
+  background: #7f0019;
+  color: white;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+header #headerbar #logo{
+	font-size: 0;
+	margin: 0;
+}
+header #headerbar #logo img {
+  margin: 4px 0px 4px 3px;
+}
+header #headerbar ul.R {
+  overflow: hidden;
+  height: 33px;
+  border-left: 1px rgba(255, 255, 255, 0.4) solid;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+header #headerbar ul.R li {
+  float: left;
+  border-right: 1px rgba(255, 255, 255, 0.4) solid;
+}
+header #headerbar ul.R li a {
+  display: block;
+}
+header #headerbar ul.R li a#header_search_btn.active{
+	background: url("http://leap-lab.net/mapdesign/sp/img/header_search_on.png") no-repeat 0 0;
+	background-size: 49px 33px;
+}
+header #headerbar ul.R li a#header_menu_btn.active{
+	background: url("http://leap-lab.net/mapdesign/sp/img/header_setting_on.png") no-repeat 0 0;
+	background-size: 49px 33px;
+}
+
+header #headerbar ul.R li a img {
+  vertical-align: top;
+}
+header #headerbar ul.R li a.active img {
+	visibility: hidden;
+}
+
+section#header_menu, section#search_form {
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  z-index: 300;
+  padding: 2px 0 18px 0;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+section#header_menu {
+  background: #5b0012;
+  color: white;
+}
+section#header_menu ul li {
+  float: left;
+  margin: 9px 0px 0 9px;
+  padding-right: 11px;
+  padding-bottom: 2px;
+}
+section#header_menu ul li.sep{
+  background: url("http://leap-lab.net/mapdesign/sp/img/header_menu_sep.gif") no-repeat right center;
+  background-size: 1px 15px;
+}
+section#header_menu ul li a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+section#header_menu #global_site_menu {
+  margin: 15px 9px 0 9px;
+}
+section#header_menu #global_site_menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+section#search_form {
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 0;
+}
+section#search_form #search_menu {
+  padding-bottom: 9px;
+}
+section#search_form #search_menu .search_menu_item {
+  display: inline-block;
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: bold;
+  height: 18px;
+  padding: 0 13px 3px 5px;
+  background: url("http://leap-lab.net/mapdesign/sp/img/search_form_sep.gif") no-repeat right center;
+  background-size: 1px 6px;
+}
+section#search_form #search_menu .search_menu_item.active {
+  color: black;
+}
+section#search_form #search_menu .search_menu_item:last-child {
+  background: none;
+}
+section#search_form #search_menu .search_menu_item img {
+  vertical-align: baseline;
+}
+section#search_form #search_by_keyword_form {
+  text-align: left;
+  position: relative;
+  width: 280px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+section#search_form #search_by_keyword_form .inputframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 231px;
+  height: 27px;
+  padding: 3px 5px;
+  border: 1px solid #bbbbbb;
+  border-right: none;
+  background-color: #FFF;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  -ms-border-radius: 2px 0 0 2px;
+  -o-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  float: left;
+  overflow: hidden;
+}
+section#search_form #search_by_keyword_form #search_keyword_input {
+  width: 200px;
+  outline: none;
+  color: #999999;
+  border: none;
+  font-size: 13px;
+}
+section#search_form #search_by_keyword_form #search_keyword_input.focused {
+  color: #333333;
+}
+section#search_form #search_by_keyword_form .search_icon {
+	float: right;
+	-webkit-border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	-ms-border-radius: 0 2px 2px 0;
+	-o-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	overflow: hidden;
+}
+section#search_form #search_by_prefecture_form {
+	width: 280px;
+	margin: 0 auto;
+	overflow: auto;
+}
+section#search_form #search_by_prefecture_form .selectform {
+  position: relative;
+  float: left;
+}
+section#search_form #search_by_prefecture_form .selectform .selectframe {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid #bbbbbb;
+  height: 27px;
+  background: url("http://leap-lab.net/mapdesign/sp/img/btn_cursor_down.png") no-repeat 7px center #fff;
+  background-size: 8px 15px;
+  font-size: 13px;
+  padding: 6px 5px 0 17px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+section#search_form #search_by_prefecture_form .selectform select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+section#search_form #search_by_prefecture_form #prefectures {
+  width: 91px;
+}
+section#search_form #search_by_prefecture_form #cities {
+  width: 142px;
+  margin-left: 4px;
+}
+section#search_form #search_by_prefecture_form .search_icon {
+  height: 35px;
+  margin-left: 5px;
+  float: right;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+section#search_form #search_by_prefecture_form .search_icon img {
+}
+section#search_form #search_by_gps_form p.btn {
+  width: 162px;
+  height: 24px;
+  padding: 11px 0 0 0;
+  font-weight: bold;
+}
+section#search_form .search_menu li, section#search_form .listset li {
+  float: left;
+}
+section#search_form div {
+}
+section#search_form button {
+  background: #888888;
+  color: white;
+  width: 162px;
+  height: 35px;
+  font-size: 13px;
+}
+section#search_form #filter {
+  clear: both;
+  padding: 0 12px;
+  margin-top: 11px;
+}
+section#search_form #filter #filter_input{
+	margin-bottom: 11px;
+}
+section#search_form #filter #filter01 > div {
+  background: url("http://leap-lab.net/mapdesign/sp/img/btn_cursor_down.png") no-repeat 7px center;
+  background-size: 8px 15px;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 18px;
+}
+section#search_form #filter #filter01 > div.selected {
+  background: url("http://leap-lab.net/mapdesign/sp/img/btn_cursor_up.png") no-repeat 7px center;
+  background-size: 8px 15px;
+}
+section#search_form #filter #filter01 > div:hover img {
+  visibility: hidden;
+}
+section#search_form #filter .tagit {
+  overflow: auto;
+  margin-top: 9px;
+  margin-left: 17px;
+}
+section#search_form #filter .tagit input {
+  display: none;
+}
+section#search_form #filter .tagit li.tagit-choice {
+  float: left;
+  padding: 4px 5px;
+  background-color: #efefef;
+  color: black;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+section#search_form #filter .tagit li.tagit-choice .tagit-close {
+  color: #888888;
+  content: "";
+  background: url("http://leap-lab.net/mapdesign/sp/img/tagit_remove.png") no-repeat right center;
+  background-size: 6px;
+  padding-left: 11px;
+  text-decoration: none;
+}
+section#search_form #filter .tagit li.tagit-choice:hover {
+  color: #7f0019;
+}
+section#search_form #filter .tagit li.tagit-choice:hover .tagit-close {
+  color: #7f0019;
+  text-decoration: none;
+}
+section#search_form #filterlist {
+  text-align: left;
+  margin-top: 11px;
+  padding: 5px 0 15px;
+  display: none;
+  border-top: 1px solid #efefef;
+  position: relative;
+  background-color: white;
+}
+section#search_form.overlay {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #f7f7f7;
+}
+section#search_form #filterlist .front {
+  position: relative;
+  z-index: 100;
+  padding: 0 20px 15px;
+  border-bottom: 1px solid #efefef;
+}
+section#search_form #filterlist .listset {
+  overflow: hidden;
+  *zoom: 1;
+}
+section#search_form #filterlist .listset .caption {
+  color: #999999;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-bottom: 4px;
+  float: left;
+}
+section#search_form #filterlist .listset .related {
+  padding-top: 13px;
+  padding-right: 1px;
+}
+section#search_form #filterlist .listset .related a {
+  color: black;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: bold;
+  float: right;
+}
+section#search_form #filterlist .listset ul {
+	clear: both;
+}
+section#search_form #filterlist .listset ul li {
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
+}
+section#search_form #filterlist .listset ul li div {
+  background: url("http://leap-lab.net/mapdesign/sp/img/filter_uncheck.png") no-repeat 118px center #f3f3f3;
+  background-position: -webkit-calc(100% - 6px) center;
+  background-position: -ms-calc(100% - 6px) center;
+  background-position: -o-calc(100% - 6px) center;
+  background-position: calc(100% - 6px) center;
+  background-size: 12px;
+  margin: 0 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+section#search_form #filterlist .listset ul li:nth-child(2n+1) div {
+	margin-left: 0;
+}
+section#search_form #filterlist .listset ul li:nth-child(2n+0) div {
+	margin-right: 0;
+}
+section#search_form #filterlist .listset ul li div.selected {
+  background-image: url("http://leap-lab.net/mapdesign/sp/img/filter_checked.png");
+}
+section#search_form #filterlist .listset ul li div p {
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 18px 0 5px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 35px;
+}
+section#search_form #filterlist .listset ul li div p .note {
+  font-weight: normal;
+}
+
+.mobileOnly .clearfix {
+  *zoom: 1;
+}
+.mobileOnly .clearfix:before {
+  content: " ";
+  display: table;
+}
+.mobileOnly .clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.mobileOnly .clearfix .L {
+  float: left;
+}
+.mobileOnly .clearfix .R {
+  float: right;
+}
+
+
+
+
+/* footer */
+footer ul.mobileOnly {border-top: 1px #d6d6d6 solid; margin-bottom: 20px;}
+footer ul.mobileOnly li {float: left; width: 50%; text-align: center;}
+footer ul.mobileOnly li a {
+display: block;
+padding: 10px;
+border-right: 1px #d6d6d6 solid;
+border-bottom: 1px #d6d6d6 solid;
+color: #0b0b0b;
+font-size: 13px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.pointer {text-align: center; margin-bottom: 10px;}
+
+.pointer span {
+    border: 1px solid #cccccc;
+    border-radius: 8px 8px 8px 8px;
+    background: #cccccc;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    margin-right: 8px;
+}
+
+.pointer span.current {
+	border: 1px solid #999999;
+    background: #999999;
+}
+
+.textOverflow {
+    overflow: hidden;
+    width: 220px;
+    height: 155px;
+}
+
+
+

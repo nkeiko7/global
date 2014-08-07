@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport" />
+
+	<title>ログイン | 無印良品</title>
+	
+	<link rel="stylesheet" href="http://www.muji.net/css/muji.css">
+	<link rel="stylesheet" href="/css/login.css">
+	<link href="http://www.muji.net/m/css/mobile.css" rel="stylesheet" media="only screen and (max-width : 767px)" id="mobileStyle" />
+	<link href="/css/login_mobile.css" rel="stylesheet" media="only screen and (max-width : 767px)" id="mobileStyle" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+	<!--[if lt IE 9]><script src="/js/lib/html5.js"></script><![endif]-->
+
+</head>
+<body id="top">
+
+<header id="headerWrap">
+	<div class="pcOnly">
+		<div id="header">
+		<div id="siteName"><a href="/jp/">無印良品</a></div>
+		</div>
+	</div>
+
+	<div class="mobileOnly">
+		<div id="headerbar" class="clearfix">
+			<h1 id="logo" class="L"><a href="/jp/">無印良品</a></h1>
+		</div>
+	</div>
+
+</header><!-- /#header and #headerWrap -->
+
+<div id="main" role="main">
+
+	<header>
+		<h1 id="title">ログイン</h1>
+	</header>
+
+	<section id="mujiPassport" class="block">
+		<h1>MUJI passportをお持ちの方</h1>
+		<div class="contentWrap">
+
+		<section class="authentication">
+			<div class="passportId">
+				<label for="passportId">MUJI passport ID</label>
+				<input type="text" name="MUJI passport ID" id="passportId" value="" placeholder="例）000123456789">
+			</div>
+			
+			<div class="passportPin">
+				<label for="passportPin">MUJI passport PIN</label>
+				<input type="text" name="MUJI passport PIN" id="passportPin" value="" placeholder="例）0123">
+			</div>
+			
+			<div class="autoLogin">
+				<label><input checked="checked" type="checkbox" name="toAutoLogin" value="">次回から自動的にログインする</label>
+			</div>
+
+			<div class="submit">
+				<button type="submit">送信</button>
+			</div>
+			
+			<p class="notice"><a href="/mt/contact/passport/mile_info/023816.html">ID・PINの確認方法</a></p>
+			
+		</section>
+		
+		<section class="registration">
+			<div class="passportApp">
+				<ul id="storeLink">
+					<li><a href="https://itunes.apple.com/jp/app/muji-passport/id631993791?l=ja&ls=1&mt=8" target="itunes_store" id="itunesstore"  style="vertical-align:middle; display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/ja_jp/images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/ja_jp/images/web/linkmaker/badge_appstore-lrg.svg);}"></a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=net.muji.passport.android" target="_blank" id="googleplay"><img src="https://developer.android.com/images/brand/ja_generic_rgb_wo_45.png" width="130" height="45" alt="Google playで手に入れよう"></a></li>
+				</ul>
+				<ul class="notice">
+					<li>アプリのダウンロードは無料です。</li>
+					<li>MUJIマイルを貯めるとプレゼントがもらえます。</li>
+				</ul>
+			</div>
+		</section>
+		
+		</div><!-- .contentWrap -->
+	</section><!-- #mujiPassport -->
+
+	<section id="mujinetMember" class="block">
+		<h1>MUJI.net メンバーの方</h1>
+		<div class="contentWrap">
+
+		<section class="authentication">
+			<div class="mail">
+				<label for="mail">メールアドレス</label>
+				<input type="text" name="メールアドレス" id="mail" value="" placeholder="例）taro-muji123@muji.co.jp">
+			</div>
+			
+			<div class="password">
+				<label for="password">パスワード</label>
+				<input type="text" name="パスワード" id="password" value="" placeholder="">
+			</div>
+				
+			<div class="autoLogin">
+				<label><input checked="checked" type="checkbox" name="toAutoLogin" value="">次回から自動的にログインする</label>
+			</div>
+			
+			<div class="submit">
+				<button type="submit">送信</button>
+			</div>
+			
+			<p class="notice"><a href="/store/cust/password/request">パスワードを忘れたら</a></p>
+			
+		</section>
+		
+		<section class="registration">
+			<div class="memberRegister">
+				<ul>
+					<li><a href="/store/cust/useradd/notice">MUJI.net メンバー登録</a></li>
+				</ul>
+				<ul class="notice">
+					<li>メンバー登録は無料です。</li>
+					<li>メンバー限定のサービスをご利用いただけます。</li>
+				</ul>
+			</div>
+		</section>
+
+		</div><!-- .contentWrap -->
+	</section><!-- #mujinetMember -->
+
+</div><!-- /#main -->
+
+<footer id="footerWrap"><div id="footer">
+	<p id="copyright"><small>Copyright &copy;Ryohin Keikaku Co., Ltd.</small></p>
+</div></footer><!-- /#footer and #footerWrap -->
+
+<script src="/shared/js/sc/s_code.js"></script>
+<script src="/shared/js/sc/code_to_paste.js"></script>
+
+</body>
+</html>
