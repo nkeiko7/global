@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+	font-size: 16px; line-height: 1.7; color: #191919;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #faf8df;
+}
+a {color: #666; text-decoration: none;}
+
+h1 {position: relative; height: 0;}
+.main h1 {width: 250px; height: auto; left: 8%; position: absolute; bottom: 10%;}
+.main h1 img {width: 250px; height: auto;}
+
+h2 {font-size: 2em; margin: 0 0 60px 0;}
+p {font-size: 1em; margin: 20px 0;}
+
+p.relatedLink {text-align: right;}
+.pcOnly {display: block;}
+.mobileOnly {display: none;}
+
+#main {width: 100%; margin: 0;}
+.annotation {color: #666; font-size: 90%;}
+.item {float: left; width: 20%;}
+.lead {font-size: 18px;}
+
+nav {position: relative; font-size: 0.8em; z-index: 20;}
+nav ul {position: absolute; top: 5px; left: 0; list-style: none;}
+nav ul li {float: left; margin-right: 20px;}
+nav ul li a {padding: 20px 0 10px 0;}
+nav ul li.current a {border-bottom: 2px solid #ccc; padding-bottom: 10px;}
+nav p {font-size: 1.5em; margin: 0;}
+nav .home {margin-right: 40px; font-weight: bold; font-size: 15px;}
+nav li.reserve {margin-top: -1px;}
+nav li.reserve a {padding: 4px 6px; background: #999; border-radius: 4px; font-size: 0.6em; color: #fff;}
+nav li.reserve a:hover {background: #333;}
+	
+#brandLogo {position: absolute; right: 40px; top: 20px; z-index: 3;}
+#brandLogo img {width: 80px; height: auto; border: none;}
+#mobileMenu {display: none;}
+
+.price {display: inline-block; /* margin-bottom: 3px; line-height: 1.2; */margin-bottom: 0; line-height: 1; font-size: 11px;}
+.price .num {font-size: 14px; font-weight: bold; margin: 0 2px; font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro",'MS PGothic' ,sans-serif;}
+
+p.lead .title {display: block; margin-bottom: 10px; font-size: 18px; font-weight: bold; line-height: 1.8;}
+.ww p.lead {color: #fff;}
+
+p.lead {position: absolute; /* text-shadow: 2px 2px 4px rgba(0,0,0,.2); */background: rgba(250,248,223,0.6); padding: 5px;}
+.main p.lead {top: 15%; right: 10%;}
+.ch01 p.lead {top: 30%; right: 10%;}
+.food02 p.lead {top: 20%; right: 10%;}
+.fab01 p.lead,
+.house01 p.lead,
+.food01 p.lead {bottom: 30%; left: 10%;}
+.st01 p.lead,
+.hb01 p.lead {top: 20%; left: 10%;}
+.ga01 p.lead {top: 30%; left: 10%;}
+.food03 p.lead {bottom: 20%; left: 10%;}
+
+
+.item {width: 100%; position: absolute; bottom: 0; left: 0; padding: 20px 0; line-height: 1.2;  background: url(/jp/goodprice/img/w_bak.png);}
+.item ul {width: 90%; padding-left: 20px;}
+.item ul img {width: 60px; height: auto; border: 5px solid #fff;}
+/*
+.item ul .thumb {float: left; margin-right: 5px;}
+.item ul .name {font-size: 12px;}
+*/
+.item ul .thumb {float: left; margin-right: 10px;}
+.item ul .name {font-size: 12px; line-height: 1.4; margin-bottom: 2px; display: block;}
+.item ul .name + br {display: none;}
+
+.item ul li {display: inline-block; margin-right: 20px; vertical-align: top; width: 220px;}
+.item ul li a {display: block;}
+
+.main {background: url(/jp/goodprice/img/main.jpg) no-repeat center center; background-size: cover; }
+.fab01 {background: url(/jp/goodprice/img/01.jpg) no-repeat center center; background-size: cover; display: none;}
+.house01 {background: url(/jp/goodprice/img/02.jpg) no-repeat center center; background-size: cover; display: none;}
+.st01 {background: url(/jp/goodprice/img/03.jpg) no-repeat center center; background-size: cover; display: none;}
+.hb01 {background: url(/jp/goodprice/img/04.jpg) no-repeat center center; background-size: cover; display: none;}
+.ga01 {background: url(/jp/goodprice/img/05.jpg) no-repeat center center; background-size: cover; display: none;}
+.ch01 {background: url(/jp/goodprice/img/06.jpg) no-repeat center center; background-size: cover; display: none;}
+.food01 {background: url(/jp/goodprice/img/07.jpg) no-repeat center center; background-size: cover; display: none;}	
+.food02 {background: url(/jp/goodprice/img/08.jpg) no-repeat center center; background-size: cover; display: none;}
+.food03 {background: url(/jp/goodprice/img/09.jpg) no-repeat center center; background-size: cover; display: none;}
+
+.appear {position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: block;}
+p.next,p.prev {cursor: pointer; padding: 25% 50px;}
+p.next {position: absolute; top: 0; right: 0; background: url(/jp/goodprice/img/arrow_right.png) no-repeat center center; border: 0; background-size: 30px auto; opacity: .8;}
+p.prev {position: absolute; top: 0; left: 0; background: url(/jp/goodprice/img/arrow_left.png) no-repeat center center; border: 0;  background-size: 30px auto; opacity: .8;}
+p.next:hover,
+p.prev:hover {opacity: 1;} 
+
+.relatedLink {position: absolute; right: 40px; bottom: 40px; z-index: 100; font-size: 12px; text-align: right;}
+.relatedLink a {display: inline-block; background: url(/jp/goodprice/img/right.png) no-repeat 14px center; border: 1px solid #ccc; padding: 7px 14px 7px 28px; text-decoration: none; font-weight: bold;}
+.relatedLink a:hover {border: 1px solid #999;}
+
+@media only screen and (max-width : 767px){
+	.pcOnly {display: none;}
+	.mobileOnly {display: block;}
+	
+	#brandLogo {right: 20px; top: 20px; z-index: 20;}
+	.relatedLink {right: 20px; bottom: 20px;}
+	
+	.itemListOpen {display: block; cursor: pointer; text-decoration: underline;}
+	.item {width: 100%; position: absolute; height: 80%; background-color:rgba(0,0,0,.7); display: none; padding-top: 0; background-image: none; padding: 0; z-index: 51;}
+	.item ul {margin: 0 auto; padding-left: 0;}
+	.item ul img {width: 30px; height: auto; border: 8px solid #fff;}
+	.item ul .thumb {float: left; margin-right: 5px;}
+	.item ul .name {font-size: 12px;}
+	.item ul li {display: inline-block; margin-right: 20px; vertical-align: top; width: 100%; margin-bottom: 10px;}
+	.item ul a {color: #fff;}
+
+	p.lead {padding: 10px; font-size: 14px; width: auto; margin: 0 auto; z-index: 2; box-sizing: border-box;}
+	p.lead .title {font-size: 14px; margin-bottom: 0; font-weight: normal;}
+
+	.main h1 {width: 150px; height: auto; position: absolute; top: 14%; left:28%;}
+	.main h1 img {width: 100%; height: auto;}
+	p.next, p.prev {padding: 42% 8%; background-size: 20px auto; opacity: 1;}
+	
+	nav ul {margin: 0; padding: 0; top: 15px; left: 15px;}
+	
+	
+	.ch01 {background-position: -20px 30%; background-size: 170%;}	
+	.ga01 {background-position: right 30%; background-size:150%;}	
+	
+	.main {background: url(/jp/goodprice/img/main_m.png) no-repeat center 25%; background-size: 120%;}
+	.st01,
+	.hb01 {background-position: 80% 30%; background-size: 150%;}
+	.food02 {background-position: 10% 20%; background-size: 130%;}
+	.house01 {background-position: -200px 30px;  background-size: 180%;}
+	
+	.food01 {background-position: 80% 30%; background-size: 150%;}
+	.fab01 {background-position: 70% 30%; background-size: 150%;}
+	.food03 {background-position: 70% 40%; background-size: 115%;}
+	
+	.main p.lead {bottom: 8%; left: 0; top: auto; width: 100%; /* background: rgba(250,248,223,0.8); */ background: none;}
+	.ch01 p.lead,
+	.food02 p.lead,
+	.fab01 p.lead,
+	.house01 p.lead,
+	.food01 p.lead,
+	.st01 p.lead,
+	.hb01 p.lead,
+	.ga01 p.lead,
+	.food03 p.lead {bottom: 15%; left: 0; top: auto; width: 100%; background: none;}
+	
+	.relatedLink {background-color:rgba(0,0,0,.2);}
+	.relatedLink a {color: #fff; font-weight: normal;}
+	.relatedLink a:hover {background-color:rgba(0,0,0,.2);}
+	p.closeBtn {color: #fff; margin: 0; padding: 20px; text-align: right;  font-size: 25px;}
+	
+	.itemInfo {position: absolute; bottom: 5px; left: 20px; font-size: 13px; color: #fff; z-index: 20;}
+	.itemInfo img {vertical-align: top; margin-right: 5px; width: 20px; height: 20px;}
+	
+	.back {
+		display: block;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.4)));
+		width: 100%;
+		height: 20%;
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+		}
+
+}
+

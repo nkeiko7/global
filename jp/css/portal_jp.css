@@ -1,13 +1,40 @@
-.mainCampaignBack {background:url(/jp/img/panel/main_mujitosleep.jpg) no-repeat center center;}
-.titleContainer h1 img {width: 30%;}
+.mainCampaignBack {background:url(/jp/img/panel/main_goodprice.png) no-repeat center center;}
+.titleContainer h1 img {width: 18%;}
+.titleContainer {padding: 38% 10% 0 10%;}
+#mainCampaign img {width: 50%;}
+#main #mainCampaign h1 {margin: 1em 0;}
 
 @media only screen and (min-width : 769px){
 	#hGlobalNav ul {width: 60%;}
 	#siteName {z-index: 1001; top: 3px; left: 0; margin: 0; position: absolute; line-height: 1.2;}
 	#siteName img {width: 78px; height: 19px;}
 	#globalHeader .wrapper ul {padding-left: 20%;}
+	
+#mainCampaign img {width: 60%;}
+#main #mainCampaign h1 {display: inline-block; vertical-align: middle; margin-right: 20px;}
+.titleContainer {padding: 12% 12% 0 0;}
+.titleContainer .mainCampaignTitle {text-align: right;}
+.titleContainer.center {text-align: right;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1152px)  {
 	#hGlobalNav ul {width: 100%;}
+	.titleContainer {padding: 18% 12% 0 0;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 769px)  {	
+	#hGlobalNav ul {width: 100%;}
+	#main #mainCampaign h1 {float: none; margin-top: 0;  margin-left: 0; text-align: center;}
+	#mainCampaign .titleContainer a {margin-right: 0;}
+	.titleContainer.center {text-align: center;}	
+	.titleContainer {padding: 20%}
+	#mainCampaign img {width: 30%;}
+}
+
+@media screen and (min-width: 481px)and (max-width: 767px)  {
+	.titleContainer {padding: 18% 30%;}
+}
+
+@media only screen and (min-width : 1550px){
+	.titleContainer {padding: 5% 12% 0 0;}
 }
