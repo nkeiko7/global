@@ -1,0 +1,10 @@
+
+img {width: 100%;}
+
+.contents {letter-spacing: -.40em; width: 100%; margin: 0 auto;}
+.item {display: inline-block; margin: 0; width: 33.333%; height: auto; background: #ccc; letter-spacing: normal; vertical-align: bottom; background: #000;}
+.item a {display: block;}
+.item a:hover {opacity: .8;}
+.item img {vertical-align: bottom;}
+
+header {position: fixed; height: 70px; top: 0; transition: top 0.2s ease-in-out; width: 100%; background: #fff;}

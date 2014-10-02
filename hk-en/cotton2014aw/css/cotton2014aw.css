@@ -1,0 +1,50 @@
+#main {font-family: 'Hiragino Mincho ProN', serif;}
+.ua-ie #main {font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;}
+
+#topContents {
+	background: url(/hk_en/cotton2014aw/img/main.jpg) no-repeat center center;
+	height: 600px;
+	background-size: cover;
+	position: relative;
+}
+
+#topContents h1 {position: absolute; top: 20%; left: 20%; margin: 0;}
+#topContents h1 img {width: 300px; height: auto;}
+
+#main h1 {text-align: left; margin: 10px 0;}
+#main .item {font-size: 12px;}
+#main .item li {float: left; margin-right: 20px; padding: 10px 0;}
+
+#main .item:after {content: ""; clear: both; display: block;}
+
+#main aside {margin-bottom: 20px;}
+#main aside li {margin-bottom: 10px;}
+#main aside ul {padding-left: 50%; list-style: disc;}
+
+.wrap {position: relative;}
+.wrap .item {position: absolute; z-index: 10; bottom: 10px; right: 10px;}
+.wrap .item a {color: #fff;}
+.wideImage img {vertical-align: bottom;}
+.wrap .detail p {margin-bottom: 0;}
+.wrap .detail {position: absolute; z-index: 10; bottom: 0; left: 40px; color: #fff;}
+
+
+@media screen and (max-width : 767px){
+	#main .item {margin-bottom: 20px;}
+	#main .item li {float: none; margin: 0; padding: 0;}	
+	#main aside ul {padding-left: 20px;}
+	#main aside li {margin-bottom: 5px;}
+	#topContents {
+	background: url(/jp/cotton2014aw/img/main_sp.jpg) no-repeat center center;
+	height: 600px;
+	background-size: cover;
+	}
+	#topContents h1 {top: 5%; left: 10%;; margin: 0;}
+	#topContents h1 img {width: 200px; height: auto;}
+	.wrap .item {position: relative; bottom: 0; margin-top: 10px; right: 0;}
+	.wrap .item a {color: #333;}
+	.wrap .detail p {margin-bottom: 0;}
+	.wrap .detail {position: relative; color: #333; left: 0; bottom: 0;}
+	.wrapper {padding: 20px 0;}
+
+}

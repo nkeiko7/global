@@ -1,0 +1,12 @@
+#mainCampaign .titleContainer h1 {position: absolute; max-width: 300px; top: 80px; left: 20%;}
+#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+.footerNav3 {display: none;}
+
+@media screen and (max-width: 1200px){
+	#mainCampaign .titleContainer h1 {max-width: 200px; left: 15%;}
+	#mainCampaign figure {overflow: hidden;}
+}
+
+@media screen and (max-width: 480px){
+	#mainCampaign .titleContainer h1 {left: 5%; max-width: 150px;}
+}

@@ -1,5 +1,9 @@
-#globalHeader {position: relative; background: none; height: 40px;}
-#globalHeader .wrapper {position: absolute;}
+img{
+	height: auto;
+	width /***/:auto; /*IE8*/
+	border: 0;
+	vertical-align: middle;
+}
 
 #main {
 	background: none; height: auto; width: 80%; padding-top: 40px;
@@ -12,7 +16,16 @@
 #main section {margin-bottom: 20px;}
 #main section + section {padding-top: 2em; border-top: 1px solid #ddd;}
 #main section ul {list-style: none; margin: 0 auto; margin-right: -20px; padding: 0; letter-spacing: -.40em;}
-#main section li {letter-spacing: normal;} 
+#main section li {
+  float: left;
+	list-style: none;
+	font-size: 14px;
+	width: 236px;
+	height: auto;
+	margin-right: 15px;
+	letter-spacing: normal;
+}
+.ua-desktop-windows.ua-ie-8 .contentSection li a:after {content: url(/img/ie_panel_back.png); height: 100%;}
 
 .contentSection {width: 100%;}
 .contentSection img {
@@ -30,7 +43,6 @@ nav#categorySelect {margin-bottom: 30px; display: none;}
 #filters li:hover {color: #999;}
 #filters li.current {border-bottom: 1px solid #ccc;}
 
-#globalHeader:after,
 #main:after,
 section.contentSection:after,
 #filters:after {
@@ -39,12 +51,20 @@ section.contentSection:after,
     display:table
 }
 
-/* header */
-#siteName {z-index: 1001; top: 3px; left: 0; margin: 0; position: absolute;}
-#siteName img {width: 78px; height: 19px;}
-.cancel {display: none;}
-#globalHeader .wrapper ul {padding-left: 20%;}
-#globalHeader .wrapper li a {text-shadow: none; color: #191919;}
+.contentSection li a {position: relative; color: #fff; display: block;}
+.contentSection li a .title {position: absolute; bottom: 10px; left: 10px; z-index: 2; text-shadow: 1px 1px 3px rgba(0,0,0,.5); font-weight: bold; width: 90%;}
+.contentSection li a:after {
+	content: ""; display: block; position: absolute; top: 0; height: 100%; width: 100%;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.04) 20%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(20%,rgba(0,0,0,0.04)), color-stop(100%,rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.04) 20%,rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.04) 20%,rgba(0,0,0,0.2) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.04) 20%,rgba(0,0,0,0.2) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.04) 20%,rgba(0,0,0,0.2) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-8 */
+}
+.ua-desktop-windows.ua-ie-8 .contentSection li a {width: 236px; height: 147px;}
 
 
 @media screen and (max-width: 1245px) {
@@ -62,19 +82,7 @@ section.contentSection:after,
 	#main {margin-top: 0;}
 	#main section li {width: 47%; height: auto; margin: 0 15px 15px 0;}
 	#main section li:nth-child(2n + 0) {margin-right: 0;}
-	#siteName {width: 78px; position: absolute; top: 0; left: 50%; margin: 0 0 0 -58px; z-index: 10;}
-/* 	#hGlobalNav h1 {display: block; text-indent: -9999px; background: url(/img/menu_b.png) no-repeat center center; width: 15px; height: 12px; background-size: 15px 12px; position: absolute; top: 0; left: 0; padding: 15px; margin: 0; cursor: pointer;} */
-	#hGlobalNav h1 {background: url(../img/menu_b.png) no-repeat center center; text-indent: -9999px; background-size: 20px 15px; position: absolute; top: 0; left: 0; padding: 20px; margin: 0; cursor: pointer; width: 20px; height: 15px;}	
 
-	#globalHeader .headerWrap {width: 100%;}
-	#globalHeader #hGlobalNav .wrapper {background: rgba(0,0,0,.8); position: fixed; z-index: 1000; width: 100%; height: 100%; color: #fff; font-size: 16px; padding: 0; box-sizing: border-box;}
-	#globalHeader .wrapper a {color: #fff;}
-	#globalHeader .wrapper ul {padding-left: 0;}
-	#globalHeader .wrapper li {float: none;}
-	#globalHeader .wrapper li a {color: #fff;}
-	#globalHeader #hGlobalNav .wrapper {display: none;}
-	.cancel {display: block; cursor: pointer;}
-	#globalHeader .wrapper li a {display: block; padding: 12px 15px;}
 }
 
 

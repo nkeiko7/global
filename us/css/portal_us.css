@@ -1,8 +1,13 @@
-.mainCampaignBack {background:url(/us/img/main_mujitosleep.jpg) no-repeat center center;}
-.titleContainer h1 img {width: 30%;}
+#mainCampaign .titleContainer h1 {position: absolute; max-width: 300px; top: 80px; left: 20%;}
+#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+.footerNav3 {display: none;}
+#misc .instagram a img {height: 31px; margin-left: 3px;}
 
-@media only screen and (min-width : 769px){
-	#hGlobalNav ul {width: 60%;}
-	#siteName {z-index: 1001; top: 20px; left: 0; margin: 0; position: absolute; background: url(/img/logo_w.png) no-repeat; background-size: 78px 19px; text-indent: -9999px; width: 78px;}
-	#globalHeader .wrapper ul {padding-left: 130px;}
+@media screen and (max-width: 1200px){
+	#mainCampaign .titleContainer h1 {max-width: 200px; left: 15%;}
+	#mainCampaign figure {overflow: hidden;}
+}
+
+@media screen and (max-width: 480px){
+	#mainCampaign .titleContainer h1 {left: 5%; max-width: 150px;}
 }

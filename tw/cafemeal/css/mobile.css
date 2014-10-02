@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*----------------------------------------------------
+ elements
+----------------------------------------------------*/
+body {
+line-height: 1.5;
+-webkit-text-size-adjust: none;
+}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+img {vertical-align: top;}
+#pageEnd:after {content: "."; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; line-height: 0;}
+
+.contentWrap {width: 100%;}
+#language {text-shadow: 0 2px 2px rgba(0,0,0,0.5);}
+h1#title {font-size: 25px; font-weight: normal;}
+#header {height: 200px;}
+#header h1 {padding-top: 65px;}
+#header h1 img {width: 250px; height: auto;}
+.lead {padding: 0 20px;}
+#language {margin-top: 20px; width: 100%; text-align: center; position: relative; top: 0; right: 0;}
+#language .en {margin-right: 20px;}
+#language .cn {margin-left: 20px;}
+
+article#about,
+article#shop,
+article#menu,
+article.nav {padding: 20px;}
+#about .secondary {float: none; margin: 20px auto;}
+#about #drink {margin-right: auto;}
+#aboutMenu li {display: block; width: 280px; margin: 0 auto;}
+#aboutMenu li.rice figcaption .menudetail {width: auto;}
+.menuList ul {width: 280px; margin: 0 auto;}
+.menuList li {width: 100%;}
+.menuList li img {width: 280px;}
+#aboutMenu li.rice img {margin-bottom: 0;}
+
+#aboutMenu .deli img {width: 240px;}
+#aboutMenu li.rice img, #aboutMenu li.takeout img {margin-left: -40px;}
+#aboutMenu li.deli figcaption .menudetail {width: 100%;}
+#howtoOrder li.stepArrow {display: none;}
+#howtoOrder ul {width: 190px; margin: 0 auto;}
+#ingredient .ingredienContentWrap {width: 280px; margin: 0 auto;}
+#ingredient article {width: 240px; margin-bottom: 10px;}
+#ingredient article img {width: 240px; height: auto;}
+#ingredient p {margin-bottom: 20px;}
+
+#shop img {float: none; width: 280px; height: auto; margin: 0 auto;}
+.map {width: 280px; height: 250px; display: block; margin-top:10px;}
+#shop .viewLargeMap {padding: 10px; text-align: center;}
+#shop .viewLargeMap a {font-size: 13px;}
+#shop .wrap {width: 280px; margin: 0 auto;}
+
+#footer,
+#copyright {width: 100%;}
+.pagetop,
+#footerlogo {display: none;}
+#copyright {text-align: center; margin-bottom: 0;}
+
+#footerNav li {float:none; margin-left: 0; padding: 10px; border: 0; text-align: center;}

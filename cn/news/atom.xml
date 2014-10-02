@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>新到信息</title>
+
+<entry>
+ <title>2014中秋节期间 无印良品官方网络商城暂停发货通知</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com.cn/cn/store/contents/contact/delivery/mid-autumn-festival.jsp" />
+ <published>2014-08-29T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>無印良品 成都伊藤洋华堂春熙 8/19（周二)闭店</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com/storelocator/?c=cn&amp;lang=LC#CN023" />
+ <published>2014-08-19T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>2014年8月8日（周五）無印良品 深圳机场GTC MUJI to GO 盛大开业</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com/storelocator/?c=cn&amp;lang=LC#CN122" />
+ <published>2014-07-28T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>2014年7月4日（周五）無印良品 上海美罗城 重装开业 微信抽奖好礼相送</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com/storelocator/?c=cn&amp;lang=LC#CN020" />
+ <published>2014-06-26T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>2014年6月27日（周五）無印良品 西安大唐西市 盛大开业</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com/storelocator/?c=cn&amp;lang=LC#CN120" />
+ <published>2014-06-20T00:00:00Z</published>
+</entry>
+
+</feed>

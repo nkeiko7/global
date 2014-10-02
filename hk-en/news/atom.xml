@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>最新信息</title>
+
+<entry>
+ <title>無印良品世貿中心店 現已重新開業</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com.hk/20140711wtc_reopen/20140711wtc_reopen.asp" />
+ <published>2014-07-16T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>07.07 週年晚會營業時間更改</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com.hk/2014_AnnualPartyBizHour.jpg" />
+ <published>2014-07-07T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Found MUJI PMQ店 06.27 全新開業</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.com.hk/20140627FoundMUJIPMQ/20140627FoundMUJIPMQOpen.asp" />
+ <published>2014-07-28T00:00:00Z</published>
+</entry>
+
+</feed>

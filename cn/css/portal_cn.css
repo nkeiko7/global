@@ -1,0 +1,17 @@
+#mainCampaign .titleContainer h1 {position: absolute; max-width: 150px; top: 40px; left: 25%;}
+#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+#misc .fLicence a img {
+	height: 45px; 
+	position: absolute;
+	right: 11%;
+	bottom: 20px;
+}
+
+@media screen and (max-width: 1200px){
+	#mainCampaign .titleContainer h1 {max-width: 110px;}
+	#mainCampaign figure {overflow: hidden;}
+}
+
+@media screen and (max-width: 480px){
+	#mainCampaign .titleContainer h1 {left: 5%; max-width: 110px;}
+}

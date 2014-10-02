@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>	
+	<meta charset="UTF-8">
+	<meta property="og:url" content="http://www.muji.com/hk/">
+	<meta property="og:image" content="http://www.muji.com/hk/img/ogimage.png">
+	<meta name="description" content="在無印良品，創造了商品的一天到一天的生活在一般家庭用品，如服裝食品，並銷售。">
+	<meta name="robots" content="noydir,noodp">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>無印良品</title>
+	<link rel="icon" type="image/png" href="/hk/img/favicon.ico">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/hk/css/muji_hk.css">
+	<link rel="stylesheet" href="/css/portal.css">
+	<link rel="stylesheet" href="/hk/css/portal_hk.css">
+	<link rel="stylesheet" href="/css/marker.css">
+	<link rel="stylesheet" href="/css/self_marker.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	
+	<script src="//assets.adobedtm.com/a6e9b8b912d51aecbc12256558ef49a48670b2e5/satelliteLib-b819f20b04de183cb78fcd501fba5317c3db2b78.js"></script>
+</head>
+
+<body>
+
+<header id="globalHeader" class="black">
+	<div class="headerWrap">
+	
+	<h1 id="siteName"><a href="/hk/"><img src="/img/logo_muji_b.png" alt="無印良品"></a></h1>
+
+	<nav id="hGlobalNav">
+		<h1>菜單</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/hk/">首頁</a></li>
+				
+				<li><a href="http://www.muji.com/storelocator/?c=hk">店舖情報</a></li>
+				
+				<li><a href="http://www.muji.com.hk/MUJICard/MUJICard_roadshow.asp">MUJI Card</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	
+
+	</div><!-- .headerWrap -->	
+</header>
+
+<div id="main">
+
+
+	<section id="mainCampaign">
+	<a href="/hk/cotton2014aw/">
+		<figure>
+			<img src="/hk/img/panel/main_cotton2014aw.jpg" alt="">
+		</figure>
+		
+		<div class="titleContainer">
+			<h1 class="mainCampaignTitle">
+
+
+			<img src="/hk/img/panel/main_title_cotton2014aw.png" alt="平整男装、試">
+
+
+			</h1>
+<!-- 			<a href="/hk/cotton2014aw/">我見多了</a> -->
+		</div>
+
+		<div id="skip"></div>
+	</a></section>
+
+
+
+	<section id="product">
+		<h1>推廣消息</h1>
+
+
+
+		<div class="viewport">
+			<ul class="flipsnap">
+
+				
+				<li><a href="http://www.muji.com.hk/MujiCatalog/2014/MUJIFurniture201407.pdf" data-category="furniture"><img src="/img/product_furniture.jpg" alt=""><br>家具</a></li>
+				
+				<li><a href="http://www.muji.com.hk/MujiCatalog/2013/MUJIHnB201311.pdf" data-category="hb"><img src="/img/product_hb.jpg" alt=""><br>肌膚之水</a></li>
+				
+
+			</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+
+	<section id="campaign" class="contentSection">
+		<h1>特集</h1>
+
+
+		<div class="more"><a href="/hk/campaign/?area=main">活動列表</a></div>
+
+
+		<div class="viewport">
+		<ul class="flipsnap">
+		</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+
+	<section id="event" class="contentSection">
+		<h1>活動</h1>
+
+
+
+		<div class="viewport">
+		<ul class="flipsnap">
+		</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+
+
+
+			
+
+
+
+	<section id="shop">
+		<div class="shopWrap">
+		<h1>店舗情報</h1>
+
+
+		<div class="more"><a href="http://www.muji.com/storelocator/?c=hk">一家商店列表</a></div>
+
+
+
+		<div id="overlimit">
+			<p>對應於該條件過多存儲的號碼。請參閱放大地圖。</p>
+		</div>
+		<div id="shoplist">
+			<div class="nearbyTitle">附近商店</div>
+			<ul class="shops"></ul>
+			<div id="noshops"></div>
+		</div>
+		<div id="map_frame">
+			<div id="mapMask"></div>
+			<div id="map" class="map"></div>
+		</div>
+		</div><!-- .shopWrap -->
+	</section>
+
+
+	<section id="information">
+	<h1>最新信息</h1>
+
+
+	<div class="more"><a href="http://www.muji.tw/News_list.aspx">更多消息</a></div>
+
+
+	<div class="viewport">
+
+		<ul class="flipsnap">
+			<script type="text/javascript" src="http://www.muji.net/shared/js/jkl-parsexml.js"></script>
+
+			<script type="text/javascript">
+			<!--
+			　function read_parse(url){
+			var http = new JKL.ParseXML(url);
+			var data = http.parse();
+			for (var i = 0; i < data.feed.entry.length; i++) {
+			var entry = data.feed.entry[i];
+			var tagTime = createDateString(entry.published);
+			document.open();
+			document.write ('<li><span class="date">' + tagTime + '</span>');
+			document.write ('<a href="' + entry.link.href + '">' + entry.title + '</a>' + '</li>');
+			document.close();
+			}
+			}
+			function createDateString(publishedDate) {
+			var pdate = publishedDate.replace(/-/g,'/');
+			pdate = pdate.replace('T',' ');pdate = pdate.replace('Z','');
+			pdate = new Date(pdate);
+			var pday= pdate.getDate();
+			var pmonth = pdate.getMonth() + 1;
+			var pyear = pdate.getFullYear();
+			var phour = pdate.getHours();
+			var pminute = pdate.getMinutes();
+			var psecond = pdate.getSeconds();
+			if (pmonth < 10) {pmonth = "0" + pmonth;}
+			if (pday < 10) {pday = "0" + pday;}
+			var strdate = pyear + "." + pmonth + "." + pday;return strdate;
+			}
+			read_parse('/hk/news/atom.xml');
+　　　
+			// -->
+			</script>
+		</ul>
+	</div>
+	<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+</div><!-- #main -->
+
+
+<aside id="misc">
+	<div class="content">
+		<ul class="sns">
+			
+			<li class="Facebook"><a href="https://www.facebook.com/muji.hongkong/" target="_blank"><img src="/img/misc_facebook.png" alt="Facebook"></a></li>
+			
+		</ul>
+		
+	</div>
+</aside>
+
+<footer>
+
+<nav id="footerNav">
+
+	<section class="footerNav1">
+		<ul>
+			
+			<li><a href="http://www.muji.com/storelocator/?c=hk" target="_self">店舗情報</a></li>
+			
+			<li><a href="http://www.muji.com.hk/cafemeal/?area=footer" target="_self">Café&Meal MUJI</a></li>
+			
+		</ul>
+	</section>
+
+	<section class="footerNav2">
+		<ul>
+			
+			<li><a href="http://www.muji.com.hk/MujiCatalog/2014/MUJIFurniture201407.pdf?area=footer" data-category="" target="_self">目錄</a></li>
+			
+			<li><a href="http://www.muji.com.hk/MUJICard/MUJICard_roadshow.asp" data-category="" target="_self">MUJI Card</a></li>
+			
+		</ul>
+	</section>
+
+	<section class="footerNav3">
+		<ul>
+			
+		</ul>
+	</section>
+
+	<section class="footerNav4">
+		<ul>
+			
+			<li><a href="http://www.muji.com/message/hk.html?area=footer" target="_self">Message from MUJI</a></li>
+			
+			<li><span target="_self">顧客服務: t: +852 2694 9309 / e: mujics@muji.com.hk</span></li>
+			
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>
+			
+			<li class="country"><a href="http://www.muji.com/?area=footer" target="_self"><img src="/hk/img/flag_hk.png" alt="">香港（中文）</a></li>
+			
+		</ul>
+		<div id="trademark"><a href="/hk/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>
+    
+</nav>
+
+<p id="copyright">
+	<span class="copyright"><small>&copy;&nbsp;Ryohin Keikaku Co., Ltd.</small></span>
+	
+	<nav class="another">
+	<ul>
+		
+		<li><span target="_self"><small>© MUJI(Hong Kong) Co.,Ltd</small></span></li>
+		
+	</ul>
+	</nav>
+</p>
+</footer>
+
+
+
+<style>
+	body {position: relative;}
+	#review {margin: 0; line-height: 1.5; position: fixed; bottom: 0; right: 0; padding: 0; z-index: 9999; margin: 0; /* color: #fff; */}
+	#review a {text-decoration: none;}
+	#review p {font-size: 14px; margin: 0 0 10px;}
+	#review .replyReview,
+	#review .replyFinish {display: none;}
+	#review .replyReview {background: #ccc; margin: 0; padding: 10px 20px;}
+	#review img {vertical-align: middle; margin-left: 3px;}
+	#review .title {
+	display: block; padding: 8px 10px; color: #fff; border-radius: 8px 0 0 0; font-size: 12px; border: 0; width: auto;
+	background: rgba(102,102,102,.6);
+  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#77000000,EndColorStr=#77000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#77000000,EndColorStr=#77000000)";
+	}
+	#review .title:not(:target){ filter: none; -ms-filter: none;}
+	#review .title.show {background: #ccc; width: 290px;}
+	#review .submit {display: inline-block; margin: 10px 10px 0 0; padding: 10px 20px; background: #666; color: #fff; border-radius: 3px; font-size: 14px; border: 0; float: left;}
+	#review .submit:hover {background: #999;}
+	#review textarea {width: 260px; height: 100px; color: #000; outline: none;}
+	#review button {cursor: pointer;}
+	#review .close {position: absolute; top: 0; right: 5px; padding: 10px; cursor: pointer;}
+	#review .note {font-size: 13px; color: #444; margin-top: 20px;}
+	#review .replyReview:after {content: ""; clear: both; display: block;}
+</style>
+
+
+	<script src="/js/lib/modernizr.custom.47384.js"></script>
+	<script src="/js/lib/cssua.js"></script>
+	<script src="/js/lib/fastclick.js"></script>
+	
+	<!--[if gt IE 8]><!-->
+		<script src="/js/lib/flipsnap.fix.js"></script>
+	<!--<![endif]-->
+	
+	<script src="/js/portal.js"></script>
+	<script src="/js/lib/jquery.scrollTo.js"></script>
+	
+	
+	<script>
+		//FastClick
+		if (cssua.ua.mobile) {
+		$(function(){
+			var selectors = [
+			  document.getElementById("hGlobalNav").getElementsByTagName("h1")[0],
+			  document.getElementById("hSearch").getElementsByTagName("h1")[0],
+			  document.getElementsByClassName("cancel")[0],
+			  document.getElementsByClassName("prev")[0],
+			  document.getElementsByClassName("next")[0],
+			  document.getElementsByClassName("avater")[0]
+			];
+						
+			for(var i = 0, sLen = selectors.length; i < sLen; i++ ) {
+			  if(selectors[i] != undefined){
+				 		FastClick.attach(selectors[i]);
+				 }
+			}
+		});
+		}
+		
+ 	</script>
+
+	<script src="/js/lib/jquery.cookie.js"></script>
+
+
+<script>
+
+$(function(){
+
+/*!
+* 
+* Panel Parsonalize
+* 
+*/
+
+// Parse json value
+
+	$.cookie.json = true;
+
+
+// Read Cookie
+
+	var visit = $.cookie("visit")?$.cookie("visit"):{};
+
+
+// Max Visit Value
+
+	var totalVisit = 0;
+
+	$.each(visit,function(i,val){
+		totalVisit += val;
+	});
+
+	if(totalVisit > 10) {
+		for (var i in visit) {
+			visit[i] = Math.floor(visit[i]/2);
+			if(visit[i] == 0) {
+				delete visit[i];
+			}
+		}
+		$.cookie("visit", visit, { expires: 90, path: '/hk/' });
+	}
+
+
+// campaign list
+
+	var campaign = [
+
+		{
+			"title":"Found MUJI PMQ",
+			"src":"/hk/img/panel/foundmuji_pmq_640.jpg",
+			"href":"http://www.muji.com.hk/20140627FoundMUJIPMQ/20140627FoundMUJIPMQOpen.asp",
+			"panelRank":0,
+			"category":""
+		},
+
+		{
+			"title":"MUJI to Sleep",
+			"src":"/hk/img/panel/140711_mujitosleep_640.jpg",
+			"href":"http://sleep.muji.net/zh/",
+			"panelRank":0,
+			"category":""
+		},
+
+		{
+			"title":"Message from MUJI",
+			"src":"/hk/img/panel/message14.jpg",
+			"href":"http://www.muji.com/message/tw.html?area=footer",
+			"panelRank":0,
+			"category":""
+		},
+
+		{
+			"title":"MUJI AWARD 04",
+			"src":"/hk/img/panel/award14.jpg",
+			"href":"http://www.muji.net/award/?lang=zh-HK",
+			"panelRank":0,
+			"category":""
+		},
+
+		{
+			"title":"2014 自然春日生活",
+			"src":"/hk/img/panel/c1401170201_520.jpg",
+			"href":"http://www.muji.com.hk/2014Spring/2014Spring.asp",
+			"panelRank":0,
+			"category":""
+		},
+
+	{}
+	];
+
+
+// increment each campaign panelRank from Cookie value
+
+	for(var i = 0; i < campaign.length-1; i++){
+		if(visit.hasOwnProperty(campaign[i].category)){
+			campaign[i].panelRank += visit[campaign[i].category];
+		}
+	}
+
+
+// sort campaign
+
+	campaign.sort(function(a,b){
+//		return a.panelRank < b.panelRank;
+		if(a.panelRank < b.panelRank) return 1;
+		if(a.panelRank > b.panelRank) return -1;
+		return 0;
+	})
+
+//	$("#campaign").append("<ul>");
+
+for(var i = 0; i < campaign.length-1; i++){
+
+var cat = campaign[i].category?campaign[i].category:"";
+var alt = (campaign[i].titleShow == true || campaign[i].titleShow == undefined)?"":campaign[i].title;
+var titleText = (campaign[i].titleShow == true || campaign[i].titleShow == undefined)?campaign[i].title:"";
+$("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='"+ cat +"' data-panelrank='"+ campaign[i].panelRank +"'><img src='" + campaign[i].src + "' alt='" + alt + "'><br><span class='title'>" + titleText + "</span></a></li>");
+
+}
+
+
+
+
+// event list
+
+	var event = [
+
+		{
+			"title":"Found MUJI PMQ_EVENT",
+			"src":"/hk/img/panel/foundmuji_pmq_640.jpg",
+			"href":"http://www.muji.com.hk/20140627FoundMUJIPMQ/20140627FoundMUJIPMQOpen.asp",
+			"panelRank":0,
+			"category":""
+		},
+
+	{}
+	];
+
+
+// increment each event panelRank from Cookie value
+
+	for(var i = 0; i < event.length-1; i++){
+		if(visit.hasOwnProperty(event[i].category)){
+			event[i].panelRank += visit[event[i].category];
+		}
+	}
+
+
+// sort campaign
+
+	event.sort(function(a,b){
+		if(a.panelRank < b.panelRank) return 1;
+		if(a.panelRank > b.panelRank) return -1;
+		return 0;
+	})
+
+//	$("#event").append("<ul>");
+
+for(var i = 0; i < event.length-1; i++){
+
+var cat = event[i].category?event[i].category:"";
+var alt = (event[i].titleShow == true || event[i].titleShow == undefined)?"":event[i].title;
+var titleText = (event[i].titleShow == true || event[i].titleShow == undefined)?event[i].title:"";
+$("#event ul").append("<li><a href='" + event[i].href + "' data-category='"+ cat +"' data-panelrank='"+ event[i].panelRank +"'><img src='" + event[i].src + "' alt='" + alt + "'><br><span class='title'>" + titleText + "</span></a></li>");
+
+}
+
+
+
+
+// write cookie
+
+	$("a").on("click",function(e){
+//		e.preventDefault();
+		if($(this).attr("data-category") != "" && $(this).attr("data-category") != undefined){
+			if(visit.hasOwnProperty($(this).attr("data-category"))){
+				visit[$(this).attr("data-category")] += 1;
+			}else{
+				visit[$(this).attr("data-category")] = 1;
+			}
+			$.cookie("visit", visit, { expires: 90, path: '/hk/' });
+		}
+	});
+
+
+// Debug
+//console.log($.cookie("visit"));
+//console.log(campaign);
+//console.log(event);
+
+});
+</script>
+
+<script>
+//feedback
+$(function() { 
+	$("#review .title").on("click",function(e){
+		$("#review .replyReview").show();
+		$("textarea#suggestion").focus();
+		$("#review .title").addClass('show');
+		e.preventDefault();
+	});
+	$("#review .close").on("click",function(){
+		$("#review .replyReview").hide();
+		$("#review .title").removeClass('show');
+	});	
+	$("#review .submitBtn").on("click",function(){
+		$("#review textarea, #review .lead, #review .submitBtn, #review .note").hide();
+		$("#review p.replyFinish").show();
+		var suggestion = $("#suggestion").val();
+		var data = "suggestion=" + suggestion;
+		data += "&ua=" + navigator.userAgent
+		
+		$.ajax({
+			type: "POST",
+			url: "/service-bin/portal_suggestion/portal_suggestion_get.php",
+			data: data,
+			
+			success: function(data){
+				//console.log("success");
+			},
+			error: function(data){
+				//console.log("fail");
+				
+			}
+		});
+		
+	});
+});
+</script>
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>	
+<!--[if !IE]><!-->
+	<script src="/js/lib/map.js"></script>
+<!--<![endif]-->
+
+<script>
+	MAP_LIMIT_SHOPLIST = 10; /* Maximum number of stores list */
+	MAP_LIMIT_MARKER = 100; /* Maximum number of stores placed on the map */
+	MAP_IMG_MARKER = "/img/marker_red_default.png";
+	MAP_IMG_SELF_POS = "/img/self_position.png";
+	MAP_MARKER_LINK_URL = "http://www.muji.net/shop/?";
+	MAP_SHOPLIST_JSON_URL = "http://www.muji.com/storelocator/?c=gl&lang=LC&_ACTION=_SEARCH";
+	MAP_DEFAULT_ZOOM = 11;
+	MAP_DEFAULT_LAT = 22.322742;
+	MAP_DEFAULT_LON = 114.090079;
+	MAP_LOAD_DIV_ID = "map";
+</script>
+
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Café&Meal MUJI 台灣">
+	<meta property="og:title" content="Café&Meal MUJI">
+  <meta property="og:image" content="/tw/cafemeal/img/common/cafemeal.jpg">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	
+	<title>Café&Meal MUJI</title>
+
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/tw/cafemeal/css/cafemeal.css">
+	<link rel="stylesheet" href="/tw/cafemeal/css/top.css">
+	<link rel="stylesheet" href="/tw/cafemeal/css/mobile.css" media="only screen and (max-width : 767px)">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script src="/tw/cafemeal/js/cafemeal.js"></script>
+	<!--[if lt IE 8 ]>
+    <script src="https://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <![endif]-->
+	<!--[if IE]><script src="/tw/cafemeal/js/html5.js"></script><![endif]-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false&language=hk">
+	<script src="http://maps.gstatic.com/intl/de_ALL/mapfiles/api-3/13/2/main.js" type="text/javascript"></script>
+	<script> 
+	$(document).ready(function() {	
+		  var latlng = new google.maps.LatLng(22.278295,114.183095);
+		  var opts = {
+		    zoom: 14,
+		    center: latlng,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP,
+		    mapTypeControl: false
+		  };
+		  var map = new google.maps.Map(document.getElementById("map_canvas"), opts);
+		  var marker = new google.maps.Marker({
+					position: latlng,
+					map: map
+			});			
+	});
+	
+	$(function(){
+		  $(".mapMask").on('click',function(){
+				$(this).addClass("draggable");
+		      return false;
+		    });
+		});
+</script>
+	
+</head>
+
+<body id="top">
+
+	<header id="header">
+	
+		<h1><img src="/tw/cafemeal/img/common/logo_white.png" alt="Café&Meal MUJI"></h1>
+	
+		<nav id="globalNav">
+			<ul>
+				<li><a href="#about">關於</a></li>
+				<li><a href="#shop">店鋪</a></li>
+				<li><a href="#menu">菜單</a></li>
+				<li><a href="http://www.muji.com/tw/"><img src="/tw/cafemeal/img/common/muji_logo.png" alt="MUJI 無印良品"></a></li>
+			</ul>
+		</nav><!-- /#globalNav -->
+		
+		<!--
+<div id="language">
+			<span class="en"><a href="/en/tw/cafemeal/">English</a></span>|<span class="cn current"><a href="#">中文</a></span>
+		</div>
+-->
+	
+	</header>
+	<div class="content">
+		
+		<div class="contentWrap">
+		<p class="lead">Café&Meal MUJI首間海外分店已於2013年6月在銅鑼灣利舞臺廣場正式開業。<br>本着「素の食」的膳食理念，採用季節食材，講求大自然的原味和食材的自然形態，<br>以簡單的烹調方法，提供適合都市忙碌生活的健康料理。</p>
+		</div>
+		
+	  <article id="about">
+	  	<div class="contentWrap">
+			<h1 class="title">關於Café&Meal MUJI</h1>
+			<section id="primary">
+			<h1><!-- 素の食 健康的原味料理 -->素の食はおいしい。</h1>
+			<p><!-- 考究原產地的季節食材，細心鑽研烹調方法，<br>調理出食材的原味。每天準備多款前菜、沙律和主菜，<br>讓大家自由組合喜愛的餐單，享用來自不同季節的大自然美味。 -->
+			もぎたてのトマトをまる齧りしたときの、あのみずみずしい甘みや酸味。<br>Café&Meal MUJIが大切にしているのは、たとえばそんな「素の食」のおいしさです。太陽や土、水の恵みがたっぷりと染み込んだ素材そのものの味を生かし、自然のうま味を引き出すために、できる限りシンプルに調理しています。<br>化学調味料は最小限に抑え、保存料はいっさい使用しません。<br>日本を中心に世界中の産地に直接足を運び、生産者の方々と交流しながらそのときいちばんの旬の食材を調達しています。<br>一方では、フェアトレードや環境に配慮した農法を積極的に採用し、その土地ならではの伝統料理をメニューに取り入れることで、歴史ある食文化を次世代につなげる試みも行いつづけています。<br><br>家族や友人と会話を楽しみながら、あるいはひとりの時間を満喫しながら。<br>カラダにやさしく、世界にやさしく、食べて美味しい「素の食」を、Café&Meal MUJIのゆったりとした空間でどうぞお召し上がりください。</p>
+			</section>
+		
+			<section id="deli" class="secondary">
+				<img src="/tw/cafemeal/img/about/deli.jpg" alt="">
+				<h1>Deli <span class="subtitle">季節食材</span></h1>
+				<p>“素之食”之理念是保持食材的自然原味。<br>採用天然的季節食材，讓食客品嚐鮮美、健康的料理。<br>備有多款採用季節蔬菜的料理，隨喜好組合，每餐可品嚐到十多種的食材，攝取均衡營養。</p>
+			</section>
+
+			<section id="sweets" class="secondary">
+				<img src="/tw/cafemeal/img/about/sweets.jpg" alt="">
+				<h1>Sweets <span class="subtitle">簡樸美味</span></h1>
+				<p>味道甘甜幼滑的“本和香糖布甸”以及清新怡人的雜莓芝士蛋糕等，純樸美味，適合跟咖啡或紅茶一同享用。</p>
+			</section>
+
+			<section id="drink" class="secondary">
+				<img src="/tw/cafemeal/img/about/drink.jpg" alt="">
+				<h1>Drinks <span class="subtitle">寧神舒暢</span></h1>
+				<p>公平貿易咖啡及沖繩縣原產茶葉製成的琉球紅茶、使用廣島縣產檸檬製成的大長檸檬梳打等，冷熱皆宜，可於用餐或午間茶點時享用。</p>	
+			</section>
+			
+			</div>
+		</article>
+		
+		
+		<article id="shop">
+			<div class="contentWrap">
+			<h1 class="title">店舖資料</h1>
+			<section class="shop">
+			<h1>Café&Meal MUJI 利舞臺廣場</h1>
+			<div class="wrap">
+				<div class="address">香港銅鑼灣波斯富街99號利舞臺廣場3樓</div>
+				<dl>
+					<dt>電話</dt><dd class="tel"><a href="tel:852-3971-3120">+852 3971-3120</a></dd>
+					<dt>營業時間</dt><dd>11:00-22:30（最後點餐 22:00）</dd>
+				</dl>
+				<img src="/tw/cafemeal/img/shop/Lee_teatre_plaza.jpg" alt="" class="shopImage">
+				
+				<div class="map_frame">
+					<div class="mapMask"></div>
+					<div id="map_canvas" class="map"></div>
+				</div>
+				
+				<div class="viewLargeMap"><a href="https://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=99+Percival+Street+Causeway+Bay+Hong+Kong&amp;aq=&amp;sll=36.5626,136.362305&amp;sspn=47.255444,79.189453&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Percival+St,+%E9%A6%99%E6%B8%AF&amp;t=m&amp;z=14&amp;iwloc=A">View large map</a></div>
+			</div>
+			</section>
+			
+			</div>
+		</article>
+		
+		
+		<article id="menu">
+			<div class="contentWrap">
+			
+			<h1 class="title">菜單</h1>
+			<section id="aboutMenu" class="detail">
+			<h1>料理　DELI</h1>
+			<p>不同的季節蔬菜和天然食材，烹調出多款營養均衡的熱盤及冷盤，可隨意選擇成為美味的料理組合。</p>
+			<ul>
+				<li class="deli tree">
+					<figure>
+						<img src="/tw/cafemeal/img/menu/aboutmenu/deli3hin_hk.png" alt="">
+						<figcaption>
+							自選3品料理
+							<span class="menudetail">任何3款熱或冷盤、米飯、飲品（由麵豉湯/咖啡/紅茶/烏龍茶中任選一種）</span>
+							<!-- <span class="price">HK$<span class="num">88</span></span> -->
+						</figcaption>
+					</figure>
+				</li>
+				<li class="deli">
+					<figure>
+						<img src="/tw/cafemeal/img/menu/aboutmenu/deli4hin_hk.png" alt="">
+						<figcaption>
+							自選4品料理
+							<span class="menudetail">熱盤2款、冷盤2款、米飯、飲品（由麵豉湯/咖啡/紅茶/烏龍茶中任選一種）</span>
+							<!-- <span class="price">HK$<span class="num">98</span</span> -->
+						</figcaption></figure>
+				</li>
+				<li class="rice">
+					<figure>
+						<img src="/tw/cafemeal/img/menu/aboutmenu/rice2_hk.png" alt="">
+						<figcaption>
+							<span class="menudetail">料理可配白飯或十穀米，以及麵豉湯或指定飲品</span>
+						</figcaption></figure>
+				</li>
+				<li class="takeout">
+					<figure>
+						<img src="/tw/cafemeal/img/menu/aboutmenu/takeout_hk.png" alt="">
+						<figcaption>
+							<span class="menudetail">提供外賣自取服務</span>
+						</figcaption></figure>
+				</li>
+			</ul>
+			</section>
+		
+			<section id="hotDeli" class="menuList">
+			<h1>熱菜一例</h1>
+			<ul>
+        <li><figure><img src="/tw/cafemeal/img/menu/hot001.jpg" alt=""><figcaption><span class="name">甜椒醬炸雞</span><br><span class="cap">甜辣味適中的甜椒醬，配上肉質鮮嫰的炸雞，可口美味。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/hot002.jpg" alt=""><figcaption><span class="name">菠菜雞肉漢堡伴照燒汁</span><br><span class="cap">混入菠菜的雞肉漢堡，健康低卡，配搭自家製的照燒醬汁享用，更加美味。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/hot005.jpg" alt=""><figcaption><span class="name">番茄咖喱煮鲭魚</span><br><span class="cap">加入乳酪調配的番茄咖喱醬汁，配合各種香料帶出鯖魚鮮味。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/hot006.jpg" alt=""><figcaption><span class="name">黑醋醬豚肉</span><br><span class="cap">炸香的豬肉外脆內軟，配上濃郁的黑醋醬汁，醒胃可口。</span></figcaption></figure></li>        
+			</ul>	
+			</section>
+		
+			<section id="coldDeli" class="menuList">
+			<h1>冷菜一例</h1>
+			<ul>
+        <li><figure><img src="/tw/cafemeal/img/menu/cold001_2.jpg" alt=""><figcaption><span class="name">忌廉煙肉馬鈴薯沙律</span><br><span class="cap">香濃的巴馬芝士配上煙肉和馬鈴薯，製成十足忌廉煙肉意粉風味的沙律。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/cold002.jpg" alt=""><figcaption><span class="name">日式醃季節蔬菜</span><br><span class="cap">各式清新季節蔬菜，以自家製的和風沙律汁淺漬而成，色彩豐富。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/cold003.jpg" alt=""><figcaption><span class="name">香檸雞肉意粉沙律</span><br><span class="cap">檸檬、水菜、番茄、雞胸配意粉，混入檸檬沙律汁，帶出清新的檸檬香味。</span></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/cold004.jpg" alt=""><figcaption><span class="name">日式洋栖菜沙律</span><br><span class="cap">以含豐富鈣質及食物纖維的羊栖菜，混合大量葉菜製成的低卡和風沙律。</span></figcaption></figure></li>        
+			</ul>	
+			</section>
+		
+			<section id="hotDeli" class="menuList">
+			<h1>飲品 · 甜點一例</h1>			
+			<ul>
+        <li><figure><img src="/tw/cafemeal/img/menu/dessert001.jpg" alt=""><figcaption><span class="name">本和香糖布甸</span><br><span class="cap">加入日本產雞蛋和牛奶，配上新鮮忌廉，香濃滑溜，入口即溶。</span><!-- <br><span class="price">HK$<span class="num">38</span></span> --></figcaption></figure></li>
+        <li><figure><img src="/tw/cafemeal/img/menu/dessert002.jpg" alt=""><figcaption><span class="name">雜莓芝士蛋糕</span><br><span class="cap">幼滑的芝士蛋糕，加入雜莓果醬，甜中帶酸，清新怡人。</span><!-- <br><span class="price">HK$<span class="num">45</span></span> --></figcaption></figure></li>        
+        <li class="drink"><figure><img src="/tw/cafemeal/img/menu/drink001.jpg" alt=""><figcaption><span class="name">大長檸檬特飲(冷)</span><br><span class="cap">用上整個無添加防腐劑及防霉劑的鮮檸檬糖漿，配合梳打水，調配出清爽怡人的季節飲品。</span><!-- <br><span class="price">HK$<span class="num">42</span></span> --></figcaption></figure></li>
+        <li class="drink"><figure><img src="/tw/cafemeal/img/menu/drink002.jpg" alt=""><figcaption><span class="name">琉球洛神花茶 (冷)</span><br><span class="cap">味帶酸甜，含花青素、黃酮素和多酚等，有益健康。</span><!-- <br><span class="price">HK$<span class="num">42</span></span> --></figcaption></figure></li>
+			</ul>	
+			</section>
+		
+		
+			<section id="howtoOrder" class="detail">
+				<h1>Café&Meal MUJI 點菜流程</h1>
+				<ul>
+					<li><figure><img src="/tw/cafemeal/img/menu/howto/howto001.jpg" alt=""><figcaption>點菜前，請先以留位牌預留座位。<figcaption></figcaption></figcaption></figure></li>
+					<li class="stepArrow"><img src="/tw/cafemeal/img/menu/howto/step_arrow.png" alt=""></li>
+					<li><figure><img src="/tw/cafemeal/img/menu/howto/howto002.jpg" alt=""><figcaption>請移步到料理櫃檯前點菜。先選擇3品或4品料理，然後點選喜歡的熱盤及冷盤，主食及飲品。<figcaption></figcaption></figcaption></figure></li>
+					<li class="stepArrow"><img src="/tw/cafemeal/img/menu/howto/step_arrow.png" alt=""></li>
+					<li><figure><img src="/tw/cafemeal/img/menu/howto/howto003.jpg" alt=""><figcaption>移步到收銀櫃檯結賬。<figcaption></figcaption></figcaption></figure></li>
+					<li class="stepArrow"><img src="/tw/cafemeal/img/menu/howto/step_arrow.png" alt=""></li>
+					<li><figure><img src="/tw/cafemeal/img/menu/howto/howto004.jpg" alt=""><figcaption>回到已預留的座位用餐。用餐後把餐盤放回食具收集檯。<figcaption></figcaption></figcaption></figure></li>
+				</ul>
+			</section>
+
+			<section id="ingredient" class="detail">
+				<h1>特色食材</h1>
+				<!-- <p>メニューの元となる、調味料や素材をご紹介します。</p> -->
+				
+				<div class="ingredienContentWrap">
+					<article>
+						<img src="/tw/cafemeal/img/menu/ingredient/honwakatou.jpg" alt="">
+						<hgroup>
+							<h1>本和香糖（HONWAKATOU）</h1>
+							<p>本和香糖100%採用沖繩縣產的甘蔗，糖粒幼細呈奶白色，保留着甘蔗原有的礦物質、風味和香甜。當中所含的礦物質是三溫糖的10倍以上，比起白糖約高80倍。<br>Café&Meal MUJI 內的部分冷熱料理、甜品及飲品都有加入本和香糖調味，為菜式帶出溫和甜味，吃得美味又健康。</p>
+						</hgroup>
+					</article>
+						
+					<article>
+						<img src="/tw/cafemeal/img/menu/ingredient/remon.jpg" alt="">
+						<hgroup>
+							<h1>大長檸檬</h1>
+							<p>位於日本廣島縣的瀨戶內海氣候穩定，加上水土良好及陽光充沛，因此能栽培出天然糖分高達10%的大長檸檬，味道份外清甜。<br>採摘過程由人手嚴選，無添加防腐劑及防霉劑，可整個連皮安心食用。以大長檸檬汁調配的各式特飲，味道清爽怡人。</p>
+						</hgroup>
+					</article>
+						
+					<article>
+						<img src="/tw/cafemeal/img/menu/ingredient/tea.jpg" alt="">
+						<hgroup>
+							<h1>琉球紅茶</h1>
+							<p>由沖繩縣產茶葉沖泡成的伯爵紅茶。<br>以世界三大銘茶之一的祁門红茶作主茶，混入斯里蘭卡錫蘭茶葉及沖繩茶葉，加上天然佛手柑果皮製作，味道香濃並帶有清新幽香，是Café&Meal MUJI的原創紅茶，適合伴以糕點一同享用。<br>紅茶中的丹寧酸，令口氣清爽，可配合牛奶製料理或米飯一起享用。</p>
+						</hgroup>
+					</article>
+					
+					<!--
+					<article>
+						<img src="/tw/cafemeal/img/menu/ingredient/yuzu.jpg" alt="">
+						<hgroup>
+							<h1>北川村的柚子</h1>
+							<p>柚子自古以來與我們關係密切，常用於冬至的柚子浴等，其最大特點便是特有的那種清新芳香。在一望無際的山嶺上，四周新鮮空氣環繞的高知縣北川村自江戶時代起便盛產柚子。由於山中缺鹽，便用柚子替代鹽作為防腐劑或調味料使用。即使是現在，柚子依然是高知縣當地鰹魚敲或什錦壽司飯等食譜中不可或缺的常用食材。<br>產地 高知縣</p>
+						</hgroup>
+					</article>
+					-->
+				</div>
+				</section>
+			
+			</div>
+	
+		</article>
+		
+	</div><!-- /.content -->
+	
+	<footer role="contentinfo"><div id="footer">
+		<div class="pagetop"><a href="#globalNav"><img src="/tw/cafemeal/img/common/pagetop.png"></a></div>
+		<ul id="footerNav">
+			<li id="fnCorporate"><a href="http://www.muji.com/tw/">MUJI 台灣</a></li>
+			<li id="fnJob"><a href="http://www.muji.tw/Job.aspx">人才募集</a></li>
+			<li id="fnJP"><a href="http://www.muji.net/tw/cafemeal/">Café&Meal MUJI Japan</a></li>
+		</ul>
+		<p id="copyright"><small>台灣無印良品股份有限公司 版權所有 轉載必究  &copy; MUJI.tw Co., Ltd.</small></p>
+		<p id="footerlogo"><img src="/tw/cafemeal/img/common/logo_footer.png" alt=""></p>
+	</div></footer>
+
+
+<script type="text/javascript" src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script type="text/javascript" src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+
+</body>
+</html>
+

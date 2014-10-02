@@ -1,0 +1,107 @@
+#header {position: relative; width: 100%; height: 500px; margin: 0 auto; background: url(/tw/cafemeal/img/top/main.jpg) no-repeat;
+background-repeat: no-repeat;
+-moz-background-size: cover;
+background-size: cover;
+overflow: visible;
+background-position: center top;}
+#header h1 img {/* width: auto; position: absolute; top: 155px; left: 245px; margin-top: 0; */ width: 395px; height: auto;}
+#header h1 {width: 100%; text-align: center; padding-top: 200px;}
+
+article h1 {font-size: 16px; font-weight: bold; margin: 5px 0 0; height: auto; overflow: hidden;}
+article h2 {color: #999; margin: 0 0 5px 0;}
+article a {display: block; position: relative;}
+.lead {font-size: 16px; margin-bottom: 30px;}
+.detail {border: 1px solid #ddd; background: #eee; padding: 20px; border-radius: 5px; margin-bottom: 20px;}
+.detail h1 {font-size: 14px; margin: 0 0 10px 0;}
+
+article#about,
+article#shop,
+article#menu,
+article.nav {float: none; border: 0; width: auto; margin: 0; padding: 30px 0; position: relative; clear: both;}
+article#shop {background: #f0f0f0;}
+article#about,
+article#menu,
+article.nav {background: #f7f7f7;}
+
+
+/* about */
+article#about:after {content: ''; display: block; clear: both;}
+article#about p {font-size: 14px; line-height: 1.8;}
+#about #primary h1 {margin: 15px 0; font-size: 18px;}
+#about #primary p {font-size: 16px;}
+#about .secondary {margin-right: 20px; float: left; width: 280px;}
+#about #drink {margin-right: 0;}
+#about .secondary img {width: 280px;}
+#about .secondary h1 {font-size: 15px; margin: 5px 0 10px;}
+#about .secondary .subtitle {font-size: 13px; margin-left: 15px; font-weight: normal;}
+
+
+/* about menu */
+#aboutMenu ul {margin-top: 10px;margin-right: -20px; letter-spacing: -.40em;}
+#aboutMenu li {display: inline-block; margin: 0; vertical-align: top; letter-spacing: normal; margin-right: 20px;}
+#aboutMenu .deli img {width: 220px; height: auto;}
+#aboutMenu li.deli.tree img {margin: 5px 0;}
+#aboutMenu figcaption {font-size: 14px;}
+#aboutMenu figcaption .menudetail {font-size: 12px; display: block;}
+#aboutMenu li.deli figcaption .menudetail {font-size: 12px; display: block; width: 220px;}
+#aboutMenu li.rice figcaption .menudetail {font-size: 12px; display: block; width: 150px;}
+#aboutMenu li.tateout figcaption .menudetail {font-size: 12px; display: block; width: 120px;}
+#aboutMenu li.rice, #aboutMenu li.takeout {text-align: center;}
+#aboutMenu li.rice figcaption, #aboutMenu li.takeout figcaption {text-align: left;}
+#aboutMenu li.rice img,
+#aboutMenu li.takeout img  {width:160px; margin: 20px 0;}
+.menuList {margin-bottom: 50px;}
+.menuList ul {/* margin-right: -20px; letter-spacing: -.40em; */margin: 0; padding: 0;}
+.menuList li {display: inline-block; width: 225px; margin: 20px 0 5px 0; vertical-align: top; letter-spacing: normal;}
+.menuList li.drink {width: 137px;}
+.menuList li img {width: 225px; height: auto;}
+.menuList li.drink img {width: 137px; height: auto;}
+.menuList li figcaption {margin-top: 3px; padding: 0 5px;}
+.cap {color: #666;}
+
+
+/* howto order */
+#howtoOrder ul {margin-right: -20px; letter-spacing: -.40em;}
+#howtoOrder li {display: inline-block; margin: 0; vertical-align: top; letter-spacing: normal;}
+#howtoOrder figcaption {width: 190px;}
+#howtoOrder li img {width: 190px; height: 130px;}
+#howtoOrder li.stepArrow img {width: 9px; height: 11px;}
+#howtoOrder li.stepArrow {margin: 58px 9px 0 9px;}
+
+
+/* ingredient */
+#ingredient .ingredienContentWrap {margin-right: -20px; letter-spacing: -.40em;}
+#ingredient article {width: 266px; display: inline-block; margin: 0 19px 0 0; vertical-align: top; letter-spacing: normal; position: relative;}
+#ingredient article img {width: 266px; height: 166px;}
+#ingredient article h1 {font-size: 13px; margin: 5px 0;}
+#ingredient article h2 {margin-bottom: 5px; color: #666;}
+
+/* ingredient detail */ 
+#ingredientDetail article {padding: 15px; width: 760px; margin: 0 auto;}
+#ingredientDetail h1 {font-size: 18px; margin: 0 0 10px 0; padding-top: 0;}
+#ingredientDetail article p {font-size: 13px; margin-bottom: 20px;}
+#ingredientDetail img {width: 380px; height:380px; float: left; margin-right: 20px;}
+#ingredientDetail .desc {width: auto; overflow:hidden;}
+#ingredientDetail dt, #ingredientDetail dd {margin: 0; padding-top: 10px;}
+#ingredientDetail dt {float: left; color: #999; font-size: 12px; margin-right: 20px; height: 30px; line-height: 21px;}
+#ingredientDetail dd {height: 30px; font-size: 14px;}
+#ingredientDetail dd:after {content: ""; display: block; clear: both;}
+#ingredientDetail dl {margin-bottom: 15px;}
+#ingredientDetail article p.annotation {font-size: 11px;}
+
+
+/* shop */
+#shop:after {content: ""; display: block; clear: both;}
+#shop dl {margin-bottom: 10px;}
+#shop dt {float: left; margin-right: 10px; color: #999;}
+#shop img {float: left; margin-right: 20px; width: 344px; height: auto;}
+#shop .viewLargeMap {text-align: right;}
+#shop .viewLargeMap a {color: #333; text-decoration: underline; font-size: 10px;}
+.map {width: 516px; height: 250px; background-color: #f7f7f7; display: inline-block;}
+#shop .address {margin-bottom: 10px;}
+#shop .wrap {font-size: 14px;}
+.map_frame {position: relative;}
+.mapMask {position: absolute; right: 0; bottom: 0; display: block; width: 516px; height: 250px; z-index: 1000;}
+.mapMask.draggable {display: none;}
+
+

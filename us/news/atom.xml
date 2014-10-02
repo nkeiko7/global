@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>NEWS RELEASE</title>
+
+<entry>
+ <title>Launch of “Wool Wool Wool” Autumn/Winter Lookbook</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.us/2014/09/02/launch-of-wool-wool-wool%E2%80%9D-autumnwinter-lookbook/" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Press Release: New Dorm New Apartment</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.us/2014/08/15/press-release-new-dorm-new-apartment/" />
+ <published>2014-08-15T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Press Release: Aging Skin Care</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.us/2014/08/15/press-release-aging-skin-care/" />
+ <published>2014-08-15T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>New “MUJI to Sleep” App for iPhone/Android</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.us/2014/07/22/new-%E2%80%9Cmuji-to-sleep%E2%80%9D-app-for-iphoneandroid/" />
+ <published>2014-07-22T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>A Summertime Drinks Seminar at MUJI Santa Monica</title>
+ <link rel="alternate" type="text/html" href="http://www.muji.us/2014/07/01/a-summertime-drinks-seminar-at-muji-santa-monica/" />
+ <published>2014-07-01T00:00:00Z</published>
+</entry>
+
+</feed>

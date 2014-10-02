@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Campaign List | MUJI</title>
+	<link rel="icon" type="image/png" href="/jp/img/favicon.ico">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/cn/css/muji_cn.css">
+	<link rel="stylesheet" href="/css/campaignlist.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="lib/jquery.min.1.11.0.js"><\/script>')</script>
+	<script src="/js/lib/modernizr.custom.47384.js"></script>
+	<script src="/js/lib/cssua.js"></script>
+	<script src="/js/lib/jquery.cookie.js"></script>
+	
+	<script src="/js/lib/imagesloaded.pkgd.min.js"></script>
+	<script src="/js/lib/isotope.pkgd.min.js"></script>
+	<script src="/js/lib/fastclick.js"></script>
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	
+	<script>
+	$(function(){
+		FastClick.attach(document.body);
+	});
+
+	function is_mobile () {
+		var useragents = [
+		'iPhone',			// Apple iPhone
+		'iPod',			// Apple iPod touch
+		'Android',			// 1.5+ Android
+		];
+		var pattern = new RegExp(useragents.join('|'), 'i');
+		return pattern.test(navigator.userAgent);
+	}
+	
+	$(document).ready(function() {	
+			// init Isotope
+			var $container = $('.isotope').imagesLoaded( function() {
+					$container.isotope({
+					itemSelector: '.element-item',
+					layoutMode: 'fitRows'
+				});
+			});
+	
+			// bind filter button click
+			$('#filters').on( 'click', 'li', function() {
+				var filterValue = $( this ).attr('data-filter');
+				$container.isotope({ filter: filterValue });
+			});
+	
+			// change is-checked class on buttons
+			$('.button-group').each( function( i, buttonGroup ) {
+				var $buttonGroup = $( buttonGroup );
+				$buttonGroup.on( 'click', 'li', function() {
+					$buttonGroup.find('.current').removeClass('current');
+					$( this ).addClass('current');
+				});
+			});	
+	});
+	
+
+	$(window).on("load resize", function(){
+    var w = $(window).width();
+    if (w > 768) {
+    $(function(){
+    	$("#hGlobalNav .wrapper").show();
+			FastClick.attach(document.body);
+	
+		});
+		} else {
+			$("#hGlobalNav .wrapper").hide();
+			
+			$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
+			$("#hGlobalNav h1").on("click", function(){
+				$("#hGlobalNav .wrapper").show();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").addClass("blur");
+			});
+			$("#hGlobalNav .cancel").on("click", function(e){
+				$("#hGlobalNav .wrapper").hide();
+				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
+			});
+	
+    }
+	});
+
+
+$(function(){
+
+/*!
+* 
+* Panel Parsonalize
+* 
+*/
+
+// Parse json value
+
+	$.cookie.json = true;
+
+
+// Read Cookie
+
+	var visit = $.cookie("visit")?$.cookie("visit"):{};
+
+
+// Max Visit Value
+
+	var totalVisit = 0;
+
+	$.each(visit,function(i,val){
+		totalVisit += val;
+	});
+
+	if(totalVisit > 10) {
+		for (var i in visit) {
+			visit[i] = Math.floor(visit[i]/2);
+			if(visit[i] == 0) {
+				delete visit[i];
+			}
+		}
+		$.cookie("visit", visit, { expires: 90, path: '/jp/' });
+	}
+
+// write cookie
+
+	$("a").on("click",function(e){
+//		e.preventDefault();
+		if($(this).attr("data-category") != "" && $(this).attr("data-category") != undefined){
+			if(visit.hasOwnProperty($(this).attr("data-category"))){
+				visit[$(this).attr("data-category")] += 1;
+			}else{
+				visit[$(this).attr("data-category")] = 1;
+			}
+			$.cookie("visit", visit, { expires: 90, path: '/jp/' });
+		}
+	});
+
+// Debug
+//console.log($.cookie("visit"));
+
+});
+	
+</script>
+</head>
+<body id="campaignList">
+
+<header id="globalHeader">
+	<div class="headerWrap">
+	
+	<h1 id="siteName"><a href="/hk/"><img src="/img/logo_muji_b.png" alt="MUJI 無印良品"></a></h1>
+
+	<nav id="hGlobalNav">
+		<h1>menu</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/hk/">Home</a></li>
+				<li><a href="http://www.muji.com/storelocator/?c=hk">Store Information</a></li>
+			</ul>
+		</div>
+	</nav	
+	</div><!-- .headerWrap -->	
+</header>
+
+<div id="main">
+	
+	<section id="feature">
+		<h1>Campaign List</h1>
+
+		<section class="contentSection">
+		<ul  class="isotope">
+			<li class="element-item"><a href="http://www.muji.com.hk/20140627FoundMUJIPMQ/20140627FoundMUJIPMQOpen.asp" data-category="found" data-panelrank="0"><img src="/hk_en/img/panel/foundmuji_pmq_640.jpg" alt=""><br><span class="title">Found MUJI PMQ</span></a></li>
+			<li class="element-item"><a href="http://sleep.muji.net/zh-TW/" data-category="houseware" data-panelrank="0"><img src="/hk_en/img/panel/140711_mujitosleep_640.jpg" alt=""><br><span class="title">MUJI to Sleep</span></a></li>
+			<li class="element-item"><a href="http://www.muji.com/message/tw.html" data-category="" data-panelrank="0"><img src="/hk_en/img/panel/message14.jpg" alt=""><br><span class="title">Message from MUJI</span></a></li>
+			<li class="element-item"><a href="http://www.muji.net/lab/fitness80/zh-tw/" data-category="" data-panelrank="0"><img src="/hk_en/img/panel/product_fitness80_640.jpg" alt=""><br><span class="title">Product fitness80</span></a></li>
+			<li class="element-item"><a href="http://www.muji.net/lab/energy/cn/" data-category="" data-panelrank="0"><img src="/hk_en/img/panel/enjoyenergy_640.jpg" alt=""><br><span class="title">Enjoy! ( ) Energy.</span></a></li>
+			<li class="element-item"><a href="http://www.muji.net/award/?lang=zh-HK" data-category="" data-panelrank="0"><img src="/hk_en/img/panel/award14.jpg" alt=""><br><span class="title">MUJI AWARD 04</span></a></li>
+		</ul>
+		</section>
+	</section>
+
+</div>
+
+<footer>
+<nav id="footerNav">
+
+	<section class="footerNav1">
+		<ul>
+			<li><a href="http://www.muji.com/storelocator/?c=hk">Store Information</a></li>
+			<li><a href="http://www.muji.com.hk/cafemeal/">Café&amp;Meal MUJI</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav3">
+		<ul>
+			<li><a href="http://www.muji.com.hk/MujiCatalog/2014/MUJIFurniture201407.pdf">Catalog</a></li>
+			<li><a href="http://www.muji.com.hk/MUJICard/MUJICard_roadshow.asp">MUJI Card</a></li>
+		</ul>
+	</section>
+	
+	<section class="footerNav4">
+		<ul>
+			<li><a href="http://www.muji.com/message/tw.html">Message from MUJI</a></li>
+			<li class="contact">Contact   t: +852 2694 9309 / e: mujics@muji.com.hk</li>
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>
+			<li class="country"><a href="http://www.muji.com"><img src="/hk/img/flag_hk.png" alt="">Hong Kong (English)</a></li>
+		</ul>
+		<div id="trademark"><a href="/hk/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>
+    
+</nav>
+
+<div id="copyright">
+	<span class="copyright"><small>&copy;&nbsp;MUJI(Hong Kong) Co.,Ltd</small></span>
+</div>
+</footer>
+
+<script>
+	$(function() {
+    var count = 15;
+    var winWidth = $(window).width();
+    var checkFlag;
+    if(winWidth <= 767) {
+    
+     $('section li .title').each(function() {
+        var thisText = $(this).text();
+        var textLength = thisText.length;
+        if (textLength > count) {
+            var showText = thisText.substring(0, count);
+            var hideText = thisText.substring(count, textLength);
+            var insertText = showText;
+            insertText += '<span class="hide">' + hideText + '</span>';
+            insertText += '<span class="omit">…</span>';
+            $(this).html(insertText);
+        };
+    });
+    
+        checkFlag = 'hide';
+    } else {
+        checkFlag = 'show';
+    }
+    function winWidthCheck() {
+        winWidth = $(window).width();
+        if((winWidth <= 767) && (checkFlag == 'hide')) {
+            $('section li .title .hide').hide();
+            $('section li .title .omit').fadeIn();
+            checkFlag = 'show';
+        } else if((winWidth > 767) && (checkFlag == 'show')) {
+            $('section li .title .hide').fadeIn();
+            $('section li .title .omit').hide();
+            checkFlag = 'hide';
+        }
+    }
+    winWidthCheck();
+    $(window).resize(function() {
+        winWidthCheck();
+    });
+});
+</script>
+
+<script>
+<!--
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-39117861-1']);
+_gaq.push(['_setSiteSpeedSampleRate', 1]);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//-->
+</script>
+
+<script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

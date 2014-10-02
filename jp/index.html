@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>	
 	<meta charset="UTF-8">
 	<meta property="og:url" content="http://www.muji.com/jp/">
 	<meta property="og:image" content="http://www.muji.com/jp/img/ogimage.png">
 	<meta name="description" content="無印良品では、衣料品から家庭用品、食品など日常生活全般にわたる商品をつくり、販売しています。">
+	<meta name="robots" content="noydir,noodp">
 	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -19,95 +20,130 @@
 	<link rel="stylesheet" href="/css/self_marker.css">
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
 	<!--[if lt IE 9]>
 		<script src="/js/lib/html5.js"></script>
 		<script src="/js/lib/respond.js"></script>
 	<![endif]-->
-
+	
+	
 </head>
 
 <body>
 
-<header id="globalHeader">
+<header id="globalHeader" class="black">
 	<div class="headerWrap">
 	
-	<h1 id="siteName"><img src="/img/logo_w.png" alt="無印良品"></h1>
+	<h1 id="siteName"><a href="/jp/"><img src="/img/logo_b.png" alt="無印良品"></a></h1>
 
 	<nav id="hGlobalNav">
-		<h1 class="w">メニュー</h1>
+		<h1>メニュー</h1>
 		<div class="wrapper">
 			<div class="cancel"></div>
 			<ul>
 				<li class="home"><a href="/jp/">ホーム</a></li>
+				
 				<li><a href="http://www.muji.net/store/?area=header">ネットストア</a></li>
+				
 				<li><a href="http://www.muji.net/event/?area=header">イベント</a></li>
+				
 				<li><a href="http://www.muji.net/lab/?area=header">くらしの良品研究所</a></li>
+				
 				<li><a href="http://www.muji.net/shop/?area=header">店舗情報</a></li>
+				
 				<li><a href="http://www.muji.net/contact/?area=header">お問い合わせ</a></li>
+				
 			</ul>
 		</div>
 	</nav>
 	
+
 	<section id="hSearch">
 		<form action="http://www.muji.net/store/cmdty/search" id="headerSearch" method="get">
 		<h1>商品検索</h1>
 		<div class="wrapper">
 			<div class="cancel"></div>
-			<input type="search" placeholder="商品検索" name="query">
+			<input type="search" placeholder="商品検索" name="query" value="">
 			<ul>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00001">衣料品</a></li>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00002">子供・マタニティ</a></li>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00003">家具・インテリア・家電</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00004">ヘルス&amp;ビューティー</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00004">ヘルス&ビューティー</a></li>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00005">雑貨・日用品</a></li>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00006">食品</a></li>
+				
 				<li><a href="http://www.muji.net/store/campaign/detail/P00007">花・グリーン</a></li>
+				
 			</ul>
 		</div>
 		<a href="javascript:void(0)" onclick="javascript:document.forms['headerSearch'].submit();return false;"></a>
 		</form>
 	</section>
-	
+
 	</div><!-- .headerWrap -->	
 </header>
 
 <div id="main">
+
+
 	<section id="mainCampaign">
-		<div class="mainCampaignBack" style="background-position: 50% 0px;">
+	<a href="http://www.muji.net/mt/events/hakkensai/140912.html">
+		<figure>
 			
-			<div class="titleContainer center">
-				<h1 class="mainCampaignTitle"><img src="/jp/img/panel/main_title_goodprice.png" alt="ずっと良い値"></h1>
-				<a href="/jp/goodprice/">詳しく見る</a>
-			</div>
-			
+		</figure>
+		
+		<div class="titleContainer">
+			<h1 class="mainCampaignTitle">
+
+
+			<img src="/jp/img/panel/main_title_hakkensai2014aw.png" alt="発見祭　ここだけの無印良品、あります。 2014.9.12 fri - 29 mon">
+
+
+			</h1>
+<!-- 			<a href="http://www.muji.net/mt/events/hakkensai/140912.html">詳しく見る</a> -->
 		</div>
-		<div id="skip"></div>	
-	</section>
+
+		<div id="skip"></div>
+	</a></section>
+
+
 
 	<section id="product">
 		<h1>製品</h1>
+
+
 		<div class="more"><a href="http://www.muji.net/store/?area=main">ネットストア</a></div>
+
+
 		<div class="viewport">
 			<ul class="flipsnap">
-				<li><a href="http://www.muji.net/store/campaign/detail/P00001" data-category="garment"><img src="/img/product_garment.jpg" alt=""><br>
-				衣料品</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00002" data-category="kids"><img src="/img/product_children.jpg" alt=""><br>
-				子供・マタニティ</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00003" data-category="homeware"><img src="/img/product_furniture.jpg" alt=""><br>
-				家具・インテリア・家電</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00004" data-category="hb"><img src="/img/product_hb.jpg" alt=""><br>
-				ヘルス＆ビューティー</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00005" data-category="homeware"><img src="/img/product_kitchen.jpg" alt=""><br>
-				雑貨・日用品</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00006" data-category="food"><img src="/img/product_food.jpg" alt=""><br>
-				食品</a></li>
-				<li><a href="http://www.muji.net/store/campaign/detail/P00007" data-category="flower"><img src="/img/product_flower.jpg" alt=""><br>
-				花・グリーン</a></li>
-				<li><a href="http://www.muji.net/store/pc/user/foundmujimarket/index.html" data-category="fmm"><img src="/img/product_found.jpg" alt=""><br>
-				Found MUJI Market</a></li>
-				<li><a href="http://www.muji.net/ie/" data-category="house"><img src="/img/product_house.jpg" alt=""><br>
-				家</a></li>
+
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00001" data-category="garment"><img src="/img/product_garment.jpg" alt=""><br>衣料品</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00002" data-category="kids"><img src="/img/product_children.jpg" alt=""><br>子供・マタニティ</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00003" data-category="homeware"><img src="/img/product_furniture.jpg" alt=""><br>家具・インテリア・家電</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00004" data-category="hb"><img src="/img/product_hb.jpg" alt=""><br>ヘルス＆ビューティー</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00005" data-category="homeware"><img src="/img/product_kitchen.jpg" alt=""><br>雑貨・日用品</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00006" data-category="food"><img src="/img/product_food.jpg" alt=""><br>食品</a></li>
+				
+				<li><a href="http://www.muji.net/store/campaign/detail/P00007" data-category="flower"><img src="/img/product_flower.jpg" alt=""><br>花・グリーン</a></li>
+				
+				<li><a href="http://www.muji.net/store/pc/user/foundmujimarket/index.html" data-category="fmm"><img src="/img/product_found.jpg" alt=""><br>Found MUJI Market</a></li>
+				
+				<li><a href="http://www.muji.net/ie/" data-category="house"><img src="/img/product_house.jpg" alt=""><br>家</a></li>
+				
+
 			</ul>
 		</div>
 		<p class="controls">
@@ -116,45 +152,17 @@
 		</p>
 	</section>
 
+
+
 	<section id="campaign" class="contentSection">
 		<h1>特集／キャンペーン</h1>
+
+
 		<div class="more"><a href="/jp/campaign/?area=main">全て見る</a></div>
+
+
 		<div class="viewport">
 		<ul class="flipsnap">
-		</ul>
-		</div>
-		<p class="controls">
-			<button class="prev" disabled="disabled">prev</button>
-			<button class="next">next</button>
-		</p>
-	</section>
-	
-	<section id="event" class="contentSection">
-		<h1>イベント</h1>
-		<div class="more"><a href="http://www.muji.net/event/?area=main">全て見る</a></div>
-		<div class="viewport">
-		<ul class="flipsnap">
-		</ul>
-		</div>
-		<p class="controls">
-			<button class="prev" disabled="disabled">prev</button>
-			<button class="next">next</button>
-		</p>
-	</section>
-	
-	<section id="lab" class="contentSection">
-		<h1>くらしの良品研究所</h1>
-		<div class="more"><a href="http://www.muji.net/lab/?area=main">全て見る</a></div>
-		<div class="viewport">
-		<ul class="flipsnap">
-			<li><a href="http://www.muji.net/lab/living/140813.html"><img src="/jp/img/panel/lab_140813_01.jpg" alt=""><br><span class="title">コラム<br>心に打ち水を</span></a></li>
-			<li><a href="http://idea.muji.net/"><img src="/jp/img/panel/lab_ideapark.png" alt=""><br><span class="title">みなさんからのご意見をIDEA PARKに掲載しました</span></a></li>
-			<li><a href="http://www.muji.net/lab/mujiarchive/140813.html"><img src="/jp/img/panel/lab_140813_02.jpg" alt=""><br><span class="title">無印良品アーカイブ<br>2007年 落ちワタふきん</span></a></li>
-			<li><a href="http://www.muji.net/lab/report/140808.html"><img src="/jp/img/panel/lab_140813_03.jpg" alt=""><br><span class="title">活動レポート<br>使い勝手を考える ─大阪ミナミから─</span></a></li>
-			<li><a href="http://www.muji.net/lab/blog/kitaakita/"><img src="/jp/img/panel/lab_140813_04.jpg" alt=""><br><span class="title">北秋田<br>甘くてふんわり、思い出の味</span></a></li>
-			<li><a href="http://www.muji.net/lab/blog/caravan/"><img src="/jp/img/panel/lab_140813_05.jpg" alt=""><br><span class="title">MUJIキャラバン<br>ソトデナニスル？ 2014</span></a></li>
-			<li><a href="http://www.muji.net/lab/blog/bicycle/"><img src="/jp/img/panel/lab_140813_06.jpg" alt=""><br><span class="title">自転車世界1周Found紀行<br>アゼルバイジャンとバクー</span></a></li>
-			<li><a href="http://www.ateliermuji.jp/blog/2014/080809.html"><img src="/jp/img/panel/lab_140813_07.jpg" alt=""><br><span class="title">ATELIER MUJI Blog<br>素顔のブラジル展 空間</span></a></li>
 		</ul>
 		</div>
 		<p class="controls">
@@ -163,10 +171,71 @@
 		</p>
 	</section>
 
+
+
+	<section id="event" class="contentSection">
+		<h1>イベント</h1>
+
+
+		<div class="more"><a href="http://www.muji.net/event/?area=main">全て見る</a></div>
+
+
+		<div class="viewport">
+		<ul class="flipsnap">
+		</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+
+	<section id="lab" class="contentSection">
+		<h1>くらしの良品研究所</h1>
+
+
+		<div class="more"><a href="http://www.muji.net/lab/?area=main">全て見る</a></div>
+
+
+		<div class="viewport">
+		<ul class="flipsnap">
+
+			
+			<li><a href="http://www.muji.net/lab/living/140910.html"><img src="http://www.muji.com/jp/img/panel/lab_140910_01.jpg" alt=""><br><span class="title">コラム<br>AEDを使う勇気</span></a></li>
+			
+			<li><a href="http://idea.muji.net/"><img src="http://www.muji.com/jp/img/panel/lab_ideapark.png" alt=""><br><span class="title">みなさんからのご意見をIDEA PARKに掲載しました</span></a></li>
+			
+			<li><a href="http://www.muji.net/lab/mujiarchive/140910.html"><img src="http://www.muji.com/jp/img/panel/lab_140910_07.jpg" alt=""><br><span class="title">無印良品アーカイブ<br>2003年 化粧水</span></a></li>
+			
+			<li><a href="http://www.muji.net/lab/blog/kitaakita/"><img src="http://www.muji.com/jp/img/panel/lab_140910_03.jpg" alt=""><br><span class="title">北秋田<br>秋田の風土が育んだ、極上の味わい</span></a></li>
+			
+			<li><a href="http://www.muji.net/lab/blog/caravan/"><img src="http://www.muji.com/jp/img/panel/lab_140910_04.jpg" alt=""><br><span class="title">MUJIキャラバン<br>OCICA</span></a></li>
+			
+			<li><a href="http://www.muji.net/lab/blog/bicycle/"><img src="http://www.muji.com/jp/img/panel/lab_140910_05.jpg" alt=""><br><span class="title">自転車世界1周Found紀行<br>バザールへ行こう</span></a></li>
+			
+			<li><a href="http://www.ateliermuji.jp/blog/2014/090510.html"><img src="http://www.muji.com/jp/img/panel/lab_140910_06.jpg" alt=""><br><span class="title">ATELIER MUJI Blog<br>素顔のブラジル展 鉄と綿</span></a></li>
+			
+
+		</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+
+
+
 	<section id="shop">
 		<div class="shopWrap">
 		<h1>店舗情報</h1>
+
+
 		<div class="more"><a href="http://www.muji.net/shop/?area=main">店舗一覧</a></div>
+
+
 		<div id="search_combobox" class="search_form">
 			<select id="prefectures" name="prefectures" onchange="javascript:if(this.options[this.selectedIndex].value!='00')location.href=MAP_MARKER_LINK_URL+'&pref='+this.options[this.selectedIndex].value;">
 				<option value="00">都道府県から店舗を探す</option>
@@ -219,6 +288,8 @@
 				<option value="47">沖縄県</option>						
 			</select>
 		</div>
+
+
 		<div id="overlimit">
 			<p>条件に該当する店舗数が多すぎます。地図を拡大してご覧ください。</p>
 		</div>
@@ -234,9 +305,15 @@
 		</div><!-- .shopWrap -->
 	</section>
 
+
+
 	<section id="information">
 	<h1>重要なお知らせ</h1>
+
+
 	<div class="more"><a href="http://www.muji.net/contact/?area=main">全て見る</a></div>
+
+
 	<div class="viewport">
 
 		<ul class="flipsnap">
@@ -281,17 +358,26 @@
 			<button class="next">next</button>
 		</p>
 	</section>
+
 </div><!-- #main -->
+
 
 <aside id="misc">
 	<div class="content">
 		<ul class="sns">
+			
 			<li class="twitter"><a href="https://twitter.com/muji_net" target="_blank"><img src="/img/misc_twitter.png" alt="Twitter"></a></li>
+			
 			<li class="facebook"><a href="https://www.facebook.com/muji.jp" target="_blank"><img src="/img/misc_facebook.png" alt="Facebook"></a></li>
+			
 			<li class="youtube"><a href="http://www.youtube.com/user/MUJIglobal" target="_blank"><img src="/img/misc_youtube.png" alt="youtube"></a></li>
+			
 			<li class="mixi"><a href="http://p.mixi.jp/muji" target="_blank"><img src="/img/misc_mixi.png" alt="mixi"></a></li>
+			
 		</ul>
+		
 		<div class="passport"><a href="http://www.muji.net/passport/"><img src="/img/misc_passport.png" alt="MUJI passport"></a></div>
+		
 	</div>
 </aside>
 
@@ -301,34 +387,59 @@
 
 	<section class="footerNav1">
 		<ul>
-			<li><a href="http://www.muji.net/store/?area=footer">ネットストア</a></li>
-			<li><a href="http://www.muji.net/shop/?area=footer">店舗情報</a></li>
-			<li><a href="http://www.muji.net/event/?area=footer">イベント</a></li>
-			<li><a href="http://www.muji.net/lab/?area=footer">くらしの良品研究所</a></li>
+			
+			<li><a href="http://www.muji.net/store/?area=footer" target="_self">ネットストア</a></li>
+			
+			<li><a href="http://www.muji.net/shop/?area=footer" target="_self">店舗情報</a></li>
+			
+			<li><a href="http://www.muji.net/event/?area=footer" target="_self">イベント</a></li>
+			
+			<li><a href="http://www.muji.net/lab/?area=footer" target="_self">くらしの良品研究所</a></li>
+			
 		</ul>
 	</section>
 
 	<section class="footerNav2">
 		<ul>
-			<li><a href="http://www.muji.net/ie/?area=footer" data-category="house">無印良品の家</a></li>
-			<li><a href="http://www.muji.net/cafemeal/?area=footer" data-category="cafemeal">Café&amp;Meal MUJI</a></li>
-			<li><a href="http://www.muji.net/camp/?area=footer" data-category="camp">キャンプ場</a></li>
+			
+			<li><a href="http://www.muji.net/ie/?area=footer" data-category="house" target="_self">無印良品の家</a></li>
+			
+			<li><a href="http://www.muji.net/cafemeal/?area=footer" data-category="cafemeal" target="_self">Cafe&Meal MUJI</a></li>
+			
+			<li><a href="http://www.muji.net/camp/?area=footer" data-category="camp" target="_self">キャンプ場</a></li>
+			
 		</ul>
 	</section>
 
 	<section class="footerNav3">
 		<ul>
-			<li><a href="http://www.muji.net/contact/?area=footer">お問い合わせ</a></li>
-			<!-- <li><a href="http://ryohin-keikaku.jp/news/?area=footer">プレスリリース</a></li> -->
-			<li><a href="http://ryohin-keikaku.jp/job/?area=footer">採用情報</a></li>
-			<li><a href="http://www.muji.net/message/?area=footer">無印良品メッセージ</a></li>
-			<li><a href="http://ryohin-keikaku.jp/?area=footer">株式会社 良品計画</a></li>
+			
+			<li><a href="http://www.muji.net/catalog/?area=footer" target="_self">カタログ</a></li>
+			
+			<li><a href="http://www.muji.net/hojin/?area=footer" target="_self">法人のお客様へ</a></li>
+			
+		</ul>
+	</section>
+
+	<section class="footerNav4">
+		<ul>
+			
+			<li><a href="http://www.muji.net/contact/?area=footer" target="_self">お問い合わせ</a></li>
+			
+			<li><a href="http://ryohin-keikaku.jp/job/?area=footer" target="_self">採用情報</a></li>
+			
+			<li><a href="http://www.muji.net/message/?area=footer" target="_self">無印良品メッセージ</a></li>
+			
+			<li><a href="http://ryohin-keikaku.jp/?area=footer" target="_self">株式会社 良品計画</a></li>
+			
 		</ul>
 	</section>
 		
-	<section class="footerNav4">
+	<section class="footerNav5">
 		<ul>
-			<li class="country"><a href="http://www.muji.com/?area=footer"><img src="/jp/img/flag_jp.png" alt="">日本</a></li>
+			
+			<li class="country"><a href="http://www.muji.com/?area=footer" target="_self"><img src="/jp/img/flag_jp.png" alt="">日本</a></li>
+			
 		</ul>
 		<div id="trademark"><a href="/jp/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
 	</section>
@@ -340,13 +451,18 @@
 	
 	<nav class="another">
 	<ul>
-		<li><a href="http://www.muji.net/mt/contact/others/014425.html?area=footer"><small>個人情報の取り扱い</small></a></li>
-		<li><a href="http://www.muji.net/mt/contact/guide/netstore_info/014426.html?area=footer"><small>セキュリティについて</small></a></li>
-		<li><a href="http://www.muji.net/sitemap/?area=footer"><small>サイトマップ</small></a></li>
+		
+		<li><a href="http://www.muji.net/mt/contact/others/014425.html?area=footer" target="_self"><small>個人情報の取り扱い</small></a></li>
+		
+		<li><a href="http://www.muji.net/mt/contact/guide/netstore_info/014426.html?area=footer" target="_self"><small>セキュリティについて</small></a></li>
+		
+		<li><a href="http://www.muji.net/sitemap/?area=footer" target="_self"><small>サイトマップ</small></a></li>
+		
 	</ul>
 	</nav>
 </p>
 </footer>
+
 
 <aside id="review">
 	<a href="#" class="title">フィードバック</a>
@@ -359,6 +475,7 @@
 		<div class="note">※返信はいたしかねます</div>
 	</div>	
 </aside>
+
 
 <style>
 	body {position: relative;}
@@ -467,34 +584,47 @@ $(function(){
 // campaign list
 
 	var campaign = [
+
 		{
-			"title":"MUJI to Sleep",
-			"src":"/jp/img/panel/140711_mujitosleep_640.jpg",
-			"href":"http://sleep.muji.net/ja/",
-			"panelRank":1000,
-			"category":"togo"
-		},
-		{
-			"title":"MUJI to GO",
-			"src":"/jp/img/panel/c14071101_520.jpg",
-			"href":"http://www.muji.net/mujitogo/campaign2014/",
-			"panelRank":1000,
-			"category":"togo"
-		},
-		{
-			"title":"夏のアイテムがお買い得",
-			"src":"/jp/img/panel/x00001_520.png",
-			"href":"http://www.muji.net/store/cmdty/section/X00001",
+			"title":"",
+			"src":"http://img.muji.net/img/store/panel/c14090501_520.jpg",
+			"href":"http://www.muji.com/jp/cotton2014aw/",
 			"panelRank":0,
-			"category":"sale"
+			"category":"garment"
 		},
+
+		{
+			"title":"オーク材・無垢材の家具",
+			"src":"http://img.muji.net/img/store/panel/oak_520.jpg",
+			"href":"http://www.muji.net/store/pc/user/homewares/scene/oak.html",
+			"panelRank":0,
+			"category":"houseware"
+		},
+
+		{
+			"title":"さらにふんわり、しっとり<br>定番のバウムがリニューアル",
+			"src":"http://img.muji.net/img/store/panel/s3000201_640.jpg",
+			"href":"http://www.muji.net/store/cmdty/section/S3000201",
+			"panelRank":0,
+			"category":"food"
+		},
+
+		{
+			"title":"衣料品2014秋冬<br>コーディネートカタログ",
+			"src":"http://img.muji.net/img/store/panel/2014aw_women_520.jpg",
+			"href":"http://www.muji.net/store/pc/user/2014aw/index.html#!/women/coordinates/",
+			"panelRank":0,
+			"category":"garment"
+		},
+
 		{
 			"title":"無印良品の家<br>家つくり見学会",
-			"src":"/jp/img/panel/140801_ie_640.png",
+			"src":"/jp/img/panel/ie_campaign_140819.png",
 			"href":"http://www.muji.net/ie/campaign/140801/",
 			"panelRank":0,
 			"category":"ie"
 		},
+
 		{
 			"title":"",
 			"src":"/jp/img/panel/woolwoolwool.jpg",
@@ -502,19 +632,15 @@ $(function(){
 			"panelRank":0,
 			"category":"garment"
 		},
+
 		{
 			"title":"無印良品からのメッセージ<br>自然、当然、無印。",
 			"src":"/jp/img/panel/message14.jpg",
 			"href":"http://www.muji.net/message/",
-			"panelRank":0
-		},
-		{
-			"title":"MUJI CARD<br>WEB入会キャンペーン",
-			"src":"/jp/img/panel/mujicard.jpg",
-			"href":"http://www.muji.net/mujicard/",
 			"panelRank":0,
-			"category":"card"
+			"category":""
 		},
+
 		{
 			"title":"キッチン家電2014",
 			"src":"/jp/img/panel/electronics_520.jpg",
@@ -522,19 +648,30 @@ $(function(){
 			"panelRank":0,
 			"category":"houseware"
 		},
+
 		{
 			"title":"MUJI meets IDEE",
 			"src":"http://img.muji.net/img/store/panel/muji-meets-idee_520.jpg",
 			"href":"http://www.muji.net/muji-meets-idee/",
 			"panelRank":0,
 			"category":"idee"
-		}
+		},
+
+		{
+			"title":"カタログ",
+			"src":"/jp/img/panel/140905_catalog_640.jpg",
+			"href":"http://www.muji.net/catalog/",
+			"panelRank":0,
+			"category":"catalog"
+		},
+
+	{}
 	];
 
 
 // increment each campaign panelRank from Cookie value
 
-	for(var i = 0; i < campaign.length; i++){
+	for(var i = 0; i < campaign.length-1; i++){
 		if(visit.hasOwnProperty(campaign[i].category)){
 			campaign[i].panelRank += visit[campaign[i].category];
 		}
@@ -552,7 +689,7 @@ $(function(){
 
 //	$("#campaign").append("<ul>");
 
-for(var i = 0; i < campaign.length; i++){
+for(var i = 0; i < campaign.length-1; i++){
 
 var cat = campaign[i].category?campaign[i].category:"";
 var alt = (campaign[i].titleShow == true || campaign[i].titleShow == undefined)?"":campaign[i].title;
@@ -567,68 +704,86 @@ $("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='
 // event list
 
 	var event = [
+
 		{
-			"title":"重ねづけしてつくるカラフルキャンドルワークショップ",
-			"src":"http://www.muji.net/mt/events/img/140813_candle.jpg",
-			"href":"http://www.muji.net/mt/events/event/025341.html",
+			"title":"発見祭",
+			"src":"http://www.muji.net/mt/events/img/140912_hakkensai.jpg",
+			"href":"http://www.muji.net/mt/events/hakkensai/140912.html",
+			"panelRank":1000,
+			"category":""
+		},
+
+		{
+			"title":"無印良品 池袋西武 9／12（金）リニューアルオープン",
+			"src":"http://www.muji.net/mt/events/img/140908_ikesei.jpg",
+			"href":"http://www.muji.net/mt/events/notice/025515.html",
+			"panelRank":0,
+			"category":""
+		},
+
+		{
+			"title":"Found MUJI 企画展「THE DINER」",
+			"src":"http://www.muji.net/mt/events/img/found_muji_diner.jpg",
+			"href":"http://www.muji.net/foundmuji/2014/09/168-the-diner.html",
+			"panelRank":0,
+			"category":"foundmuji"
+		},
+
+		{
+			"title":"「これからの田舎と都会・千葉鴨川」イベント－収穫祭",
+			"src":"http://www.muji.net/mt/events/img/140903_shukakusai.jpg",
+			"href":"http://www.muji.net/mt/events/event/025461.html",
 			"panelRank":0,
 			"category":"kids"
 		},
+
 		{
-			"title":"じぶんでつくる こけだまワークショップ",
-			"src":"http://www.muji.net/mt/events/img/140808_kokedama.jpg",
-			"href":"http://www.muji.net/mt/events/event/025319.html",
+			"title":"じぶんでつくる こけだまワークショップ<br><span class='venue'>開催店舗：全国17店舗</span>",
+			"src":"http://www.muji.net/mt/events/img/140901_kokedama.jpg",
+			"href":"http://www.muji.net/mt/events/event/025447.html",
 			"panelRank":0,
 			"category":"kids"
 		},
+
 		{
-			"title":"「ころころビー玉迷路」をつくろう！ ワークショップ",
-			"src":"http://www.muji.net/mt/events/img/140805_kobe_korokoro.jpg",
-			"href":"http://www.muji.net/mt/events/event/025283.html",
+			"title":"欧州旗艦店 MUJI Forum des Halles 記念ポスター展示<br><span class='venue'>開催店舗：東京ミッドタウン、グランフロント大阪、他</span>",
+			"src":"http://www.muji.net/mt/events/img/140901_fdh-poster.jpg",
+			"href":"http://www.muji.net/mt/events/event/025449.html",
 			"panelRank":0,
-			"category":"kids"
+			"category":""
 		},
+
 		{
-			"title":"家族の「お守り」をつくろう！ ワークショップ",
-			"src":"http://www.muji.net/mt/events/img/140805_kobe_omamori.jpg",
-			"href":"http://www.muji.net/mt/events/event/025284.html",
-			"panelRank":0,
-			"category":"kids"
-		},
-		{
-			"title":"「リトル・フォレスト」× Café&Meal MUJI<br>コラボメニュー販売",
+			"title":"「リトル・フォレスト」× Café&Meal MUJI<br>コラボメニュー販売<br><span class='venue'>開催店舗：Café&Meal MUJI 全店</span>",
 			"src":"http://www.muji.net/img/events/140801_cafemeal_640.jpg",
 			"href":"http://www.muji.net/cafemeal/news/news/025252.html",
 			"panelRank":0,
 			"category":"cafe"
 		},
+
 		{
-			"title":"無印良品の家<br>耐震住宅トークセッション",
-			"src":"http://www.muji.net/img/events/140804_ie_640.jpg",
-			"href":"http://www.muji.net/mt/events/event/025264.html",
-			"panelRank":0,
-			"category":"ie"
-		},
-		{
-			"title":"ATELIER MUJI<br>「素顔のブラジル展」",
+			"title":"ATELIER MUJI<br>「素顔のブラジル展」<br><span class='venue'>開催店舗：有楽町</span>",
 			"src":"/jp/img/panel/140731_atelier_640.jpg",
 			"href":"http://www.muji.net/lab/ateliermuji/exhibition/140613.html",
 			"panelRank":0,
 			"category":"atelier"
 		},
+
 		{
-			"title":"無印良品キャンプ場<br>アウトドア教室開催中",
-			"src":"/jp/img/panel/140806_camp_640.jpg",
-			"href":"http://www.muji.net/camp/CAMP/cgi-bin/SCHOOL.CGI",
+			"title":"",
+			"src":"/jp/img/panel/140905_camp_640.png",
+			"href":"http://www.muji.net/camp/tsunan/blog/2014/08/curry_beer_rock_fes2014muji_campground.html",
 			"panelRank":0,
 			"category":"camp"
-		}		
+		},
+
+	{}
 	];
 
 
 // increment each event panelRank from Cookie value
 
-	for(var i = 0; i < event.length; i++){
+	for(var i = 0; i < event.length-1; i++){
 		if(visit.hasOwnProperty(event[i].category)){
 			event[i].panelRank += visit[event[i].category];
 		}
@@ -645,7 +800,7 @@ $("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='
 
 //	$("#event").append("<ul>");
 
-for(var i = 0; i < event.length; i++){
+for(var i = 0; i < event.length-1; i++){
 
 var cat = event[i].category?event[i].category:"";
 var alt = (event[i].titleShow == true || event[i].titleShow == undefined)?"":event[i].title;
@@ -753,6 +908,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 <script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
 <script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
 
 </body>
 

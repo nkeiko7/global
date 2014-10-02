@@ -4,23 +4,14 @@ $(window).on("load resize", function(){
   $(function(){
 		FastClick.attach(document.body);
 
-		$("#hAccount .avater").on("click", function(){
-			$("#hAccount .wrapper").slideDown();
-		});
-		$("#hAccount .cancel").on("click", function(e){
-			$("#hAccount .wrapper").slideUp();
-		});
+			$("#hAccount .avater").on("click", function(){
+				$("#hAccount .wrapper").slideDown();
+			});
+			$("#hAccount .cancel").on("click", function(e){
+				$("#hAccount .wrapper").slideUp();
+			});
 		
-		$(window).scroll(function(){
-			var y = $(this).scrollTop();
-			$('.mainCampaignBack').css('background-position', 'center ' + parseInt( y / 2 ) + 'px');
-			
-			if($(window).scrollTop() > 440){
-				$("#globalHeader").addClass("back");
-				} else {
-				$("#globalHeader").removeClass("back");
-			};
-		});
+		
 		});
 		
 		} else {			
@@ -52,43 +43,44 @@ $(window).on("load resize", function(){
 				$("#main, #hGlobalNav h1, #siteName img, #hSearch h1").removeClass("blur");
 			});
     }	
-	
-	$(function(){
-    var _window = $(window);
-    var _title = $(".titleContainer");
-    var _winHeight;
-    var _scroll;
- 
-    function scrollFade() {
-        _winHeight = _window.height();        
-        _window.scroll(function(){
-            _scroll = _window.scrollTop()*2;             
-            if ( _scroll < 0 ) {
-                _title.css({ "opacity" : 1 });
-            }
-            else if ( 0 <= _scroll && _scroll <= _winHeight ) {
-                _title.css({ "opacity" : 1 - (_scroll / _winHeight) });
-            }
-            else {
-                _title.css({ "opacity" : 0 });
-            }
-        }); 
-    }
-    _window.on("load resize", function(){
-    scrollFade();
-    });
-    
+	  
+		
 	  $(function(){
 		  $("#mapMask").on('click',function(){
 				$("#mapMask").addClass("draggable");
 		      return false;
 		    });
 		});
-	
-	});
+
 
 });	
 
+
+$(function(){
+
+    var imageWidth, wrapperWidth, overlap, $container = $('#mainCampaign figure'); 
+  
+    function centerImage() {
+
+        imageWidth = $container.find('img').width();
+        wrapperWidth = $container.width();
+            if(imageWidth>wrapperWidth){
+        overlap =  (wrapperWidth - imageWidth) / 2;
+        $container.find('img').css('margin-left', overlap + "px");
+            }
+    }
+      
+    $(window).on("load resize", centerImage);   
+    var el = $container.get(0);
+    if (el.addEventListener) { 
+        el.addEventListener("webkitTransitionEnd", centerImage, false); // Webkit event
+        el.addEventListener("transitionend", centerImage, false); // FF event
+        el.addEventListener("oTransitionEnd", centerImage, false); // Opera event
+    }
+
+
+});
+		
 
 //flipsnap
 if (cssua.ua.ie == undefined || cssua.ua.ie > 8.0) {

@@ -1,5 +1,19 @@
-body {color:#333; font: 14px/1.5;  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;}
+body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
 
-#siteName {background:url(/img/logo_w.png) no-repeat; background-size: 78px 19px; text-indent: -9999px; width: 78px; position: absolute; top: 15px; left: 50%; margin: 0 0 0 -39px; z-index: 10;}
 
-.country a {background: url(/us/img/flag_us.png) no-repeat left center; background-size: 18px 12px;}
+@media only screen and (min-width : 769px){
+	#hGlobalNav ul {width: 60%;}
+	#siteName a {padding: 22px 0 0 0;}
+	#siteName img {width: 110px; height: 24px; vertical-align: top;}
+	#globalHeader .wrapper ul {padding-left: 20%; margin: 0;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1152px)  {
+	#hGlobalNav ul {width: 100%;}
+}
+
+@media screen and (max-width: 767px) {
+	#siteName a {padding: 23px 0 0 0;}
+	#siteName img {width: 110px; padding: 0; vertical-align: top;}
+	#copyright {width: 80%; margin: 0;}
+}

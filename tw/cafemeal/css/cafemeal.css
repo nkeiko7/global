@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* RESET */
+
+/* body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;} */
+/* RESET HTML5 */
+/* article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline;} */
+/* HTML5 display-role reset for older browsers */
+/* article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} */
+
+
+/* FLOAT CLEAR */
+
+.content:after,
+#footerNav:after,
+#share:after {content: ""; display: block; clear: both;}
+
+
+/* GENERAL */
+
+body {color: #333; font: 13px/1.5 "Helvetica","Lucida Grande", "Microsoft YaHei", "Arial", sans-serif; background: #f7f7f7;}
+a {text-decoration: none;}
+a:link, a:visited {color:#333;}
+a:active, a:hover {color:#7F0019;}
+a img {vertical-align: bottom;}
+
+.annotation {color: #666; font-size: 11px; font-weight: normal;}
+time {color: #999; font-weight: bold; font-size: 10px; margin-right: 10px;}
+hr {height: 1px; background-image:url(/tw/cafemeal/img/common/dotline.png); border: 0;}
+.price {font-size: 11px; display: block; /* text-align: right; */}
+.price .num {font-size: 14px; font-weight: bold; margin: 0 2px; font-family: "Helvetica","Lucida Grande", "Arial", sans-serif;}
+
+/* GLOBAL NAVIGATION */
+
+#globalNav {position: absolute; top: 18px; right: 20px; font-weight: normal;}
+#globalNav a {color: #fff;}
+#globalNav li {float: left; padding: 0 10px;}
+#globalNav li:last-child {padding-right: 0;}
+#globalNav img {width: 55px; border: 1px solid #fff; padding: 3px 5px; border-radius: 2px;}
+#globalNav a:hover {-ms-filter: "alpha( opacity=80 )"; filter: alpha( opacity=80 ); opacity: 0.8;}
+
+#language {margin-top: 10px; color: #fff; position: absolute; top: 45px; right: 20px;}
+#language a {color: #fff;}
+#language .current a {color: #ccc;}
+#language .en {margin-right: 5px;}
+#language .cn {margin-left: 5px;}
+#language a:hover {-ms-filter: "alpha( opacity=80 )"; filter: alpha( opacity=80 ); opacity: 0.8;}
+
+
+.skipNav {margin: 0;}
+.skipNav li {float: left; padding: 0 20px 0 0; margin-right: 20px; border-right: 1px solid #ccc;}
+.skipNav li:first-child {padding-left: 0;}
+.skipNav li:last-child {border: 0;}
+
+
+/* CONTENT */
+
+.content {width: 100%; margin: 0 auto; padding-top: 35px; background: #f0f0f0; box-sizing: border-box;}
+.contentWrap  {width: 880px; margin: 0 auto;}
+h1.title {font-size: 32px; font-weight: normal; padding: 0; margin: 20px 0;/*  border-bottom: 1px solid #666; */}
+section {margin-bottom: 20px;}
+section section:last-child {margin-bottom: 0;}
+section h1 {font-size: 18px; font-weight: bold; margin-bottom: 5px;}
+section h1 .subtitle {margin-left: 5px; font-size: 12px; font-weight: normal;}
+.detail {border: 1px solid #ddd; background: #eee; padding: 20px; border-radius: 5px; margin-bottom: 20px;}
+.detail h1 {font-size: 14px; margin-bottom: 5px;}
+article time {margin-bottom: 30px; display: block;}
+
+
+
+/* FOOTER */
+
+#footer {width: 880px; margin: 10px auto; line-height: 16px;}
+.pagetop {float: right; margin-bottom: 15px;}
+.pagetop a {padding-left: 10px; /* background: url(/cafemeal/img/common/arrow_up.png) no-repeat left center; */}
+#footerNav {margin: 10px 0; clear: both;}
+#footerNav li {float:left; margin-left: 12px; padding-left: 12px; border-left:1px solid #CCC; line-height:13px;}
+#copyright {margin-bottom: 20px; padding-top: 5px; border-top: 1px solid #E6E6E6;}
+#copyright small {font-size: 10px; font-family:  "Helvetica","Lucida Grande", "Arial", sans-serif;}
+#footerlogo {text-align: right; margin-top: -55px;}
+#footerlogo img {width: 80px; height: auto; border: 0;}
+
+#footerNav li#fnCorporate {margin-left: 0; padding-left: 0; border: none;}
+#footerNav li#fnJob {display: none;}
+
+/*
+@media screen and (max-width: 480px){
+	.contentWrap  {width: 100%; margin: 0 auto;}
+	#footer {width: 100%;}
+}
+*/
+
+@media screen and (max-width: 768px){
+	.contentWrap  {width: 100%; margin: 0 auto;}
+	#footer {width: 100%; }
+}

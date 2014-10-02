@@ -10,7 +10,10 @@
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/muji.2.0.css">
 	<link rel="stylesheet" href="/jp/css/muji_jp.css">
+<!--
 	<link rel="stylesheet" href="/css/portal.css">
+	<link rel="stylesheet" href="/css/portal_jp.css">
+-->
 	<link rel="stylesheet" href="/css/campaignlist.css">
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -152,10 +155,10 @@ $(function(){
 </head>
 <body id="campaignList">
 
-<header id="globalHeader">
+<header id="globalHeader" class="black">
 	<div class="headerWrap">
 	
-	<h1 id="siteName"><a href="http://www.muji.com/jp/"><img src="/img/logo_b.png" alt="無印良品"></a></h1>
+	<h1 id="siteName"><a href="/jp/"><img src="/img/logo_b.png" alt="無印良品"></a></h1>
 
 	<nav id="hGlobalNav">
 		<h1>メニュー</h1>
@@ -163,17 +166,17 @@ $(function(){
 			<div class="cancel"></div>
 			<ul>
 				<li class="home"><a href="/jp/">ホーム</a></li>
-				<li><a href="http://www.muji.net/store/">ネットストア</a></li>
-				<li><a href="http://www.muji.net/event/">イベント</a></li>
-				<li><a href="http://www.muji.net/lab/">くらしの良品研究所</a></li>
-				<li><a href="http://www.muji.net/shop/">店舗情報</a></li>
-				<li><a href="http://www.muji.net/contact/">お問い合わせ</a></li>
+				<li><a href="http://www.muji.net/store/?area=header">ネットストア</a></li>
+				<li><a href="http://www.muji.net/event/?area=header">イベント</a></li>
+				<li><a href="http://www.muji.net/lab/?area=header">くらしの良品研究所</a></li>
+				<li><a href="http://www.muji.net/shop/?area=header">店舗情報</a></li>
+				<li><a href="http://www.muji.net/contact/?area=header">お問い合わせ</a></li>
 			</ul>
 		</div>
 	</nav>
 	
+	</div><!-- .headerWrap -->	
 </header>
-
 
 <div id="main">
 	
@@ -240,39 +243,49 @@ $(function(){
 
 	<section class="footerNav1">
 		<ul>
-			<li><a href="http://www.muji.net/store/">ネットストア</a></li>
-			<li><a href="http://www.muji.net/shop/">店舗情報</a></li>
-			<li><a href="http://www.muji.net/event/">イベント情報</a></li>
-			<li><a href="http://www.muji.net/lab/">くらしの良品研究所</a></li>
+			<li><a href="http://www.muji.net/store/?area=footer">ネットストア</a></li>
+			<li><a href="http://www.muji.net/shop/?area=footer">店舗情報</a></li>
+			<li><a href="http://www.muji.net/event/?area=footer">イベント</a></li>
+			<li><a href="http://www.muji.net/lab/?area=footer">くらしの良品研究所</a></li>
 		</ul>
 	</section>
 
 	<section class="footerNav2">
 		<ul>
-			<li><a href="http://www.muji.net/ie/" data-category="house">無印良品の家</a></li>
-			<li><a href="http://www.muji.net/cafemeal/" data-category="cafemeal">Café&amp;Meal MUJI</a></li>
-			<li><a href="http://www.muji.net/camp/" data-category="camp">キャンプ場</a></li>
+			<li><a href="http://www.muji.net/ie/?area=footer" data-category="house">無印良品の家</a></li>
+			<li><a href="http://www.muji.net/cafemeal/?area=footer" data-category="cafemeal">Café&amp;Meal MUJI</a></li>
+			<li><a href="http://www.muji.net/camp/?area=footer" data-category="camp">キャンプ場</a></li>
 		</ul>
 	</section>
-
+	
 	<section class="footerNav3">
 		<ul>
-			<li><a href="http://www.muji.net/contact/">お問い合わせ</a></li>
-<!-- 			<li><a href="http://www.muji.net/pr/">プレスリリース</a></li> -->
-			<li><a href="http://ryohin-keikaku.jp/job/">採用情報</a></li>
-			<li><a href="http://www.muji.net/message/">無印良品メッセージ</a></li>
-			<li><a href="http://ryohin-keikaku.jp/">株式会社 良品計画</a></li>
+			<li><a href="http://www.muji.net/catalog/" data-category="">カタログ</a></li>
+			<li><a href="http://www.muji.net/foundmuji/" data-category="found">Found MUJI</a></li>
+			<li><a href="http://www.muji.net/shop/advisor/" data-category="homeware">インテリア相談会</a></li>
+			<li><a href="http://www.muji.net/infillplus/" data-category="homeware">MUJI INFILL</a></li>
+			<li><a href="http://www.muji.net/hojin/" data-category="">法人のお客様へ</a></li>
+			<li class="longTitle"><a href="http://www.muji.net/kids/" data-category="kids">こどもと楽しむ無印良品</a></li>
 		</ul>
-		</section>
-		
-		<section class="footerNav4">
-		<ul>
-			<li class="country"><a href="http://www.muji.com/"><img src="/jp/img/flag_jp.png" alt="">日本</a></li>
-		</ul>
-		<div id="trademark"><a href="/jp"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
-
 	</section>
 
+	<section class="footerNav4">
+		<ul>
+			<li><a href="http://www.muji.net/contact/?area=footer">お問い合わせ</a></li>
+			<!-- <li><a href="http://ryohin-keikaku.jp/news/?area=footer">プレスリリース</a></li> -->
+			<li><a href="http://ryohin-keikaku.jp/job/?area=footer">採用情報</a></li>
+			<li><a href="http://www.muji.net/message/?area=footer">無印良品メッセージ</a></li>
+			<li><a href="http://ryohin-keikaku.jp/?area=footer">株式会社 良品計画</a></li>
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>
+			<li class="country"><a href="http://www.muji.com/?area=footer"><img src="/jp/img/flag_jp.png" alt="">日本</a></li>
+		</ul>
+		<div id="trademark"><a href="/jp/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>
+    
 </nav>
 
 <p id="copyright">

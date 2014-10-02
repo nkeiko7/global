@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Callback function - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage callback function." />
+	<meta name="keywords"  content="fullpage,jquery,demo,callbac,function,event" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="xmas2014.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="xmas2014.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['topPage', 'calendar', 'december20', 'december21', 'december22', 'december23', 'december24', 'december25'],
+				menu: '#menu',
+				afterLoad: function(anchorLink, index){
+
+					//section 2
+					if(index == 2){
+						//moving the image
+						$('#section1').find('img').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+
+						$('#section1').find('p').first().fadeIn(1800, function(){
+							$('#section1').find('p').last().fadeIn(1800);
+						});;
+
+					}
+
+					//section 3
+					if(anchorLink == 'december20'){
+					//if(index == 3){
+						//moving the image
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+				}
+			});
+
+		});
+	</script>
+
+	<style>
+		#section1 img{
+			left: 130%;
+			position:relative;
+		}
+		#section1 p{
+			visibility:hidden;
+		}
+		#section2 .intro{
+			left: -130%;
+			position:relative;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<ul id="menu">
+<!--
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+-->
+	
+	<li data-menuanchor="topPage"><a href="#topPage">Xmas from MUJI</a></li>
+	<li data-menuanchor="calendar"><a href="#calendar">Advent Calendar</a></li>
+<!--
+	<li data-menuanchor="day20"><a href="#day20">december20</a></li>
+	<li data-menuanchor="day20"><a href="#day20">december21</a></li>
+	<li data-menuanchor="day20"><a href="#day20">december22</a></li>
+	<li data-menuanchor="day20"><a href="#day20">december23</a></li>
+	<li data-menuanchor="day20"><a href="#day20">december24</a></li>
+	<li data-menuanchor="day20"><a href="#day20">december25</a></li>
+-->
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>Xmas present<br>from MUJI</h1>
+<!-- 		<p>Configure the easing jQuery UI effect!</p> -->
+<!-- 		<img src="imgs/fullPage.png" alt="fullPage" /> -->
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<img src="imgs/1.png" alt="Cool" />
+			<h1>easeOutExpo</h1>
+			<p>This example is working with `easeOutExpo` effect instead of the default `easeOutExpo`</p>
+			<p>You can see more about them <a href="http://jqueryui.com/resources/demos/effect/easing.html" target="_blank">here</a></p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>December 20</h1>
+			<p>aaaaaa 20%OFF</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>December 21</h1>
+			<p>ちょっと待っててね</p>
+			<p class="back"><a href="#calendar">Back to the Advent calendar</a></p>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
