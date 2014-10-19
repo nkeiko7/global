@@ -1,0 +1,65 @@
+/* header & toparea */
+
+.portalLink {margin-left: 40px;}
+
+#main {margin-bottom: 0;}
+#main p.lead.isBack {margin-bottom: 20px;}
+
+#cafemeal #topContents {
+	background: url(/tw/cafemeal/img/top/main.jpg) no-repeat center center;
+	height: 500px;
+	background-size: cover;
+}
+#menu #topContents {
+	background: url(/tw/cafemeal/img/menu/menu_main.jpg) no-repeat center center;
+	height: 500px;
+	background-size: cover;
+}
+#menu #topContents h1 {color: #fff; margin-top: 220px;}
+
+#siteName img {height: auto;}
+#globalHeader .wrapper ul {width: auto; float: right; padding-left: 0;}
+#globalHeader .wrapper li.home {display: block;}
+
+/* main */
+figure img {float: none;}
+
+ul.col4 {letter-spacing: -.40em; margin: 0; box-sizing: border-box;}
+.col4 li {display: inline-block; letter-spacing: normal; margin: 0 0 10px 0; vertical-align: top; width: 25%;}
+.col4 figure {margin: 0; padding: 0; width: 100%;}
+.col4 figure img {width: 100%; height: auto; float: none; margin: 0; text-align: left;}
+.col4 figure p,
+.col4 figure h3 {padding-right: 10px;}
+
+#howtoOrder ul {margin-right: -20px; letter-spacing: -.40em; box-sizing: border-box;}
+#howtoOrder li {display: inline-block; margin: 0 15px 0 0; vertical-align: top; letter-spacing: normal; width: 22%; box-sizing: border-box; }
+#howtoOrder li img {width: 100%; height: auto; margin-right: 0;}
+
+#campaign .price .num {font-size: 24px; margin-left: 5px;}
+#map_canvas {width:100%; height:350px; margin: 0;}
+.mapDetail {padding-left: 20px; font-size: 12px;}
+#main .mapDetail a {text-decoration: underline;}
+.icon img {width: 50px; height: auto;}
+
+
+#place .wrapper {padding-bottom: 0;}
+
+@media only screen and (max-width: 767px) {
+	#globalHeader .wrapper ul {float: none;}
+	.portalLink {margin:0;}
+	.col4 li {width: 50%;}
+	aside .col3 figure {text-align: center;}
+	aside .col3 figure img {width: 60%;}
+	#howtoOrder li {width: 45%; margin-bottom: 20px;}
+}
+
+@media screen and (max-width: 480px){
+	#globalHeader .wrapper ul {float: none;}
+	.portalLink {margin:0;}
+	#topContents h1 img {width: 80%;}	
+	.col4 li {width: 50%;}
+	#howtoOrder li {width: 45%;}
+}
+
+
+

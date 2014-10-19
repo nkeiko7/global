@@ -1,10 +1,42 @@
 
-img {width: 100%;}
+img,
+video {width: 100%; vertical-align: bottom;}
+
+header {padding: 20px; position: relative;}
+header h1 img {width: 400px; height: auto; margin-left: 20px;}
+header nav ul {list-style: none; position: absolute; top: 20px; right: 20px; margin: 0;}
+header nav ul li {display: inline-block; font-size: 14px; margin-left: 20px;}
+header li.home {margin-left: 80px;}
+
+.outsideWrap {display: block; overflow: hidden; width: 100%; padding: 0; margin: 0;}
+.outsideWrap.gr {background-color: #f7f7f7;}
+.annotation {font-size: 12px;}
+
+.wrapper {display: block; overflow: hidden; width: 80%; margin: 0 auto; box-sizing: border-box; max-width: 1024px; padding: 40px 0;}
+.wrapper .wrapper {margin: 0 auto; padding: 20px 0 0; width: 100%;}
+
+.leadSection {text-align: center;}
 
 .contents {letter-spacing: -.40em; width: 100%; margin: 0 auto;}
-.item {display: inline-block; margin: 0; width: 33.333%; height: auto; background: #ccc; letter-spacing: normal; vertical-align: bottom; background: #000;}
+.item {display: inline-block; margin: 0; width: 33.333%; height: auto; letter-spacing: normal; vertical-align: top; font-size: 14px;}
 .item a {display: block;}
-.item a:hover {opacity: .8;}
-.item img {vertical-align: bottom;}
+.item a .name {text-decoration: underline;}
+.item a:hover {color: #111;}
+.item img {vertical-align: top;}
 
-header {position: fixed; height: 70px; top: 0; transition: top 0.2s ease-in-out; width: 100%; background: #fff;}
+.misc {background: #fff; padding: 20px 0; margin: 0; position: relative; height: 100px; overflow: hidden;}
+.misc p.detail,
+.misc p.more {margin: 0; padding: 0 20px; display: block;}
+.misc p.more a {text-decoration: underline; font-size: small; margin-top: 10px;}
+
+.misc p.sns {text-align: right;position: absolute; right: 20px; bottom: 0;}
+.item .sns a {padding: 5px 5px 0; display: inline-block;} 
+.sns img {width: 15px; height: auto;}
+.sns .tw img {width: 18px;}
+
+.price {font-size: 12px; margin-left: 10px; display: inline-block;}
+.price .num {font-size: 14px; font-weight: bold; margin: 0 2px; font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック" ,sans-serif;}
+
+
+/* header {position: fixed; height: 70px; top: 0; transition: top 0.2s ease-in-out; width: 100%; background: #fff;} */
+header {height: auto;}
