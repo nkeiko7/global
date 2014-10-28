@@ -1,13 +1,26 @@
 
-#main #mainCampaign {background: #7f0019;}
-#mainCampaign .titleContainer h1 {position: absolute; width: auto; max-width: 346px; top: 60px; left: 50%; margin-left: -173px;}
-#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+/* -良品週間用- #main #mainCampaign {background: #7f0019;}
+#mainCampaign .titleContainer h1 {position: absolute; width: auto; max-width: 600px; top: 0; left: 50%; margin-left: -300px;}*/
 
-@media screen and (max-width: 1200px){
-	#mainCampaign .titleContainer h1 {max-width: 346px;}
-	#mainCampaign figure {overflow: hidden;}
+
+#main #mainCampaign {background: #f7f7f7;}
+#mainCampaign .titleContainer h1 {position: absolute; width: auto; max-width: 456px; top: 170px; left: 50%; margin-left: -228px;}
+
+
+/*@media screen and (max-width: 767px){*/
+	/*#mainCampaign .titleContainer h1 {left: 5%; max-width: 100px;}*/
+	/*#mainCampaign .titleContainer h1 {top: 50px; left: 45%; max-width: 160px;}
+	#mainCampaign figure {max-height:400px;}
+	#mainCampaign figure img {width: 100%; max-width: 100%; min-width:767px;}
 }
 
-@media screen and (max-width: 480px){
-	#mainCampaign .titleContainer h1 {width: auto; max-width: 280px; margin-left: -140px;}
+@media screen and (max-width: 414px){
+	#mainCampaign .titleContainer h1 {top: 50px; left: 45%; max-width: 160px;}
+	#mainCampaign figure {max-height:400px;}
+	#mainCampaign figure img {width: 100%; max-width: 100%; min-width:414px;}
+}*/
+
+@media screen and (max-width: 456px){
+	#mainCampaign .titleContainer h1 {width: auto; max-width: 300px; left: 50%; margin-left: -150px;}
 }
+

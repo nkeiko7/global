@@ -17,16 +17,45 @@ header li.home {margin-left: 80px;}
 
 .leadSection {text-align: center;}
 
-.contents {letter-spacing: -.40em; width: 100%; margin: 0 auto;}
-.item {display: inline-block; margin: 0; width: 33.333%; height: auto; letter-spacing: normal; vertical-align: top; font-size: 14px;}
+/* .contents {letter-spacing: -.40em; width: 100%; margin: 0 auto;} */
+/* .item {display: inline-block; margin: 0; width: 33.333%; height: auto; letter-spacing: normal; vertical-align: top; font-size: 14px;} */
+
+.contents {
+	width: 100%;
+	height: inherit;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  column-gap: 15px;
+  column-fill: auto;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.item {
+	display: inline-block;
+  columns: 30% auto;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 10px 20px 0;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  padding: 15px;
+}
+
 .item a {display: block;}
 .item a .name {text-decoration: underline;}
 .item a:hover {color: #111;}
-.item img {vertical-align: top;}
+.item img {vertical-align: top; margin-bottom: 15px;}
+.item p.detail {font-size: 14px; margin: 0 0 10px;}
 
-.misc {background: #fff; padding: 20px 0; margin: 0; position: relative; height: 100px; overflow: hidden;}
+/* .misc {background: #fff; padding: 20px 0; margin: 0; position: relative; height: 100px; overflow: hidden;} */
 .misc p.detail,
-.misc p.more {margin: 0; padding: 0 20px; display: block;}
+.misc p.more {margin: 0; padding: 0; display: block; font-size: 13px;}
 .misc p.more a {text-decoration: underline; font-size: small; margin-top: 10px;}
 
 .misc p.sns {text-align: right;position: absolute; right: 20px; bottom: 0;}

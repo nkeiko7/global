@@ -36,15 +36,21 @@ ul.col4 {letter-spacing: -.40em; margin: 0; box-sizing: border-box;}
 #howtoOrder li img {width: 100%; height: auto; margin-right: 0;}
 
 #campaign .price .num {font-size: 24px; margin-left: 5px;}
+/*
 #map_canvas {width:100%; height:350px; margin: 0;}
 .mapDetail {padding-left: 20px; font-size: 12px;}
+*/
+/* #map {width: 100%; text-align: center;} */
+.wideImage #map img {width: 1000px; height: auto;}
 #main .mapDetail a {text-decoration: underline;}
 .icon img {width: 50px; height: auto;}
+
+#place p {text-align: center; line-height: 1.8;}
 
 
 #place .wrapper {padding-bottom: 0;}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	#globalHeader .wrapper ul {float: none;}
 	.portalLink {margin:0;}
 	.col4 li {width: 50%;}

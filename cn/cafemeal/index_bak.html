@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>	
+	<meta charset="UTF-8">
+	<meta property="og:url" content="http://www.muji.com/cn/cafemeal/">
+	<meta property="og:image" content="http://www.muji.com/cn/cafemeal/img/common/og.jpg">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Café&Meal MUJI 中国</title>
+	<link rel="icon" type="image/png" href="/cn/img/favicon.ico">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/cn/css/muji_cn.css">
+	<link rel="stylesheet" href="/css/layout_onepage-1.0.css">
+	<link rel="stylesheet" href="/cn/cafemeal/css/cafemeal.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script>
+	$(document).ready(function() {
+
+		var MY_MAPTYPE_ID = 'cool';
+		var stylez = [
+			  {
+			    "featureType": "all",
+			    "stylers": [
+			      { "saturation": -100 }
+			    ]
+			  }
+  		];
+  		
+	  var latlng = new google.maps.LatLng(35.660402, 139.699555);
+	  var opts = {
+	    zoom: 16,
+	    navigationControl: true,
+			mapTypeControl: false,
+			scaleControl: false,
+	    center: latlng,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	    mapTypeControl: false,
+	    scrollwheel: false,
+	    disableDefaultUI: true,
+	    draggable: false,
+	    mapTypeControlOptions: {
+			mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+			},
+			mapTypeId: MY_MAPTYPE_ID
+	  };
+	  var map = new google.maps.Map(document.getElementById("map_canvas"), opts);
+	  var styledMapOptions = {name: "sample"};
+		var jayzMapType = new google.maps.StyledMapType(stylez, styledMapOptions);map.mapTypes.set(MY_MAPTYPE_ID, jayzMapType);
+	  var markerOpts = {
+			position: new google.maps.LatLng(35.661559,139.699724),
+			map: map,
+	    icon:"/cn/cafemeal/img/shop/maker.png"
+		};
+		var marker = new google.maps.Marker(markerOpts);
+		var infowin = new google.maps.InfoWindow({content:"text"});
+	});
+</script>
+</head>
+
+<body id="cafemeal">
+
+<header id="globalHeader">
+	<div class="headerWrap">
+	
+	<h1 id="siteName"><a href="/cn/cafemeal/"><img src="/cn/cafemeal/img/common/logo_bk.png" alt="Café&Meal MUJI"></a></h1>
+
+	<nav id="hGlobalNav">
+		<h1>menu</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/cn/cafemeal/">Café&Meal MUJI Top</a></li>
+				<li><a href="/cn/cafemeal/menu.html">Menu</a></li>
+				<li><a href="http://www.muji.com/storelocator/?c=cn&lang=CN&header=gl&shopstyle=Cafe%26Meal%20MUJI">Shop Info</a></li>
+				<!-- 			<li><a href="">Blog</a></li> -->
+				<li class="portalLink"><a href="">MUJI 無印良品</a></li>
+			</ul>
+		</div>
+	</nav>	
+	</div>	
+</header>
+
+<div id="main">
+	<section id="topContents" class="">
+		<div class="outsideWrap">
+			<h1><img src="/cn/cafemeal/img/common/logo_white.png" alt="Café&Meal MUJI"></h1>
+		</div><!-- .outsideWrap -->
+	</section>
+	
+	<div class="outsideWrap gr">
+		<section class="wrapper">
+			<p class="lead isBack">2014年12月、成都にCafe&Meal MUJIがオープンしました。　Main lead ...(Dummy text) Six sounds of nature recorded across various regions of Japan. High quality stereophonic sounds that will help you get to sleep. The recordings are made using a "dummy head," a special microphone that resembles the head of a person. Binaural recordings are used to compile a set of natural sounds with a sense of presence.</p>
+		</section>
+	</div><!-- /outsideWrap -->
+	
+
+	
+	<div class="outsideWrap wideImage">
+		<section class="outsideWrap gr">			
+			<div><img src="/cn/cafemeal/img/top/store01.jpg" alt=""></div>
+			<div class="wrapper">
+				<p class="lead isBack">お店のイメージと説明　Use this area if necessary. If don't use this area delete from line130 to 134.<br>(Dummy text) Six sounds of nature recorded across various regions of Japan. High quality stereophonic sounds that will help you get to sleep. The recordings are made using a "dummy head," a special microphone that resembles the head of a person. Binaural recordings are used to compile a set of natural sounds with a sense of presence.</p>
+			</div><!-- .wrapper -->
+		</section>
+		<section id="place">
+			<div class="wrapper">
+			<h1>Shop Info</h1>
+			<h2>Café&Meal MUJI 成都</h2>
+			<p>東京都渋谷区宇田川町21-1 渋谷西武 2F（無印良品内）／電話：03-3770-1637／営業時間：10時から21時まで</p>
+			<p class="relatedLink"><a href="http://www.muji.com/storelocator/?c=cn&lang=CN&header=gl&shopstyle=Cafe%26Meal%20MUJI"> 詳しく見る</a></p>
+			</div>
+			<div id="map_canvas"></div>
+<!-- 		<iframe width="100%" height="365" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://j.map.baidu.com/f0WCx"></iframe> -->
+		</section>
+		
+	</div><!-- /outsideWrap -->
+	
+	<div class="outsideWrap">
+		<section class="wrapper">
+			<h1>こだわりのメニュー</h1>
+			<div class="wrapper">	
+				<ul class="col3">
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/image_deli.jpg" alt="">
+							<h3>Deli 季節食材</h3>
+							<p>“素之食”之理念是保持食材的自然原味。<br>採用天然的季節食材，讓食客品嚐鮮美、健康的料理。<br>備有多款採用季節蔬菜的料理，隨喜好組合，每餐可品嚐到十多種的食材，攝取均衡營養。</p>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/image_sweets.jpg" alt="">
+							<h3>Sweets 簡樸美味</h3>
+							<p>味道甘甜幼滑的“本和香糖布甸”以及清新怡人的雜莓芝士蛋糕等，純樸美味，適合跟咖啡或紅茶一同享用。</p>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/image_drink.jpg" alt="">
+							<h3>Drinks 寧神舒暢</h3>
+							<p>公平貿易咖啡及沖繩縣原產茶葉製成的琉球紅茶、使用廣島縣產檸檬製成的大長檸檬梳打等，冷熱皆宜，可於用餐或午間茶點時享用。</p>
+						</figure>
+					</li>
+				</ul>
+				<p class="relatedLink"><a href="/cn/cafemeal/menu.html"> 詳しく見る</a></p>
+			</div><!-- .wrapper -->				
+		</section><!-- .wrapper -->
+	</div>
+	
+	<div class="outsideWrap gr">
+		<section class="wrapper">
+			<h1>關於Café&Meal MUJI</h1>
+			<h2>素の食はおいしい。</h2>
+			<p class="lead">もぎたてのトマトをまる齧りしたときの、あのみずみずしい甘みや酸味。<br>
+Café&Meal MUJIが大切にしているのは、たとえばそんな「素の食」のおいしさです。太陽や土、水の恵みがたっぷりと染み込んだ素材そのものの味を生かし、自然のうま味を引き出すために、できる限りシンプルに調理しています。
+化学調味料は最小限に抑え、保存料はいっさい使用しません。<br>
+日本を中心に世界中の産地に直接足を運び、生産者の方々と交流しながらそのときいちばんの旬の食材を調達しています。<br>
+一方では、フェアトレードや環境に配慮した農法を積極的に採用し、その土地ならではの伝統料理をメニューに取り入れることで、歴史ある食文化を次世代につなげる試みも行いつづけています。<br><br>
+
+家族や友人と会話を楽しみながら、あるいはひとりの時間を満喫しながら。<br>
+カラダにやさしく、世界にやさしく、食べて美味しい「素の食」を、Café&Meal MUJIのゆったりとした空間でどうぞお召し上がりください。</p>		
+		
+		</section><!-- .wrapper -->
+	</div><!-- /outsideWrap -->
+	
+	<div class="outsideWrap">
+		<section class="wrapper">
+			<h1>特色食材</h1>
+			<p class="lead">私たちは、様々な、こだわりの食材を仕入れ、使用しています。その中の一部をご紹介します。</p>
+			<div class="wrapper">	
+				<ul class="col3">
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/foods01.jpg" alt="">
+							<h3>丹波黑豆</h3>
+							<p>日本兵庫縣篠山市的特產丹波黑豆，採用無農藥和化學肥料的栽種方法，含豐富蛋白質、維他命及粗纖維素，且不含膽固醇，具抗氧化功效及促進血液循環。Café&Meal MUJI 的丹波黑豆茶，散發著黑豆烘焙後的醇厚香氣，適合與料理一起享用。</p>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/foods02.jpg" alt="">
+							<h3>丹波黑豆</h3>
+							<p>日本兵庫縣篠山市的特產丹波黑豆，採用無農藥和化學肥料的栽種方法，含豐富蛋白質、維他命及粗纖維素，且不含膽固醇，具抗氧化功效及促進血液循環。Café&Meal MUJI 的丹波黑豆茶，散發著黑豆烘焙後的醇厚香氣，適合與料理一起享用。</p>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="/cn/cafemeal/img/top/foods03.jpg" alt="">
+							<h3>丹波黑豆</h3>
+							<p>日本兵庫縣篠山市的特產丹波黑豆，採用無農藥和化學肥料的栽種方法，含豐富蛋白質、維他命及粗纖維素，且不含膽固醇，具抗氧化功效及促進血液循環。Café&Meal MUJI 的丹波黑豆茶，散發著黑豆烘焙後的醇厚香氣，適合與料理一起享用。</p>
+						</figure>
+					</li>
+				</ul>
+			</div><!-- .wrapper -->				
+		</section><!-- .wrapper -->
+	</div>
+
+</div><!-- #main -->
+
+
+<footer>
+<nav id="footerNav">
+	<section class="footerNav1">
+		<ul>
+			<li><a href="/cn/cafemeal/">Café&Meal MUJI Top</a></li>
+			<li><a href="/cn/cafemeal/menu.html">Menu</a></li>
+			<li><a href="http://www.muji.com/storelocator/?c=cn&lang=CN&header=gl&shopstyle=Cafe%26Meal%20MUJI">Shop Info</a></li>
+<!-- 			<li><a href="">Blog</a></li> -->
+		</ul>
+	</section>
+	
+	<section class="footerNav2">
+		<ul>
+			<li><a href="http://www.muji.com/cn/">MUJI 無印良品</a></li>
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>			
+			<li class="country"><a href="http://www.muji.com/" target="_self"><img src="http://www.muji.com.cn/cn/store/contents/img/flag_cn.png" alt="">中国</a></li>
+		</ul>
+	</section>
+	    
+</nav>
+
+	<nav id="copyright">
+	<ul>		
+		<li><span target="_self"><small>© 無印良品（上海）商業有限公司    地址：上海市静安区石门一路211号旺旺大厦6楼  </small></span></li>		
+		<li><a href="http://www.miibeian.gov.cn/" target="_self"><small>沪ICP备08018225号</small></a></li>		
+	</ul>
+	</nav>
+</footer>
+
+<script src="/js/lib/modernizr.custom.47384.js"></script>
+<script src="/js/lib/cssua.js"></script>
+<script src="/js/lib/fastclick.js"></script>
+
+<!--[if gt IE 8]><!-->
+	<script src="/js/lib/flipsnap.fix.js"></script>
+<!--<![endif]-->
+
+<script src="/js/campaign-1.0.js"></script>
+<script src="/cn/cafemeal/js/cafemeal.js"></script>
+<script src="/js/lib/jquery.scrollTo.js"></script>
+
+
+<script>
+	//FastClick
+	if (cssua.ua.mobile) {
+	$(function(){
+		var selectors = [
+		  document.getElementById("hGlobalNav").getElementsByTagName("h1")[0],
+		  document.getElementsByClassName("cancel")[0]
+		];
+					
+		for(var i = 0, sLen = selectors.length; i < sLen; i++ ) {
+		  if(selectors[i] != undefined){
+			 		FastClick.attach(selectors[i]);
+			 }
+		}
+	});
+}	
+</script>
+
+
+</body>
+
+</html>

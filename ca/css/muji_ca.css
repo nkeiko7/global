@@ -1,0 +1,19 @@
+body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
+
+
+@media only screen and (min-width : 769px){
+	#hGlobalNav ul {width: 60%;}
+	#siteName a {padding: 22px 0 0 0;}
+	#siteName img {width: 110px; height: 24px; vertical-align: top;}
+	#globalHeader .wrapper ul {padding-left: 20%; margin: 0;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1152px)  {
+	#hGlobalNav ul {width: 100%;}
+}
+
+@media screen and (max-width: 767px) {
+	#siteName a {padding: 23px 0 0 0;}
+	#siteName img {width: 110px; padding: 0; vertical-align: top;}
+	#copyright {width: 80%; margin: 0;}
+}

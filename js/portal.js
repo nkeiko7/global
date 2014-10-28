@@ -108,77 +108,25 @@ $(window).on("load resize", function(){
 	}
 
 
+	var flipsnapElements = [];
 
-	var flipsnapProduct = Flipsnap('#product .flipsnap', {distance:distance("#product"), maxPoint:maxPoint("#product")});
-	var flipsnapCampaign = Flipsnap('#campaign .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#campaign")});
-	var flipsnapLab = Flipsnap('#lab .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#lab")});
-	var flipsnapEvent = Flipsnap('#event .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#event")});
-	var flipsnapInfo = Flipsnap('#information .flipsnap', {distance:distance("#campaign"), maxPoint:maxPoint("#information")});
-	
-	if($("#product").length){
-		var $next = $('#product .next').click(function() {
-	  	flipsnapProduct.toNext();
+	$(".flipsnap").each(function(i,e){
+
+		flipsnapElements[i] = Flipsnap(e, {distance:distance(e), maxPoint:maxPoint(e)});
+
+		var $next = $(this).parent().parent().find(".next").click(function() {
+	  		flipsnapElements[i].toNext();
 		});
-		var $prev = $('#product .prev').click(function() {
-			flipsnapProduct.toPrev();
+		var $prev = $(this).parent().parent().find(".prev").click(function() {
+			flipsnapElements[i].toPrev();
 		});	
-		flipsnapProduct.element.addEventListener('fspointmove', function() {
-		    $next.attr('disabled', !flipsnapProduct.hasNext());
-		    $prev.attr('disabled', !flipsnapProduct.hasPrev());
+		flipsnapElements[i].element.addEventListener('fspointmove', function() {
+		    $next.attr('disabled', !flipsnapElements[i].hasNext());
+		    $prev.attr('disabled', !flipsnapElements[i].hasPrev());
 		}, false);
-	}
-	
-	if($("#campaign").length){
-		var $next2 = $('#campaign .next').click(function() {
-	    flipsnapCampaign.toNext();
-		});
-		var $prev2 = $('#campaign .prev').click(function() {
-			flipsnapCampaign.toPrev();
-		});	
-		flipsnapCampaign.element.addEventListener('fspointmove', function() {
-		    $next2.attr('disabled', !flipsnapCampaign.hasNext());
-		    $prev2.attr('disabled', !flipsnapCampaign.hasPrev());
-		}, false);
-	}
-	
-	if($("#event").length){
-		var $next3 = $('#event .next').click(function() {
-	    flipsnapEvent.toNext();
-		});
-		var $prev3 = $('#event .prev').click(function() {
-			flipsnapEvent.toPrev();
-		});	
-		flipsnapEvent.element.addEventListener('fspointmove', function() {
-		    $next3.attr('disabled', !flipsnapEvent.hasNext());
-		    $prev3.attr('disabled', !flipsnapEvent.hasPrev());
-		}, false);
-	}
-	
-	if($("#lab").length){
-		var $next4 = $('#lab .next').click(function() {
-	    flipsnapLab.toNext();
-		});
-		var $prev4 = $('#lab .prev').click(function() {
-			flipsnapLab.toPrev();
-		});	
-		flipsnapLab.element.addEventListener('fspointmove', function() {
-		    $next4.attr('disabled', !flipsnapLab.hasNext());
-		    $prev4.attr('disabled', !flipsnapLab.hasPrev());
-		}, false);
-	}
-	
-	if($("#information").length){
-		var $next5 = $('#information .next').click(function() {
-	    flipsnapInfo.toNext();
-		});
-		var $prev5 = $('#information .prev').click(function() {
-			flipsnapInfo.toPrev();
-		});	
-		flipsnapInfo.element.addEventListener('fspointmove', function() {
-		    $next5.attr('disabled', !flipsnapInfo.hasNext());
-		    $prev5.attr('disabled', !flipsnapInfo.hasPrev());
-		}, false);
-	}
+
+	});
+
 
 });
 }

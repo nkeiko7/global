@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>NEWS RELEASE</title>
+
+<entry>
+ <title>Sample Title 01</title>
+ <link rel="alternate" type="text/html" href="" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Sample Title 02</title>
+ <link rel="alternate" type="text/html" href="" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Sample Title 03</title>
+ <link rel="alternate" type="text/html" href="" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Sample Title 04</title>
+ <link rel="alternate" type="text/html" href="" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+<entry>
+ <title>Sample Title 05</title>
+ <link rel="alternate" type="text/html" href="" />
+ <published>2014-09-02T00:00:00Z</published>
+</entry>
+
+
+</feed>

@@ -44,7 +44,7 @@ ul.col4 {letter-spacing: -.40em; margin: 0; box-sizing: border-box;}
 
 #place .wrapper {padding-bottom: 0;}
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	#globalHeader .wrapper ul {float: none;}
 	.portalLink {margin:0;}
 	.col4 li {width: 50%;}
