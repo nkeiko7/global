@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>	
+	<meta charset="UTF-8">
+	<meta property="og:url" content="http://www.muji.com/de/">
+	<meta property="og:image" content="http://www.muji.com/de/img/ogimage.png">
+	<meta name="description" content="">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="noydir,noodp">
+
+	<title>MUJI</title>
+	<link rel="icon" type="image/png" href="/de/img/favicon.ico">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/de/css/muji_de.css">
+	<link rel="stylesheet" href="/css/portal.css">
+	<link rel="stylesheet" href="/de/css/portal_de.css">
+	<link rel="stylesheet" href="/css/marker.css">
+	<link rel="stylesheet" href="/css/self_marker.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	
+	<script src="//assets.adobedtm.com/a6e9b8b912d51aecbc12256558ef49a48670b2e5/satelliteLib-113ae7929f1ac7f18f4b345540359ea621c8d1d8.js"></script>
+</head>
+
+<body>
+
+<header id="globalHeader" class="black">
+	<div class="headerWrap">
+	
+	<h1 id="siteName"><a href=""><img src="" alt="MUJI"></a></h1>
+
+	<nav id="hGlobalNav">
+		<h1>Menu</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/de/">Home</a></li>				
+				<li><a href="http://www.muji.de/en/store/">Online Stoe</a></li>
+				<li><a href="http://www.muji.com/storelocator/?c=de">Store Information</a></li>
+				<li><a href="http://www.muji.de/en/store/contents/contact/faq/">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div><!-- .headerWrap -->	
+</header>
+
+<div id="main">
+
+
+
+			
+
+</div><!-- #main -->
+
+
+<aside id="misc">
+	<div class="content">
+		<ul class="sns">
+			
+		</ul>
+		
+	</div>
+</aside>
+
+<footer>
+<nav id="footerNav">
+	<section class="footerNav1">
+		<ul>			
+			<li><a href="http://www.muji.de/en/store/" target="_self">Online Store</a></li>			
+			<li><a href="http://www.muji.com/storelocator/?c=de" target="_self">Store Information</a></li>			
+		</ul>
+	</section>
+	
+	<section class="footerNav4">
+		<ul>
+			<li><a href="http://www.muji.de/en/store/contents/contact/faq/" target="_self">Contact</a></li>
+			<li><a href="http://www.muji.de/en/store/contents/corporate/#recruitment" target="_self">Careers</a></li>
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>
+			<li class="country"><a href="http://www.muji.com/?area=footer" target="_self"><img src="/de/img/flag_de.png" alt="">Deutsch (English)</a></li>
+		</ul>
+		<div id="trademark"><a href="/de/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>    
+</nav>
+
+<p id="copyright">
+	<span class="copyright"><small>&copy;&nbsp;MUJI Deutschland GmbH</small></span>	
+	<nav class="another">
+	<ul>
+		<li><a href="http://www.muji.de/en/store/contents/contact/tandc/" target="_self"><small>General terms and conditions</small></a></li>
+	</ul>
+	</nav>
+</p>
+</footer>
+
+	<script src="/js/lib/modernizr.custom.47384.js"></script>
+	<script src="/js/lib/cssua.js"></script>
+	<script src="/js/lib/fastclick.js"></script>
+	
+	<!--[if gt IE 8]><!-->
+		<script src="/js/lib/flipsnap.fix.js"></script>
+	<!--<![endif]-->
+	
+	<script src="/js/portal.js"></script>
+	<script src="/de/js/portal_de.js"></script>
+	<script src="/js/lib/jquery.scrollTo.js"></script>
+	
+	
+	<script>
+		//FastClick
+		if (cssua.ua.mobile) {
+		$(function(){
+			var selectors = [
+			  document.getElementById("hGlobalNav").getElementsByTagName("h1")[0],
+			  document.getElementById("hSearch").getElementsByTagName("h1")[0],
+			  document.getElementsByClassName("cancel")[0],
+			  document.getElementsByClassName("prev")[0],
+			  document.getElementsByClassName("next")[0],
+			  document.getElementsByClassName("avater")[0]
+			];
+						
+			for(var i = 0, sLen = selectors.length; i < sLen; i++ ) {
+			  if(selectors[i] != undefined){
+				 		FastClick.attach(selectors[i]);
+				 }
+			}
+		});
+		}
+		
+ 	</script>
+
+	<script src="/js/lib/jquery.cookie.js"></script>
+
+
+<script>
+
+$(function(){
+
+/*!
+* 
+* Panel Parsonalize
+* 
+*/
+
+// Parse json value
+
+	$.cookie.json = true;
+
+
+// Read Cookie
+
+	var visit = $.cookie("visit")?$.cookie("visit"):{};
+
+
+// Max Visit Value
+
+	var totalVisit = 0;
+
+	$.each(visit,function(i,val){
+		totalVisit += val;
+	});
+
+	if(totalVisit > 10) {
+		for (var i in visit) {
+			visit[i] = Math.floor(visit[i]/2);
+			if(visit[i] == 0) {
+				delete visit[i];
+			}
+		}
+		$.cookie("visit", visit, { expires: 90, path: '/de/' });
+	}
+
+
+// campaign list
+
+	var campaign = [
+
+	{}
+	];
+
+	campaign.pop();
+
+// increment each campaign panelRank from Cookie value
+
+	for(var i = 0; i < campaign.length; i++){
+		if(visit.hasOwnProperty(campaign[i].category)){
+			campaign[i].panelRank += visit[campaign[i].category];
+		}
+	}
+
+
+// sort campaign
+
+	campaign.sort(function(a,b){
+//		return a.panelRank < b.panelRank;
+		if(a.panelRank < b.panelRank) return 1;
+		if(a.panelRank > b.panelRank) return -1;
+		return 0;
+	})
+
+//	$("#campaign").append("<ul>");
+
+for(var i = 0; i < campaign.length; i++){
+
+var cat = campaign[i].category?campaign[i].category:"";
+var alt = (campaign[i].titleShow == true || campaign[i].titleShow == undefined)?"":campaign[i].title;
+var titleText = (campaign[i].titleShow == true || campaign[i].titleShow == undefined)?campaign[i].title:"";
+$("#campaign ul").append("<li><a href='" + campaign[i].href + "' data-category='"+ cat +"' data-panelrank='"+ campaign[i].panelRank +"'><img src='" + campaign[i].src + "' alt='" + alt + "'><br><span class='title'>" + titleText + "</span></a></li>");
+
+}
+
+
+
+
+// event list
+
+	var event = [
+
+	{}
+	];
+
+	event.pop();
+
+// increment each event panelRank from Cookie value
+
+	for(var i = 0; i < event.length; i++){
+		if(visit.hasOwnProperty(event[i].category)){
+			event[i].panelRank += visit[event[i].category];
+		}
+	}
+
+
+// sort campaign
+
+	event.sort(function(a,b){
+		if(a.panelRank < b.panelRank) return 1;
+		if(a.panelRank > b.panelRank) return -1;
+		return 0;
+	})
+
+//	$("#event").append("<ul>");
+
+for(var i = 0; i < event.length; i++){
+
+var cat = event[i].category?event[i].category:"";
+var alt = (event[i].titleShow == true || event[i].titleShow == undefined)?"":event[i].title;
+var titleText = (event[i].titleShow == true || event[i].titleShow == undefined)?event[i].title:"";
+$("#event ul").append("<li><a href='" + event[i].href + "' data-category='"+ cat +"' data-panelrank='"+ event[i].panelRank +"'><img src='" + event[i].src + "' alt='" + alt + "'><br><span class='title'>" + titleText + "</span></a></li>");
+
+}
+
+
+
+
+// write cookie
+
+	$("a").on("click",function(e){
+//		e.preventDefault();
+		if($(this).attr("data-category") != "" && $(this).attr("data-category") != undefined){
+			if(visit.hasOwnProperty($(this).attr("data-category"))){
+				visit[$(this).attr("data-category")] += 1;
+			}else{
+				visit[$(this).attr("data-category")] = 1;
+			}
+			$.cookie("visit", visit, { expires: 90, path: '/de/' });
+		}
+	});
+
+
+// Debug
+//console.log($.cookie("visit"));
+//console.log(campaign);
+//console.log(event);
+
+});
+</script>
+
+<script>
+//feedback
+$(function() { 
+	$("#review .title").on("click",function(e){
+		$("#review .replyReview").show();
+		$("textarea#suggestion").focus();
+		$("#review .title").addClass('show');
+		e.preventDefault();
+	});
+	$("#review .close").on("click",function(){
+		$("#review .replyReview").hide();
+		$("#review .title").removeClass('show');
+	});	
+	$("#review .submitBtn").on("click",function(){
+		$("#review textarea, #review .lead, #review .submitBtn, #review .note").hide();
+		$("#review p.replyFinish").show();
+		var suggestion = $("#suggestion").val();
+		var data = "suggestion=" + suggestion;
+		data += "&ua=" + navigator.userAgent
+		
+		$.ajax({
+			type: "POST",
+			url: "/service-bin/portal_suggestion/portal_suggestion_get.php",
+			data: data,
+			
+			success: function(data){
+				//console.log("success");
+			},
+			error: function(data){
+				//console.log("fail");
+				
+			}
+		});
+		
+	});
+});
+</script>
+
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>	
+<!--[if !IE]><!-->
+	<script src="/js/lib/map.js"></script>
+<!--<![endif]-->
+
+
+<script>
+	MAP_LIMIT_SHOPLIST = 10; /* Maximum number of stores list */
+	MAP_LIMIT_MARKER = 100; /* Maximum number of stores placed on the map */
+	MAP_IMG_MARKER = "/img/marker_red_default.png";
+	MAP_IMG_SELF_POS = "/img/self_position.png";
+
+
+
+
+	MAP_MARKER_LINK_URL = "http://www.muji.com/storelocator/?c=de";
+	MAP_SHOPLIST_JSON_URL = "http://www.muji.com/storelocator/?c=de&_ACTION=_SEARCH";
+
+	MAP_DEFAULT_ZOOM = ;
+	MAP_DEFAULT_LAT = ;
+	MAP_DEFAULT_LON = ;
+	MAP_LOAD_DIV_ID = "map";
+</script>
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+</body>
+
+</html>

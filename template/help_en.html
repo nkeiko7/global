@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Help</title>
+
+<style>
+	body {line-height: 1.6;}
+	.main {width: 720px; margin: 60px auto;}
+	section {margin: 80px 0 0 0;}
+	ol, ul {margin: 10px 0 20px;}
+	ol li {list-style: decimal; margin-bottom: 0.6em;}
+	ul li {list-style: disc; margin-bottom: 0.3em;}
+	aside {margin-top: 80px;}
+	section h1 {font-size: 1.8em;}
+	section section h1 {font-size: 1.4em;}
+	h2 {font-size: 1.2em; margin-top: 40px;}
+</style>
+</head>
+<body>
+
+
+<section class="main">
+	<h1>About MUJI Global Management System（Global CMS）</h1>
+	<section>
+		<h1>URL</h1>
+		<p><a href="https://gbcms.muji.com/muji.publisher/manage/login/">https://gbcms.muji.com/muji.publisher/manage/login/</a></p>
+		<p>*ID & Passward We will be notified separately</p>
+	</section>
+	
+	<section>
+		<h1>Procedure of update / public</h1>
+		<h2>[Portal]</h2>
+		<ol>
+			<li>Login the above URL.</li>
+			<li>Click menu of 'Edit Configurations'.</li>
+			<li>Enter the required menu of 'Edit Configurations'.</li>
+			<li>Click the 'Preview' button at the bottom of the screen.</li>
+			<li>Click the 'Deploy' button at the bottom of the screen if there is no problem. (This portal top file will be send to the source tree of Manage Content.)</li>
+			<li>Click the top of the screen title 'MUJI Global Contents Management System', to return to the Global CMS top page.</li>
+			<li>Click on the 'Manage Contents'.</li>
+			<li>Open the 'Country Code(jp,us etc.)' folder on the source tree.</li>
+			<li>Select the 'index.html'.</li>			
+			<li>When you click the 'Deploy' button at the bottom of the screen, publishing settings dialog opens.<br>
+					<ul>
+						<li>'Deploy Resource:' ... public file "(country code) /index.html"</li>
+						<li>'Deploy to:' ... public destination</li>
+						<li>'Staging' ... test environment http://st3gb.muji.com/ (country code) /<br>ID: admwtpgj PW: ptwgjmad</li>
+						<li>'Production' ... release http://www.muji.com/ (country code) /</li>
+						<li>'Deploy Operaion:' Choose ... Upload</li>
+						<li>'Deploy on:' ...  published date and time settings "YYYYMMDD HH: MM"</li>
+					</ul>
+			</li>
+			<li>if you click the "Book Deployment" button, It will be published in the set date and time.</li>
+		</ol>	
+	
+		<h2>[Featured content]</h2>
+		<ol>
+			<li>The template that is provided separately in the reference, you can create a HTML of featured content.</li>
+			<li>Put the necessary files(html files, image files, and css files) to the folder that you gave the feature name. And make a .zip file.</li>
+			<li>Log in from the above URL, and open the Global CMS top page.</li>
+			<li>Click the top of the screen title 'MUJI Global Contents Management System', to return to the GlobalCMS top page.</li>
+			<li>Click on the 'Manage Contents'.</li>		
+			<li>Open the 'Your Country Code' folder on the source tree.</li>
+			<li>Select the 'campaign' folder.</li>
+			
+			<li>When you click the 'Upload' button at the bottom of the screen, opens the Upload Settings dialog.<br>
+				<ul>
+					<li>'Upload Point:' ··· public destination '(country code) / campaign'</li>
+					<li>'Upload File:' ... Select the .zip file to be published</li>
+				</ul>
+			</li>
+			
+			<li>Click on the 'Upload'. This files will be send to the source tree of Manage Content.</li>
+			<li>Select the 'upload folder'.</li>
+			<li>When you click the 'Deploy' button at the bottom of the screen, publishing settings dialog opens.<br>
+					<ul>
+						<li>'Deploy Resource:' ... public file "(country code) /index.html"</li>
+						<li>'Deploy to:' ... public destination</li>
+						<li>'Staging' ... test environment http://st3gb.muji.com/ (country code) /<br>ID: admwtpgj PW: ptwgjmad</li>
+						<li>'Production' ... release http://www.muji.com/ (country code) /</li>
+						<li>'Deploy Operaion:' ... Choose Upload</li>
+						<li>'Deploy on:'  ... published date and time settings "YYYYMMDD HH: MM"</li>
+					</ul>
+			</li>
+			<li>if you click the 'Book Deployment' button, It will be published in the set date and time.</li>
+			<li>*If you want to remove the files from the production server
+				<ol>
+					<li>Select the deleted files you want on the 'Manage Contents'.</li>
+					<li>Click the 'Deploy' button at the bottom of the screen.</li>
+					<li>Choose 'Delete' menu from the 'Deploy Operaion:' (in the publishing settings dialog) and click the 'Book Deployment'</li>
+				</ol>
+			</li>
+		</ol>
+		</section>
+		
+		<section>
+			<h1>Function</h1>
+			<h2>Edit Configurations (Top Page)</h2>
+			<ul>
+				<li>This is the setting screen of the portal.</li>
+				<li>Save / Preview / Deploy：Upload function of file　(There is the button at the bottom of the screen)</li>
+				<li>↑ ↓: display order sorting</li>
+				<li>+: Adding a input area</li>
+				<li>x: Delete</li>				
+			</ul>
+			
+			<h2>Manage Contents</h2>
+			<ul>
+				<li>Upload and download files</li>
+				<li>Create Folder</li>
+				<li>Delete files and folders</li>
+				<li>setting to the public time (It is used to publish time) </li>			
+			</ul>
+			
+			<h2>Manage Deployments</h2>
+			<ul>
+				<li>History list of upload and deletion.</li>			
+			</ul>
+			
+			<h2>Manage User Settings</h2>
+			<ul>
+				<li>User Name：Can not be changed</li>
+				<li>User Password：Change in each</li>
+				<li>please do the time setting of each country based on UTC (example: Japan → UTC + 9 hours)</li>	
+			</ul>
+		</section>
+
+
+		<aside>	
+			If you have any questions, please contact the following destination.<br>
+			web-dev@muji.co.jp
+		</aside>
+	
+</section>
+</body>
+
+</html>

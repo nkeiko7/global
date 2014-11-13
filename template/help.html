@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>Help</title>
+
+<style>
+	body {line-height: 1.6;}
+	.main {width: 720px; margin: 60px auto;}
+	section {margin: 80px 0 0 0;}
+	ol, ul {margin: 10px 0 20px;}
+	ol li {list-style: decimal; margin-bottom: 0.6em;}
+	ul li {list-style: disc; margin-bottom: 0.3em;}
+	aside {margin-top: 80px;}
+	section h1 {font-size: 1.8em;}
+	section section h1 {font-size: 1.4em;}
+	h2 {font-size: 1.2em; margin-top: 40px;}
+</style>
+</head>
+<body>
+
+
+<section class="main">
+	<h1>「MUJI Global Management System（以下GlobalCMS）」について</h1>
+	<section>
+		<h1>URL</h1>
+		<p><a href="https://gbcms.muji.com/muji.publisher/manage/login/">https://gbcms.muji.com/muji.publisher/manage/login/</a></p>
+		<p>※ ID、Passwardは別途お知らせします</p>
+	</section>
+	
+	<section>
+		<h1>更新／公開の手順</h1>
+		<h2>[ポータル]</h2>
+		<ol>
+			<li>上記URLからログインし、GlobalCMSトップページ開きます。</li>
+			<li>リンク「Edit Configurations」をクリックしてください。</li>
+			<li>「Edit Configurations」画面にて、更新が必要な項目に入力をします。</li>
+			<li>画面下部の「Preview」ボタンをクリックします。「Preview」ページが表示されます。</li>
+			<li>「Preview」ページに問題が無ければ、画面下部の「Deploy」ボタンをクリックします。（「Manage Contents」画面のソースツリーにファイルが登録されます。）</li>
+			<li>画面上部のタイトル「MUJI Global Contents Management System」をクリックして、GlobalCMSトップページに戻ります。</li>
+			<li>リンク「Manage Contents」をクリックしてください。</li>
+			<li>「Manage Contents」画面にて、ソースツリー上の「（国コード）」フォルダを開きます。</li>
+			<li>「index.html」を選択します。</li>
+			<li>画面下部の「Deploy」ボタンをクリックすると、公開設定ダイアログが開きます。<br>
+					<ul>
+						<li>「Deploy Resource：」・・・公開ファイル　「（国コード）/index.html」</li>
+						<li>「Deploy to:」・・・・・・・公開先</li>
+						<li>「Staging」・・・・・・テスト環境 http://st3gb.muji.com/（国コード）/<br>ID: admwtpgj PW: ptwgjmad</li>
+						<li>「Production」・・・・・リリース http://www.muji.com/（国コード）/</li>
+						<li>「Deploy Operaion:」・・・・Uploadを選択</li>
+						<li>「Deploy on：」・・・・・・・公開日時設定「YYYYMMDD HH:MM」</li>
+					</ul>
+			</li>
+			<li>「Book Deployment」ボタンをクリックします。設定した日時に公開されます。</li>
+		</ol>
+	
+	
+		<h2>[特集コンテンツ]</h2>
+		<ol>
+			<li>別途提供されるテンプレートを参考にして、特集コンテンツのHTMLを作成します。</li>
+			<li>キャンペーン名を付けたフォルダにhtmlファイル、画像ファイル、cssファイルを入れ、.zipファイルにします。</li>
+			<li>上記URLからログインし、GlobalCMSトップページ開きます。</li>
+			<li>画面上部のタイトル「MUJI Global Contents Management System」をクリックして、GlobalCMSトップページに戻ります。</li>
+			<li>リンク「Manage Contents」をクリックしてください。</li>		
+			<li>「Manage Contents」画面にて、「（国コード）」フォルダを開き「feature(campaign)」フォルダを選択します。</li>
+			
+			<li>画面下部の「Upload」ボタンをクリックすると、アップロード設定ダイアログが開きます。<br>
+				<ul>
+					<li>「Upload Point：」・・・公開先　「（国コード）/feature(campaign)」</li>
+					<li>「Upload File：」・・・・・・・公開する.zipファイルを選択</li>
+				</ul>
+			</li>
+			
+			<li>「Upload」ボタンをクリックします。作成したキャンペーンフォルダが「Manage Contents」画面のソースツリーに登録されます。</li>
+			<li>該当のフォルダを選択します。</li>
+			<li>画面下部の「Deploy」ボタンをクリックすると、公開設定ダイアログが開きます。<br>
+					<ul>
+						<li>「Deploy Resource：」・・・公開ファイル　「（国コード）/feature(campaign)フォルダ」</li>
+						<li>「Deploy to:」・・・・・・・公開先</li>
+						<li>「Staging」・・・・・・テスト環境 http://st3gb.muji.com/（国コード）/<br>ID: admwtpgj PW: ptwgjmad</li>
+						<li>「Production」・・・・・リリース http://www.muji.com/（国コード）/</li>
+						<li>「Deploy Operaion:」・・・・Uploadを選択</li>
+						<li>「Deploy on：」・・・・・・・公開日時設定「YYYYMMDD HH:MM」</li>
+					</ul>
+			</li>
+			<li>「Book Deployment」ボタンをクリックします。設定した日時に公開されます。</li>
+			<li>※ファイルを本番サーバから削除したい場合
+				<ol>
+					<li>「Manage Contents」画面のソースツリーで削除したいファイルを選択します。</li>
+					<li>画面下部の「Deploy」ボタンをクリックします。</li>
+					<li>公開設定ダイアログの項目「Deploy Operaion:」で、「Delete」を選択し、「Book Deployment」ボタンをクリックします。</li>
+				</ol>
+			</li>
+		</ol>
+		</section>
+		
+		<section>
+			<h1>機能</h1>
+			<h2>Edit Configurations (Top Page)</h2>
+			<ul>
+				<li>ポータルの設定画面です</li>
+				<li>Save / Preview / Deploy：ファイルのアップロード（画面下にボタンがあります）</li>
+				<li>↑↓ボタン：表示順の並び替え</li>
+				<li>+ボタン：記入エリアの追加</li>
+				<li>xボタン：削除</li>				
+			</ul>
+			
+			<h2>Manage Contents</h2>
+			<ul>
+				<li>ファイルのアップロード、ダウンロード</li>
+				<li>フォルダの作成</li>
+				<li>フォルダ、ファイルの削除</li>
+				<li>本番への公開時間設定</li>			
+			</ul>
+			
+			<h2>Manage Deployments</h2>
+			<ul>
+				<li>ファイルアップロードやファイル削除の履歴一覧表示</li>			
+			</ul>
+			
+			<h2>Manage User Settings</h2>
+			<ul>
+				<li>User Name：変更できません</li>
+				<li>User Password：各々で変更をお願いしま</li>
+				<li>Timezone：UTCを基準にして、各国の時間設定を行ってください（例：日本→UTC+9時間）</li>	
+			</ul>
+		</section>
+		
+		<aside>	
+			不明点がありましたら、以下の宛先にご連絡ください。<br>
+			web-dev@muji.co.jp
+		</aside>
+	
+</section>
+</body>
+
+</html>

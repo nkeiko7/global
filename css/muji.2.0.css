@@ -89,7 +89,7 @@ footer nav.another li a {color: #ccc;}
 	padding-left: 30px; margin: 0; line-height: 2; min-height: 28px; font-size: 14px; outline: none;
 }
 
-@media screen and (max-width : 1152px){
+@media screen and (max-width : /* 1152 */1200px){
 	.white #hGlobalNav h1,
 	.white_back #hGlobalNav h1 {background: url(../img/menu_w.png) no-repeat center center; text-indent: -9999px; background-size: 20px 15px; position: absolute; top: 0; left: 0; padding: 27px; margin: 0; cursor: pointer; width: 20px; height: 15px; z-index: 1001;}
 	#hGlobalNav h1,
@@ -234,14 +234,33 @@ footer nav.another li a {color: #ccc;}
 	footer li {width: auto; margin-right: 20px;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1152px)  {
+@media screen and (min-width: 768px) and (max-width: /* 1152px */1200px)  {
+	#siteName {left: 2%}
 	#hGlobalNav h1 {z-index: 1001;}
-	#globalHeader .headerWrap {width: 90%;}	
-	#hSearch input[type="search"] {right: 5%;}
+	#hSearch input[type="search"] {right: 2%;}
+	#globalHeader #hGlobalNav .wrapper {width: 90%;}
+	
+	#hGlobalNav .cancel {display: none;}
+	#hSearch li {width: 50%; float: left;}
+	#hSearch li:nth-child(9) {width: 100%;}
+	#hSearch ul:after {content: ""; display: block; clear: both;}
+	#globalHeader #hSearch .wrapper li {font-size: 16px; margin: 10px 0;}
+	#globalHeader .wrapper li a {display: block; /* padding: 10px 15px; */}
+	#hSearch .wrapper {display: none;}
+	#globalHeader .headerWrap {width: 100%;}
+	.cancel {display: block; padding: 20px 20px 0; z-index: 1002;}
+	#hSearch input[type="search"],
+	.white #hSearch input[type="search"] {background: none; border: solid #ccc; border-width: 0 0 1px; border-radius: 0; -webkit-appearance: none; width: 90%; box-sizing: border-box; background: url(/img/icon_search_w.png) no-repeat left center; background-size: 20px 21px; line-height: 2; min-height: 28px; font-size: 14px; outline: none; position: relative; left: 5%; /* top:0; */}
+	#hSearch h1 {display: block; position: absolute; top: 10px; right: 0; padding:25px; margin: 0;z-index: 101;}
+	#globalHeader #hSearch .wrapper {background: rgba(0,0,0,.8); position: fixed; z-index: 1000; width: 100%; height: 100%; color: #fff; font-size: 16px; padding: 0; box-sizing: border-box;}
+	#globalHeader #hSearch .wrapper a {color: #fff;}
+	#globalHeader #hSearch .wrapper ul {padding: 10px; display: block; width: 90%; margin: 20px auto;}
+	#globalHeader #hSearch .wrapper li {list-style: none; padding: 0;}
+	
 }
 
+/*
 @media screen and (min-width: 767px) and (max-width: 768px)  {
-/* 	#globalHeader {position: relative; height: 40px;} */
 	#globalHeader #hGlobalNav .wrapper {display: none;} 
 	#siteName {position: absolute; top: 0; left: 0; z-index: 100; margin: 0; padding: 0; text-align: center; width: 100%; height: 70px;}
 	#siteName img {width: 80px; vertical-align: top; padding: 15px; border: 0;}
@@ -259,10 +278,11 @@ footer nav.another li a {color: #ccc;}
 	#globalHeader .headerWrap {width: 100%;}
 	.cancel {display: block; padding: 20px 20px 0; z-index: 1002;}
 	#hSearch input[type="search"],
-	.white #hSearch input[type="search"] {background: none; border: solid #ccc; border-width: 0 0 1px; border-radius: 0; -webkit-appearance: none; width: 90%; box-sizing: border-box; background: url(/img/icon_search_w.png) no-repeat left center; background-size: 20px 21px; line-height: 2; min-height: 28px; font-size: 14px; outline: none; position: relative; left: 5%; /* top:0; */}
+	.white #hSearch input[type="search"] {background: none; border: solid #ccc; border-width: 0 0 1px; border-radius: 0; -webkit-appearance: none; width: 90%; box-sizing: border-box; background: url(/img/icon_search_w.png) no-repeat left center; background-size: 20px 21px; line-height: 2; min-height: 28px; font-size: 14px; outline: none; position: relative; left: 5%;}
 	#hSearch h1 {display: block; position: absolute; top: 10px; right: 0; padding:25px; margin: 0;z-index: 101;}
 	#globalHeader #hSearch .wrapper {background: rgba(0,0,0,.7); position: fixed; z-index: 1000; width: 100%; height: 100%; color: #fff; font-size: 16px; padding: 0; box-sizing: border-box;}
 	#globalHeader #hSearch .wrapper a {color: #fff;}
 	#globalHeader #hSearch .wrapper ul {padding: 10px; display: block; width: 90%; margin: 20px auto;}
 	#globalHeader #hSearch .wrapper li {list-style: none; padding: 0;}
 }
+*/

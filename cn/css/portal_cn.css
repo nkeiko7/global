@@ -1,20 +1,16 @@
+
+#mainCampaign .titleContainer h1 {position: absolute; width: 100%; max-width: 100%; top: 160px; left: 0; font-size: 55px; color: #fff; text-align: center; margin: 0;}
+#mainCampaign .titleContainer h1 img {width: 400px; max-width: 100%;}
+
+@media screen and (max-width: 679px){
+	#mainCampaign .titleContainer h1 img {width: 80%;}
+}
+
+.footerNav3 {display: none;}
+#misc .instagram a img {height: 31px; margin-left: 3px;}
 #misc .fLicence a img {
 	height: 45px; 
 	position: absolute;
 	right: 11%;
 	bottom: 20px;
-}
-
-#main #mainCampaign {background: #fff;}
-#mainCampaign .titleContainer	{z-index: 1000;}
-#mainCampaign .titleContainer h1 {position: absolute; width: auto; max-width: 200px; top: 60px; left: 50%; margin-left: -100px;}
-#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
-
-@media screen and (max-width: 1200px){
-	#mainCampaign .titleContainer h1 {max-width: 200px; top: 60px; margin-left: -100px;}
-	#mainCampaign figure {overflow: hidden;}
-}
-
-@media screen and (max-width: 480px){
-	#mainCampaign .titleContainer h1 {width: auto; max-width: 200px; margin-left: -100px; top: 6 0px;}
 }

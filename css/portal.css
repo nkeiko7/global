@@ -12,9 +12,7 @@ a {text-decoration: none; color: #666;}
 #main #campaign,
 #main #lab,
 #main #event,
-#main #houseVision,
-#main #other {width: 96%; margin: 0 auto 60px;}
-
+#main #houseVision {width: 96%; margin: 0 auto 60px;}
 
 #main h1 {font-size: 17px; font-weight: normal; margin: 0 0 1em; line-height: 1; color: #333;}
 .more {font-size: 14px; float: right; margin: -40px 15px 0 0; line-height: 1;}
@@ -34,15 +32,6 @@ img{
 }
 
 .contentSection img {width: 236px;}
-/*
-#other.contentSection img,
-#houseVision.contentSection img {width: 236px; height: 87px;}
-*/
-#hv5 #other.contentSection img {width: 100%; height: auto;}
-#houseVision.contentSection .column img {width: 87px; height: 87px;}
-#hv2 #houseVision.contentSection img,
-#hv4 #other.contentSection img {width: 87px; height: 87px;}
-
 #product img {width: 88px; margin-bottom: 5px;}
 
 .viewport {
@@ -61,10 +50,10 @@ img{
 
 #main section ul {padding: 0; margin: 0;}
 
-#main #mainCampaign {z-index: 1; height: auto; width: 100%; background: #f7f7f7; text-align: center; position: relative; margin-bottom: 0;}
+#main #mainCampaign {z-index: 1; height: auto; width: 100%; background: #f7f7f7; text-align: center; position: relative; margin-bottom: 0; overflow: hidden;}
 #mainCampaign figure {margin: 0; min-height: 400px;}
 #mainCampaign .titleContainer {width: 100%; position: absolute; top: 0; left: 0;}
-#mainCampaign .titleContainer h1 {position: absolute;}
+#mainCampaign .titleContainer h1 {position: absolute; font-size: 32px; font-weight: bold;}
 #mainCampaign .titleContainer a {position: absolute; top: 300px; left: 45%;}
 #mainCampaign .titleContainer a:hover {background: #666;}
 #mainCampaign .titleContainer a:hover img {opacity: 0.8;}
@@ -77,25 +66,8 @@ img{
 	text-decoration: none;
 	}
 
-
-#hv5 #other.contentSection ul {margin-right: -1%;}
-#hv5 #other.contentSection li {margin-right: 1%; letter-spacing: normal;}
-
 .contentSection li a {position: relative; color: #fff; display: block;}
 .contentSection li a .title {position: absolute; bottom: 10px; left: 10px; z-index: 2; text-shadow: 1px 1px 3px rgba(0,0,0,.5); font-weight: bold; width: 90%;}
-#houseVision.contentSection li,
-#other.contentSection li {background: #f7f7f7;}
-#houseVision.contentSection li a .title {top: 10px; left: 100px; width: 50%;}
-#hv2 #houseVision.contentSection li a .title {top: 10px; left: 100px; width: 50%; line-height: 1.3;}
-#hv2 #houseVision.contentSection li a .title strong {display: inline-block; margin-bottom: 3px;}
-#hv4 #other.contentSection li a .title {top: 10px; left: 100px; width: 50%; line-height: 1.3;}
-#hv4 #other.contentSection li a .title strong {display: inline-block; margin-bottom: 3px;}
-
-#houseVision.contentSection li a,
-#hv4 #other.contentSection li a {color: #191919;}
-#houseVision.contentSection li a .title,
-#hv4 #other.contentSection li a .title {text-shadow: none; font-weight: normal; font-size: 13px;}
-
 .contentSection li a:after {
 	content: ""; display: block; position: absolute; top: 0; height: 100%; width: 100%;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjA0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -107,9 +79,8 @@ img{
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.04) 20%,rgba(0,0,0,0.2) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-8 */
 }
-
-#houseVision.contentSection li a:after,
-#other.contentSection li a:after {background: none;}
+#houseVision.contentSection li {background: #f7f7f7;}
+#houseVision.contentSection li a:after {background: none;}
 
 #map {width: 100%; height: 162px;}
 #mapMask {display: block; position: absolute; z-index: 1001;}
@@ -135,7 +106,6 @@ margin-bottom: 5px;
 font-size: small;
 color: #999;}
 
-
 @media only screen and (max-width : 767px){
 	#globalHeader #hGlobalNav .wrapper {display: none;}
 	#main img {vertical-align: bottom;}
@@ -146,8 +116,7 @@ color: #999;}
 	#main #campaign,
 	#main #lab,
 	#main #event,
-	#main #houseVision,
-	#main #other {width: 100%;}
+	#main #houseVision {width: 100%;}
 	#main h1 {font-size: 17px; font-weight: normal; margin: 0 15px 20px;}		
 	.contentSection img {width: 260px;}
 	#product img {width: 106px; margin-bottom: 5px;}
@@ -155,7 +124,6 @@ color: #999;}
 	
 	#search_combobox {margin: 0 0 20px 15px;}
 	.viewport {
-/*     width: 320px; */
     overflow: hidden;
     margin: 0 auto;
     -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
@@ -169,14 +137,6 @@ color: #999;}
 	    width: 260px;
 	    margin-right: 15px;
 	}
-	
-	#hv5 #main section#other li {
-	   display: inline-block;
- 	    list-style: none;
-	    font-size: 14px;
-	    width: 49%;
-	    margin: 0 1% 1% 0;
-	    }
 	
 	#main #product li {
 		font-size: 13px;
@@ -217,17 +177,12 @@ color: #999;}
   #hAccount .wrapper {height: 568px; overflow: scroll;}
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px)  {
-	.viewport {width: 90%;}
-}
-
 
 @media only screen and (min-width : 768px){
 	#main #product,
 	#main #campaign,
 	#main #lab,
-	#main #event {width: 80%; margin: 40px auto;} 
-	#main #other,
+	#main #event {width: 80%; margin: 40px auto;}
 	#main #houseVision {width: 80%; margin: 80px auto;} 
 	
 	#main section li {
@@ -238,13 +193,6 @@ color: #999;}
 		height: auto;
 		margin-right: 15px;
 	}
-	#hv5 #main section#other li {
-   display: inline-block;
-	    list-style: none;
-    font-size: 14px;
-    width: 24%;
-    }
-	
 
 	#main #product li {
 		font-size: 13px;
@@ -293,33 +241,29 @@ color: #999;}
 	#event,
 	#lab,
 	#information,
-	#houseVision,
-	#other {position: relative;}
+	#houseVision {position: relative;}
+	
 	#product button,
 	#campaign button,
 	#event button,
 	#lab button,
 	#information button,
-	#houseVision button,
-	#other button {border: none; width: 20px; height: auto; text-indent: -9999px; cursor: pointer;}
+	#houseVision button {border: none; width: 20px; height: auto; text-indent: -9999px; cursor: pointer;}
 	
-	#product button.prev,
+	#product button.prev  {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 65px; left: -40px;}
 	#information button.prev {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 80px; left: -40px;}
 	#campaign button.prev,
 	#event button.prev,
 	#lab button.prev {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 100px; left: -40px;}
 	
-	#product button.next,
+	#product button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 65px; right: -40px;}
 	#information button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 80px; right: -40px;}
 	#campaign button.next,
 	#event button.next,
 	#lab button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 100px; right: -40px;}
 	
-	#houseVision button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 70px; right: -40px;}
-	#houseVision button.prev {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 70px; left: -40px;}
-	#other button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 30px; right: -40px;}
-	#other button.prev {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 30px; left: -40px;}
-
+	#houseVision button.next {background: url("/img/arrow_right.png") no-repeat center center; position: absolute; top: 65px; right: -40px;}
+	#houseVision button.prev {background: url("/img/arrow_left.png") no-repeat center center; position: absolute; top: 65px; left: -40px;}
 	
 	button.prev:disabled,
 	button.next:disabled {display: none;}
@@ -352,7 +296,7 @@ color: #999;}
 
 @media screen and (max-width: 1200px){
 	#mainCampaign figure {width: 100%;}
-	#mainCampaign figure img {width: 100%; height: 100%; min-width: 1200px;}
+	#mainCampaign figure img {width: 100%; height: 100%; min-width: 1200px;} 
 	
 }
 

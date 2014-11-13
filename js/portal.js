@@ -1,6 +1,6 @@
 $(window).on("load resize", function(){
   var w = $(window).width();
-  if (w > 768) {
+  if (w > 1200) {
   $(function(){
 		FastClick.attach(document.body);
 
