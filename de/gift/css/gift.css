@@ -1,17 +1,18 @@
-body {background: url(/de/gift/img/back.jpg);}
+body {
+	background-color: #fbf5e5;  
+  background-image: url(/de/gift/img/back.jpg);  
+}
 
 img,
 video {width: 100%; vertical-align: bottom;}
 
 header {padding: 20px; position: relative;}
-header h1 {z-index: 10; width: 35%; max-width: 400px; margin-top: 40px;}
+header h1 {z-index: 10; width: 35%; max-width: 400px; margin: 40px;}
 header h1 img {height: auto;}
 header nav ul {list-style: none; position: absolute; top: 20px; right: 20px; margin: 0; padding: 0;}
-header nav ul li {display: inline-block; font-size: 14px; margin-left: 20px;}
-header li.home {margin-left: 80px;}
+header nav ul li {display: inline-block; font-size: 14px; margin-left: 20px; display: none;}
+header li.home {margin-left: 80px; display: block;}
 header .topImage {position: absolute; width: 50%; height: auto; top: 60px; left: 45%; z-index: -1; max-width: 630px;}
-
-
 
 .outsideWrap {display: block; overflow: hidden; width: 100%; padding: 0; margin: 0;}
 .outsideWrap.gr {background-color: #f7f7f7;}
@@ -21,15 +22,16 @@ header .topImage {position: absolute; width: 50%; height: auto; top: 60px; left:
 .wrapper .wrapper {margin: 0 auto; padding: 20px 0 0; width: 100%;}
 
 .leadSection {text-align: center; padding: 0 0 40px 0;}
+.pagetop {display: block; text-align: right; padding: 20px;}
+.pagetop a {padding-left: 20px; background: url(/img/common/arrow_top.png) no-repeat left center;}
 
 #container {
-/* 	background: #f7f7f7; */
 	width: 100%;
 	height: auto;
  	height: inherit;
  	margin: 0 auto;
   box-sizing: border-box;
-  padding: 40px 0 40px 2.5%;
+  padding: 40px 0 40px 3%;
 
 }
 
@@ -42,7 +44,7 @@ header .topImage {position: absolute; width: 50%; height: auto; top: 60px; left:
 .item {
 /* 	display: inline-block; */
 	width: 30%;
-	margin: 0 2.5% 2.5% 0;
+	margin: 0 2% 2% 0;
 	height: auto; 
   background: #fff;
   border-radius: 4px;
@@ -77,13 +79,15 @@ header {height: auto;}
 
 
 @media screen and (min-width: 321px) and (max-width: 800px) {
-	#container {padding: 2.5% 0 2.5% 2.5%;}
+	header h1 {margin: 40px 0 0 0;}
+	#container {padding: 2% 0 2% 3%;}
 	.item {width: 45%;}
 	header li.home {margin-left: 40px;}
 }
 
 @media screen and (max-width: 320px){
-	#container {padding: 2.5% 0 2.5% 2.5%;}
+	header h1 {margin: 40px 0 0 0;}
+	#container {padding: 2% 0 2% 3%;}
 	.item {width: 93%; margin: 0 2.5% 2.5% 0;}
 	header li.home {margin-left: 40px;}
 }

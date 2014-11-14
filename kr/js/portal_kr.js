@@ -2,7 +2,7 @@ $(function(){
 	var $setElem = $('#mainCampaign figure img'),
 	pcName = '_pc',
 	spName = '_sp',
-	replaceWidth = 580;
+	replaceWidth = 581;
 
 	$setElem.each(function(){
 		var $this = $(this);

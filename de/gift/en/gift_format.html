@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App" class="no-csscolumns">
+<head>	
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+
+	<title>GIFT | MUJI 無印良品</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/de/css/muji_de.css">
+	<link rel="stylesheet" href="/de/gift/css/gift.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	
+	<script src="/js/lib/masonry.pkgd.min.js"></script>
+	<script src="/de/gift/js/imagesloaded.pkgd.min.js"></script>
+	
+	<!--  -->
+	<script>
+		$(function(){
+			var $container = $('#container');
+			$container.imagesLoaded(function(){
+				$container.masonry({
+					itemSelector: '.item',
+					isFitWidth: true,
+					isResizable: true,
+					columnWidth: '.item'
+				});
+			});
+		});
+	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<header id="header-wrap">
+	<h1><img src="/de/gift/img/365joyfuldays_logo.png" alt="365 Joyful Days"></h1>
+	<div class="topImage"><img src="/de/gift/img/mainimage.jpg" alt=""></div>
+	<nav>
+		<ul>
+			<li>Gift Item List</li>
+			<li>Wrapping</li>
+			<li class="home"><a href="http://www.muji.de/de/store/">MUJI Home</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="main">
+
+	<div class="outsideWrap">
+		<section class="wrapper leadSection">
+			<h1>We are all givers.</h1>
+			<p class="lead">			
+			If the feeling is there, anything exchanged between two people is a gift.<br>That includes "good morning, "thank you" and "I'm sorry.Encouragement, consideration and sharing, too.<br><br>
+			Let's be sure to give.Through words, voice, facial expression, and sometimes showing our feelings with a thing.<br><br>
+			Everyone is a giver from the day he's born.<br>MUJI is delighted to show its support for those lovable people. 
+			</p>
+		</section>
+	</div>
+	
+	<section id="container" class="masonry" >
+<!-- ここにCSVのデータを差し込む -->
+<div id="insert_csv_data"><div>
+	</section>
+
+</div>
+
+<div class="pagetop"><a href="#header-wrap">Page Top</div>
+
+
+<script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+
+</body>
+</html>
