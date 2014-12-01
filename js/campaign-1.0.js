@@ -1,6 +1,6 @@
 $(window).on("load resize", function(){
   var w = $(window).width();
-  if (w < 769) {
+  if (w > 1200) {
   
   	$(function(){				
 			$("#main, #hGlobalNav h1, #siteName img").removeClass("blur");

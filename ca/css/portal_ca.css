@@ -1,15 +1,15 @@
 #mainCampaign {height: 400px; text-arign: center;}
 #mainCampaign .titleContainer h1 {font-size: 40px; font-weight: bold; text-align: center; padding-top: 130px; position: relative; line-height: 1.5;}
 #mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
-.footerNav2,
-.footerNav3 {display: none;}
 #mainCampaign figure img {height: 400px;}
 
 @media screen and (max-width: 1200px){
-/* 	#mainCampaign .titleContainer h1 {max-width: 200px; left: 15%;} */
 	#mainCampaign figure {overflow: hidden;}
 }
 
 @media screen and (max-width: 480px){
-	#mainCampaign .titleContainer h1 {padding-top: 70px;}
+	#main #mainCampaign .titleContainer h1 {padding-top: 70px; color: #191919; line-height: 1.2;}
 }
+
+.footerNav2,
+.footerNav3 {display: none;}

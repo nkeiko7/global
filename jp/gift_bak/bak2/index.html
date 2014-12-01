@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="App" class="no-csscolumns">
+<head>	
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+
+	<title>GIFT | 無印良品</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/de/css/muji_de.css">
+	<link rel="stylesheet" href="/de/gift/css/gift.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	
+	
+	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script> -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+	<script src="/js/lib/masonry.pkgd.min.js"></script>
+	<script src="/de/gift/js/imagesloaded.pkgd.min.js"></script>
+	<script src="/de/gift/js/app.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<header id="header-wrap">
+	<h1><img src="/de/gift/img/365joyfuldays_logo.png" alt="365 Joyful Days"></h1>
+	<div class="topImage"><img src="/de/gift/img/mainimage.jpg" alt=""></div>
+	<nav>
+		<ul>
+			<li>Gift Item List</li>
+			<li>Wrapping</li>
+			<li class="home"><a href="/de/">無印良品</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="main">
+	<div class="outsideWrap">
+		<section class="wrapper leadSection">
+			<h1>ぼくらはみんな、贈るひと。</h1>
+			<p class="lead">		
+			人と人がいて、気持ちがあれば、行き交うすべては贈り物。<br>
+			おはようも、ありがとうも、ごめんねも。<br>
+			励ましも、気遣いも、分かち合う事も。<br><br>
+	
+			ちゃんと届けよう。<br>
+			言葉で、声で、表情で、
+			ときにはそれをモノに託して。<br><br>
+	
+			誰もがみんな、生まれたときから贈るひと。<br>
+			その愛すべき人々を、無印良品は
+			よろこんで応援したいと思うのです。
+			</p>
+		</section>
+	</div>
+	
+	<section ng-controller="TodoCtrl" id="container" class="masonry" >
+		<div ng-repeat="todo in todos" class="item" on-finish-render>
+
+			<img ng-src="{{todo[0].imgurl}}">
+			<p class="detail">{{todo[0].detail}}</p>
+			
+			<div class="misc">
+				<p class="detail"  ng-repeat="todo2 in todo">
+					<a href="{{todo2.itemurl}}">
+						<span class="name">{{todo2.name}}</span>
+						<span class="price">税込<span class="num">{{todo2.price|number}}</span>円</span>
+					</a>
+				</p>
+			</div>
+		</div>
+		
+	</section>
+
+</div>
+
+
+<script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+
+</body>
+</html>

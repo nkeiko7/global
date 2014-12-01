@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App" class="no-csscolumns">
+<head>	
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+
+	<title>GIFT | MUJI 無印良品</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/de/css/muji_de.css">
+	<link rel="stylesheet" href="/de/gift/css/gift.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	
+	<script src="/js/lib/masonry.pkgd.min.js"></script>
+	<script src="/de/gift/js/imagesloaded.pkgd.min.js"></script>
+	
+	<!--  -->
+	<script>
+		$(function(){
+			var $container = $('#container');
+			$container.imagesLoaded(function(){
+				$container.masonry({
+					itemSelector: '.item',
+					isFitWidth: true,
+					isResizable: true,
+					columnWidth: '.item'
+				});
+			});
+		});
+	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	<script src="//assets.adobedtm.com/a6e9b8b912d51aecbc12256558ef49a48670b2e5/satelliteLib-113ae7929f1ac7f18f4b345540359ea621c8d1d8.js"></script>
+</head>
+<body>
+
+<header id="globalHeader">
+	<div class="headerWrap">
+	<h1 id="siteName"><a href="/de/"><img src="/img/logo_muji_b.png" alt="MUJI 無印良品"></a></h1>
+	<nav id="hGlobalNav">
+		<h1>menu</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/de/">Home</a></li>
+				<li><a href="http://www.muji.de/en/store/">Online Stoe</a></li>
+				<li><a href="http://www.muji.com/storelocator/?c=de">Store Information</a></li>
+				<li><a href="http://www.muji.de/en/store/contents/contact/faq/">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	</div><!-- .headerWrap -->
+</header>
+
+<div id="featureHeader">
+	<h1><img src="/de/gift/img/365joyfuldays_logo.png" alt="365 Joyful Days"></h1>
+	<div class="topImage"><img src="/de/gift/img/mainimage.jpg" alt=""></div>
+	<nav>
+		<ul>
+			<li>Gift Item List</li>
+			<li>Wrapping</li>
+<!-- 			<li class="home"><a href="http://www.muji.de/en/store/">MUJI Home</a></li> -->
+		</ul>
+	</nav>
+</div>
+
+<div id="main">
+
+	<div class="outsideWrap">
+		<section class="wrapper leadSection">
+			<h1>We are all givers.</h1>
+			<p class="lead">			
+			If the feeling is there, anything exchanged between two people is a gift.<br>That includes "good morning, "thank you" and "I'm sorry.Encouragement, consideration and sharing, too.<br><br>
+			Let's be sure to give.Through words, voice, facial expression, and sometimes showing our feelings with a thing.<br><br>
+			Everyone is a giver from the day he's born.<br>MUJI is delighted to show its support for those lovable people. 
+			</p>
+		</section>
+	</div>
+	
+	<section id="container" class="masonry" >
+<!-- ここにCSVのデータを差し込む -->
+<div id="insert_csv_data"><div>
+	</section>
+
+</div>
+
+<div class="pagetop"><a href="#globalHeader">Page Top</a></div>
+<footer>
+<nav id="footerNav">
+	<section class="footerNav1">
+		<ul>
+			<li><a href="http://www.muji.de/en/store/" target="_self">Online Store</a></li>
+			<li><a href="http://www.muji.com/storelocator/?c=de" target="_self">Store Information</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav4">
+		<ul>
+			<li><a href="http://www.muji.de/en/store/contents/contact/faq/" target="_self">Contact</a></li>
+			<li><a href="http://www.muji.de/en/store/contents/corporate/#recruitment" target="_self">Careers</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav5">
+		<ul>
+			<li class="country"><a href="http://www.muji.com/?area=footer" target="_self"><img src="/de/img/flag_de.png" alt="">Deutsch (English)</a></li>
+		</ul>
+		<div id="trademark"><a href="/de/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>
+</nav>
+
+<div id="copyright">
+	<span class="copyright"><small>©&nbsp;MUJI Deutschland GmbH</small></span>
+	<nav class="another">
+	<ul>
+		<li><a href="http://www.muji.de/de/store/contents/contact/tandc/" target="_self"><small>Allgemeine Geschäftsbedingungen</small></a></li>
+	</ul>
+	</nav>
+</div>
+</footer>
+
+<script src="/js/campaign-1.0.js"></script>
+
+<script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+</body>
+</html>

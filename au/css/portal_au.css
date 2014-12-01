@@ -1,0 +1,14 @@
+#main #mainCampaign {margin-bottom: 40px;}
+#mainCampaign figure img {visibility: hidden;}
+#mainCampaign .titleContainer h1 {display: none;}
+#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+
+@media screen and (max-width: 580px){
+   #mainCampaign figure img {max-height: 400px; min-width: 580px; overflow: hidden;}
+}
+
+.venue {font-size: 12px; font-weight: normal;}
+
+.footerNav2,
+.footerNav3,
+.footerNav4 {display: none;}

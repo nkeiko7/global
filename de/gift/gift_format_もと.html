@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="App" class="no-csscolumns">
+<head>	
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+
+	<title>Geschenke | MUJI 無印良品</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/de/css/muji_de.css">
+	<link rel="stylesheet" href="/de/gift/css/gift.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	
+	<script src="/js/lib/masonry.pkgd.min.js"></script>
+	<script src="/de/gift/js/imagesloaded.pkgd.min.js"></script>
+	
+	<!--  -->
+	<script>
+		$(function(){
+			var $container = $('#container');
+			$container.imagesLoaded(function(){
+				$container.masonry({
+					itemSelector: '.item',
+					isFitWidth: true,
+					isResizable: true,
+					columnWidth: '.item'
+				});
+			});
+		});
+	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<header id="header-wrap">
+	<h1><img src="/de/gift/img/365joyfuldays_logo.png" alt="365 Joyful Days"></h1>
+	<div class="topImage"><img src="/de/gift/img/mainimage.jpg" alt=""></div>
+	<nav>
+		<ul>
+			<li>Gift Item List</li>
+			<li>Wrapping</li>
+			<li class="home"><a href="http://www.muji.de/de/store/">MUJI Home</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="main">
+
+	<div class="outsideWrap">
+		<section class="wrapper leadSection">
+			<h1>Machen wir nicht alle gerne Geschenke?</h1>
+			<p class="lead">			
+			Wenn das Gefühl zwischen zwei Menschen stimmt, dann ist alles, was sie sich gegenseitig geben, ein Geschenk. <br><br>
+			Bringen Sie Ihr Gefühl mit Worten zum Ausdruck, zeigen Sie Ihre Zuneigung mit Ihrer Stimme, Ihrem Gesichtsausdruck und vertrauen Sie es im richtigen Moment Dingen an. <br><br>
+			Denn sind wir nicht alle von Geburt an Wesen, die gerne etwas verschenken?<br>
+			MUJI möchte Sie dabei unterstützen, Ihr Gefühl zu den Personen, die Ihnen wichtig sind, zum Ausdruck zu bringen. 
+			</p>
+		</section>
+	</div>
+	
+	<section id="container" class="masonry" >
+<!-- ここにCSVのデータを差し込む -->
+<div id="insert_csv_data"><div>
+	</section>
+
+</div>
+
+<div class="pagetop"><a href="#header-wrap">Page Top</div>
+
+
+<script src="http://www.muji.net/shared/js/sc/s_code.js"></script>
+<script src="http://www.muji.net/shared/js/sc/code_to_paste.js"></script>
+
+
+</body>
+</html>

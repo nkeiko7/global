@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>	
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1,user-scalable=no" name="viewport">
+	<meta property="og:url" content="http://www.muji.com/cn/gift/">
+	<meta property="og:image" content="http://www.muji.com/cn/gift/img/mainimage.jpg">
+
+	<title>365 JOYFUL DAYS | MUJI 無印良品</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/muji.2.0.css">
+	<link rel="stylesheet" href="/cn/css/muji_cn.css">
+	<link rel="stylesheet" href="/cn/gift/css/gift.css">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/lib/jquery.min.1.11.0.js"><\/script>')</script>
+	
+	<script src="/js/lib/masonry.pkgd.min.js"></script>
+	<script src="/cn/gift/js/imagesloaded.pkgd.min.js"></script>
+	
+	<script>
+		$(function(){
+			var $container = $('#container');
+			$container.imagesLoaded(function(){
+				$container.masonry({
+					itemSelector: '.item',
+					isFitWidth: true,
+					isResizable: true,
+					columnWidth: '.item'
+				});
+			});
+		});
+	</script>
+	
+	<!--[if lt IE 9]>
+		<script src="/js/lib/html5.js"></script>
+		<script src="/js/lib/respond.js"></script>
+	<![endif]-->
+	
+	<script src="/js/campaign-1.0.js"></script>
+</head>
+<body>
+
+<header id="globalHeader" class="black">
+	<div class="headerWrap">
+	
+	<h1 id="siteName"><a href="/"><img src="/cn/img/logo_muji_b.png" alt="无印良品"></a></h1>
+
+	<nav id="hGlobalNav">
+		<h1>菜单</h1>
+		<div class="wrapper">
+			<div class="cancel"></div>
+			<ul>
+				<li class="home"><a href="/cn/">首页</a></li>				
+				<li><a href="/cn/store/?area=header">网络商城</a></li>
+				<li><a href="http://www.muji.com/storelocator/?c=cn">店铺信息</a></li>
+				<li><a href="http://www.muji.net/lab/zh-cn/?area=header">生活良品研究所</a></li>
+				<li><a href="/cn/store/contents/contact/faq/?area=header">问题咨询</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	</div><!-- .headerWrap -->	
+</header>
+
+<div id="featureHeader">
+	<h1><img src="/cn/gift/img/365joyfuldays_logo.png" alt="365 Joyful Days"></h1>
+	<div class="topImage"><img src="/cn/gift/img/mainimage.jpg" alt=""></div>
+	<nav>
+		<ul>
+			<li>Gift Item List</li>
+			<li>Wrapping</li>
+			<!-- <li class="home"><a href="http://www.muji.de/cn/store/">MUJI Home</a></li> -->
+		</ul>
+	</nav>
+</div>
+
+<div id="main">
+
+	<div class="outsideWrap">
+		<section class="wrapper leadSection">
+			<h1>ぼくらはみんな、贈るひと。</h1>
+			<p class="lead">		
+			人と人がいて、気持ちがあれば、<br class="mobileOnly">行き交うすべては贈り物。<br>
+			おはようも、ありがとうも、<br class="mobileOnly">ごめんねも。<br>
+			励ましも、気遣いも、<br class="mobileOnly">分かち合う事も。<br><br>
+	
+			ちゃんと届けよう。<br>
+			言葉で、声で、表情で、
+			ときにはそれをモノに託して。<br><br>
+	
+			誰もがみんな、<br class="mobileOnly">生まれたときから贈るひと。<br>
+			その愛すべき人々を、<br class="mobileOnly">無印良品はよろこんで応援したいと<br class="mobileOnly">思うのです。
+			</p>
+		</section>
+	</div>
+	
+	<section id="container" class="masonry" >
+<!-- ここにCSVのデータを差し込む -->
+<div id="insert_csv_data"><div>
+	</section>
+
+</div>
+
+<div class="pagetop"><a href="#globalHeader">Page Top</a></div>
+
+
+<footer>
+
+<nav id="footerNav">
+
+	<section class="footerNav1">
+		<ul>
+			<li><a href="http://www.muji.com.cn/cn/store/?area=footer" target="_self">网络商城</a></li>
+			<li><a href="http://www.muji.com/storelocator/?c=cn" target="_self">店铺信息</a></li>
+			<li><a href="http://www.muji.net/lab/zh-cn/?area=footer" target="_self">生活良品研究所</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav2">
+		<ul>
+			<li><a href="/cn/store/contents/ateliermuji/?area=footer" data-category="" target="_self">ATELIER MUJI</a></li>
+			<li><a href="http://www.muji.com/cn/cafemeal/?area=footer" data-category="" target="_self">Café&amp;Meal MUJI</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav3">
+		<ul>
+			<li><a href="/cn/store/contents/catalog/?area=footer" target="_self">商品目录</a></li>
+		</ul>
+	</section>
+
+	<section class="footerNav4">
+		<ul>
+			<li><a href="/cn/store/contents/contact/faq/?area=footer" target="_self">问题咨询</a></li>
+			<li><a href="/cn/store/contents/corporate/partner.jsp" target="_self">店铺合作伙伴</a></li>
+			<li><a href="http://zp.muji.com.cn/mujirecruitment/Pager/SocialRecruitment.aspx?area=footer" target="_self">人才招聘</a></li>
+			<li><a href="http://www.muji.com/message/ch.html?area=footer" target="_self">MUJI message</a></li>
+			<li><a href="/cn/store/contents/corporate/?area=footer" target="_self">公司信息</a></li>			
+		</ul>
+	</section>
+		
+	<section class="footerNav5">
+		<ul>
+			<li class="country"><a href="http://www.muji.com/?area=footer" target="_self"><img src="/cn/img/flag_cn.png" alt="">中国</a></li>			
+		</ul>
+		<div id="trademark"><a href="/cn/?area=footer"><img src="/img/logo_muji_w.png" alt=""><img src="/img/logo_mujirushiryohin_w.png" alt=""></a></div>
+	</section>
+    
+</nav>
+
+<p id="copyright">
+	<span class="copyright"><small>©&nbsp;Ryohin Keikaku Co., Ltd.</small></span>
+</p><nav class="another">
+	<ul>
+		<li><span target="_self"><small>© 無印良品（上海）商業有限公司    地址：上海市静安区石门一路211号旺旺大厦6楼  </small></span></li>
+		<li><a href="http://www.miibeian.gov.cn/" target="_self"><small>沪ICP备08018225号</small></a></li>		
+	</ul>
+	</nav>
+</footer>
+
+</body>
+</html>

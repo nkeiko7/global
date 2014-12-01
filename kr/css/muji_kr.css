@@ -1,5 +1,4 @@
-body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
-
+body {color:#333; font: 16px/1.5 "Dotum", "돋움", "AppleGothic", "Lucida Grande", "Verdana", "Aria", "Tahoma", "sans-serif";}
 
 @media only screen and (min-width : 768px){
 	#hGlobalNav ul {width: 60%;}
