@@ -9,8 +9,9 @@ body {
 #featureHeader {padding: 20px; position: relative; display: block;}
 #featureHeader h1 {z-index: 10; width: 35%; max-width: 400px; margin: 40px;}
 #featureHeader h1 img {height: auto; width: 100%;}
-#featureHeader ul {list-style: none; position: absolute; top: 20px; right: 20px; margin: 0; padding: 0;}
-#featureHeader ul li {display: inline-block; font-size: 14px; margin-left: 20px; display: none;}
+#featureHeader ul {list-style: none; position: absolute; top: 20px; right: 10%; margin: 0; padding: 0;}
+#featureHeader ul li {display: inline-block; font-size: 14px; margin-left: 20px;}
+#featureHeader ul li.current {border-bottom: 2px solid #ccc; padding-bottom: 3px; color: #999;}
 #featureHeader li.home {margin-left: 80px; display: block;}
 #featureHeader .topImage {position: absolute; width: 50%; height: auto; top: 60px; left: 45%; z-index: -1; max-width: 630px;}
 #featureHeader .topImage img {width: 100%;}
@@ -20,7 +21,7 @@ body {
 .annotation {font-size: 12px;}
 
 .wrapper {display: block; overflow: hidden; width: 80%; margin: 0 auto; box-sizing: border-box; max-width: 1024px; padding: 40px 0;}
-.wrapper .wrapper {margin: 0 auto; padding: 20px 0 0; width: 100%;}
+.wrapper .wrapper {margin: 0 0 40px 0; padding: 20px 0 0; width: 100%;}
 
 .leadSection {text-align: center; padding: 0 0 40px 0;}
 .pagetop {display: block; text-align: right; padding: 20px;}
@@ -61,6 +62,10 @@ body {
 .item a:hover {color: #111;}
 .item p.detail {font-size: 14px; margin: 5px 0 10px;}
 
+.item.ad {background: #fbf5e5;}
+.item.ad h1 {font-size: 1em; text-align: center;}
+.item.ad img {border-radius: 50%;}
+
 .misc p.detail,
 .misc p.more {margin: 0; padding: 0; display: block; font-size: 13px;}
 .misc p.more a {text-decoration: underline; font-size: small; margin-top: 10px;}
@@ -72,17 +77,30 @@ body {
 .price {font-size: 12px; margin-left: 10px; display: inline-block;}
 .price .num {font-size: 14px; font-weight: bold; margin: 0 2px; font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック" ,sans-serif;}
 
-
-/* header {position: fixed; height: 70px; top: 0; transition: top 0.2s ease-in-out; width: 100%; background: #fff;} */
 #featureHeader {height: auto;}
+figure.col2_1 {margin: 0;}
 
+.relatedLink {display: block; text-align: right; margin-top: 20px;}
+.relatedLink a {display: inline-block; background: url(/img/common/arrow_right.png) no-repeat 14px 50%; border: 1px solid #ccc; padding: 10px 20px 10px 35px; text-decoration: none;}
+.relatedLink a:hover {border: 1px solid #191919;}
 
+aside:after {content: ""; clear: both; display: block;}
+
+.wideImage {margin-bottom: 20px;}
+
+@media screen and (max-width: 767px){
+	#main aside img {width: 100%; float: none;}
+	#main aside {margin-bottom: 40px;}
+	#main aside {width: 90%;}
+	.wrapper {width: 90%;}
+}
 
 @media screen and (min-width: 321px) and (max-width: 800px) {
 	#featureHeader h1 {margin: 40px 0 0 0;}
 	#container {padding: 2% 0 2% 3%;}
 	.item {width: 45%;}
 	#featureHeader li.home {margin-left: 40px;}
+	#main aside {width: 90%;}
 }
 
 @media screen and (max-width: 320px){

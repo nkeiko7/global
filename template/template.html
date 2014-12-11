@@ -181,6 +181,32 @@
 	</section>
 {else}{/ife}
 
+{ife "{$HOUSEVISION_TITLE}" != ""}
+	<section id="houseVision" class="contentSection">
+{else}{/ife}
+{ife "{$HOUSEVISION_TITLE}" != ""}
+		<h1>{$HOUSEVISION_TITLE}</h1>
+{else}{/ife}
+{ife "{$HOUSEVISION_MORE_LINK}" != ""}
+		<div class="more"><a href="{$HOUSEVISION_MORE_LINK}">{$HOUSEVISION_MORE_TEXT}</a></div>
+{else}{/ife}
+{ife "{$HOUSEVISION_TITLE}" != ""}
+		<div class="viewport">
+		<ul class="flipsnap">
+{else}{/ife}
+			{$HOUSEVISION_LINKS}
+			<li><{ife "{$LINK}" != ""}a href="{$LINK}"{else}span{/ife}><img src="{$IMG}" alt="">{$TEXT}<{ife "{$LINK}" != ""}/a{else}/span{/ife}></li>
+			{/$HOUSEVISION_LINKS}
+{ife "{$HOUSEVISION_TITLE}" != ""}
+		</ul>
+		</div>
+		<p class="controls">
+			<button class="prev" disabled="disabled">prev</button>
+			<button class="next">next</button>
+		</p>
+	</section>
+{else}{/ife}
+
 {ife "{$SL_TITLE}" != ""}
 	<section id="shop">
 		<div class="shopWrap">
@@ -269,42 +295,43 @@
 {else}{/ife}
 {ife "{$INFO_TITLE}" != ""}
 	<div class="viewport">
-
-		<ul class="flipsnap">
-			<script type="text/javascript" src="http://www.muji.net/shared/js/jkl-parsexml.js"></script>
-
+		
+		<ul class="flipsnap atom_import">
+			
 			<script type="text/javascript">
 			<!--
-			　function read_parse(url){
-			var http = new JKL.ParseXML(url);
-			var data = http.parse();
-			for (var i = 0; i < data.feed.entry.length; i++) {
-			var entry = data.feed.entry[i];
-			var tagTime = createDateString(entry.published);
-			document.open();
-			document.write ('<li><span class="date">' + tagTime + '</span>');
-			document.write ('<a href="' + entry.link.href + '">' + entry.title + '</a>' + '</li>');
-			document.close();
-			}
-			}
-			function createDateString(publishedDate) {
-			var pdate = publishedDate.replace(/-/g,'/');
-			pdate = pdate.replace('T',' ');pdate = pdate.replace('Z','');
-			pdate = new Date(pdate);
-			var pday= pdate.getDate();
-			var pmonth = pdate.getMonth() + 1;
-			var pyear = pdate.getFullYear();
-			var phour = pdate.getHours();
-			var pminute = pdate.getMinutes();
-			var psecond = pdate.getSeconds();
-			if (pmonth < 10) {pmonth = "0" + pmonth;}
-			if (pday < 10) {pday = "0" + pday;}
-			var strdate = pyear + "." + pmonth + "." + pday;return strdate;
-			}
-			read_parse('{$INFO_DATAFILE_PATH}');
-　　　
+				$.ajax({
+					url: "{$INFO_DATAFILE_PATH}" ,
+					async: true,
+					cache: false,
+					dataType:"xml",
+					success: function(xml){
+						var html_temp = "";
+						var title = "";
+						var link = "";
+						var tagTime = "";
+						var tagno = 0;
+						var tagTimeArray = "";
+						
+						//xml loop
+						$(xml).find('entry').each(function(i){							
+							title = $(this).find('title').text();
+							link = $(this).find('link').attr('href');
+							tagTime = $(this).find('published').text();
+							
+							//tag
+							html_temp += '<li><span class="date">' + tagTime + '</span>';
+							html_temp += '<a href="' + link + '">' + title + '</a>' + '</li>';
+						});
+						
+						//output
+						$(".atom_import").html(html_temp);
+					}
+				});
+				
 			// -->
 			</script>
+			
 		</ul>
 	</div>
 	<p class="controls">
@@ -438,7 +465,8 @@
 		<script src="/js/lib/flipsnap.fix.js"></script>
 	<!--<![endif]-->
 	
-	<script src="/js/portal.js"></script>
+	<script src="/js/muji-1.0.js"></script>
+	<script src="/js/portal-1.1.js"></script>
 	<script src="/{$selRegion}/js/portal_{$selRegion}.js"></script>
 	<script src="/js/lib/jquery.scrollTo.js"></script>
 	
@@ -448,21 +476,21 @@
 		if (cssua.ua.mobile) {
 		$(function(){
 			var selectors = [
-			  document.getElementById("hGlobalNav").getElementsByTagName("h1")[0],
-			  document.getElementById("hSearch").getElementsByTagName("h1")[0],
-			  document.getElementsByClassName("cancel")[0],
-			  document.getElementsByClassName("prev")[0],
-			  document.getElementsByClassName("next")[0],
-			  document.getElementsByClassName("avater")[0]
+				$("#hGlobalNav h1").get(0),
+				$("#hSearch h1").get(0),
+				$(".cancel").get(0),
+				$(".prev").get(0),
+				$(".next").get(0),
+				$(".avater").get(0)
 			];
-						
+			
 			for(var i = 0, sLen = selectors.length; i < sLen; i++ ) {
-			  if(selectors[i] != undefined){
-				 		FastClick.attach(selectors[i]);
-				 }
+				if(selectors[i] != undefined){
+				FastClick.attach(selectors[i]);
+				}
 			}
 		});
-		}
+	}
 		
  	</script>
 

@@ -1,0 +1,11 @@
+#mainCampaign figure img {visibility: hidden;}
+#mainCampaign .titleContainer h1 {display: none;}
+#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+
+footer nav.another li:nth-child(2) {width: 80%; padding-left: 10%;}
+
+@media screen and (max-width: 580px){
+   #mainCampaign figure img {height:400px; max-height: 400px; min-width: 580px; overflow: hidden;}
+}
+
+.footerNav4 {display: none;}
