@@ -17,3 +17,6 @@ body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
 	#siteName img {width: 110px; padding: 0; vertical-align: top;}
 	#copyright {width: 80%; margin: 0;}
 }
+
+footer nav.another li:nth-child(2) {width: 80%; padding-left: 10%;}
+.footerNav4 {display: none;}

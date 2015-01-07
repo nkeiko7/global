@@ -1,6 +1,3 @@
-body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
-
-
 @media only screen and (min-width : 768px){
 	#hGlobalNav ul {width: 60%;}
 	#siteName a {padding: 22px 0 0 0;}
@@ -17,3 +14,11 @@ body {color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", sans-serif;}
 	#siteName img {width: 110px; padding: 0; vertical-align: top;}
 	#copyright {width: 80%; margin: 0;}
 }
+
+#main #mainCampaign {margin-bottom: 40px;}
+.venue {font-size: 12px; font-weight: normal;}
+.footerNav2,
+.footerNav3,
+.footerNav4 {display: none;}
+
+#misc {display: none;}

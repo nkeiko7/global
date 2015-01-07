@@ -1,4 +1,4 @@
-body {color:#333; font: 14px/1.5;  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;}
+body {color:#333; font: 16px/1.5 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;}
 
 @media only screen and (min-width : 768px){
 	#hGlobalNav ul {width: 80%;}

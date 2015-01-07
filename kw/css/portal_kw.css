@@ -1,15 +1,15 @@
-#main #mainCampaign {margin-bottom: 40px;}
-#mainCampaign figure img {visibility: hidden;}
-#mainCampaign .titleContainer h1 {display: none;}
-#mainCampaign .titleContainer h1 img {width: auto; max-width: 100%;}
+#main #mainCampaign {background: url(/kw/img/panel/main_whatismuji_bg.jpg) center; margin-bottom: 40px;}
+#mainCampaign .titleContainer h1 {position: absolute; width: 100%; max-width: 100%; top: 170px; left: 0; font-size: 55px; color: #191919; text-align: center; margin: 0;}
+#mainCampaign .titleContainer h1 img {max-width: 100%;}
 
-@media screen and (max-width: 580px){
-   #mainCampaign figure img {max-height: 400px; min-width: 580px; overflow: hidden;}
+@media screen and (max-width: 480px){
+     #mainCampaign .titleContainer h1 {top: 172px;}
+  #mainCampaign .titleContainer h1 img {width: 80%; max-width: 220px;}
 }
 
-.venue {font-size: 12px; font-weight: normal;}
 
-.footerNav2,
-.footerNav3,
-.footerNav4 {display: none;}
-#misc {display: none;}
+.more {float: none; margin: 0; line-height: inherit; position: absolute; left: 0; top: 0;}
+.more a:before {content: url("/img/arrow_left_s.png"); margin-right: 5px;}
+.more a:after {content: none;}
+#main h1,
+.contentSection li a .title {text-align: right;}
