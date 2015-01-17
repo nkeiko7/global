@@ -1,0 +1,102 @@
+#topContents {
+	background: url(/jp/valentine2015_2/img/main.jpg) no-repeat center center;
+	height: 1200px;
+	background-size: cover;
+}
+
+#topContents h1,
+#topContents h2 {color: #fff;}
+
+#topContents h1 {margin-top: 300px;}
+.lead {text-align: center;}
+
+ul.col4 {margin-right: -40px; letter-spacing: -.80em;}
+.col4 li {display: inline-block; letter-spacing: normal; margin: 0 40px 60px 0; vertical-align: top; width: 45%;}
+.col4 figure img {width: 100%; height: auto; float: none;}
+
+.itemDesc {margin-bottom: 20px;}
+.itemDesc .itemName {display: block; margin: 10px 0; font-weight: bold;}
+.itemDesc .desc {font-size: 14px; display: block; margin-bottom: 5px;}
+
+.itemImg {text-align: center; position: relative;}
+.itemImg img {margin: 0;}
+.itemImg img.sizeArrow {position: absolute; top:0; right: 15%;}
+.itemImg span.size {position: absolute; top: 40%; right: 0; color: #8a5a24; font-size: 13px;}
+
+.item01 .itemImg img {width: 47%;}
+.item01 .itemImg img.sizeArrow {height: 90%; width: auto; right: 20%;}
+
+.item02 .itemImg img {width: 70%; margin-right: 10px;}
+.item02 .itemImg img.sizeArrow {height: 85%; width: auto; right: 20%;}
+
+.item03 .itemImg img {width: 42%;}
+.item03 .itemImg img.sizeArrow {height: 90%; width: auto;}
+
+.item04 .itemImg img {width: 100%;}
+.item04 .itemImg img.sizeArrow {height: 95%; width: auto;}
+
+.item05 .itemImg img {width: 68%;}
+.item05 .itemImg img.sizeArrow {height: 95%; width: auto;}
+
+.item06 .itemImg img {width: 66%;}
+.item06 .itemImg img.sizeArrow {height: 95%; width: auto;}
+
+.item07 .itemImg img {width: 32%;}
+.item07 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item08 .itemImg img {width: 32%;}
+.item08 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item09 .itemImg img {width: 47%;}
+.item09 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item10 .itemImg img {width: 80%;}
+.item10 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item11 .itemImg img {width: 55%;}
+.item11 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item12 .itemImg img {width: 63%;}
+.item12 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item13 .itemImg img {width: 55%;}
+.item13 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item14 .itemImg img {width: 53%;}
+.item14 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item15 .itemImg img {width: 65%;}
+.item15 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+.item16 .itemImg img {width: 95%;}
+.item16 .itemImg img.sizeArrow {height: 92%; width: auto;}
+
+
+@media screen and (max-width : 767px){
+	.col4 li {width: 42%;}
+}
+
+@media screen and (max-width : 480px){
+	#topContents h1 {font-size: 1.8em}
+	ul.col4 {margin-right:0;}
+	.col4 li {display: block; width: 100%;}
+}
+
+/*
+/store/cmdty/detail/4547315911059
+/store/cmdty/detail/4547315911042
+/store/cmdty/detail/4547315911035
+/store/cmdty/detail/4547315911165
+/store/cmdty/detail/4547315911066
+/store/cmdty/detail/4547315911103
+/store/cmdty/detail/4547315911097
+/store/cmdty/detail/4547315911189
+/store/cmdty/detail/4547315911073
+/store/cmdty/detail/4547315911080
+/store/cmdty/detail/4547315911172
+/store/cmdty/detail/4547315911158
+/store/cmdty/detail/4547315911127
+/store/cmdty/detail/4547315911141
+/store/cmdty/detail/4547315911110
+/store/cmdty/detail/4547315911134
+*/

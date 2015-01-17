@@ -1,0 +1,9 @@
+#main #mainCampaign {background: #7f0019;}
+#mainCampaign .titleContainer h1 {position: absolute; width: 100%; max-width: 100%; top: 10px; left: 0; font-size: 55px; color: #fff; text-align: center; margin: 0;}
+#mainCampaign .titleContainer h1 img {width: 500px; max-width: 100%;}
+
+@media screen and (max-width: 480px){
+     #mainCampaign .titleContainer h1 img {width: 80%;}
+     #main #mainCampaign .titleContainer h1 {top: 60px;}
+     footer nav.another li:nth-child(2){padding: 0; width: 100%;}
+}

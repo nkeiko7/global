@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Lookbook | Cotton of MUJI | MUJI</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes" name="viewport">
+	
+	<link rel="stylesheet" href="http://www.muji.net/css/normalize.css">
+    <link rel="stylesheet" href="/css/feature/garment/2015ss/style.css?v=181920">
+    <style>
+    .viewport {overflow:hidden; width:320px;}
+    .flipsnap {overflow:hidden; width:3900%;}
+    .item {float:left; width:320px; position: relative;}
+    .item img {width:100%; height:auto;}
+    .item .number {position: absolute; bottom: 10px; left: 10px;}
+    </style>
+	 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="http://www.muji.net/js/lib/jquery-1.11.1.min.js"><\/script>')</script>
+	
+	<script src="http://www.muji.net/js/lib/fastclick.js"></script>
+	<script src="/js/feature/garment/2015ss/flipsnap.js"></script>
+	<script src="/js/feature/garment/2015ss/jquery.fademover.js"></script>
+	
+	<script src="http://www.muji.net/js/store/cmdty/jquery.csv.js"></script>
+	
+	<script>
+		//csv読み取り＆ページ生成
+		$(function(){
+
+			//mobile menu	
+			$('.btns').on("click",function(){
+				$('.wd1').fadeIn('fast');
+			});
+			$('.close,.modalBK').on("click",function(){
+				$('.wd1').fadeOut('slow');
+			});
+
+			if( window.navigator.standalone ) {
+				var aTags = $('a'); 
+				aTags.each(function(){
+					var url = $(this).attr('href');
+					$(this).removeAttr('href');
+					$(this).on("click",function(){
+						location.href = url;
+					});
+				});
+			}
+			
+			FastClick.attach(document.body);
+
+			$.get('lookbook.csv',function(data){
+				var csv = $.csv()(data);
+				var html_temp = "";
+				
+				var menu_img = "/img/feature/garment/2015ss/menu.png";
+				var arrow_up_img = "/img/feature/garment/2015ss/arrow_up.png";
+				
+				var img_url = "";
+				var link_url = "";
+				var item_name = "";
+				var release_date = "";
+				
+				$(csv).each(function(index){
+					
+					img_url = this[0];
+					link_url = this[1];
+					item_name = this[2];
+					release_date = this[3];
+					
+					//画像がある場合
+					if (img_url != ""){
+						
+						//1行目じゃなければ閉じタグを出力
+						if (index != 0){
+							html_temp += "			</ul>";
+							html_temp += "		</div>";
+							html_temp += "	</div>";
+							html_temp += "</div>";
+						}
+						
+						html_temp += "<div class=\"item\">";
+						html_temp += "	<p class=\"open\"><img src=\"" + menu_img + "\" alt=\"\"><span class=\"text\">DETAILS</span></p>";
+						html_temp += "	<p class=\"mobileOpen\"><img src=\"" + arrow_up_img + "\" alt=\"\"><span class=\"text\">DETAILS</span></p>";
+						html_temp += "		<img src=\"" + img_url + "\" alt=\"\">";
+						html_temp += "			<div class=\"mask\">";
+						html_temp += "				<p class=\"close\">× CLOSE</p>";
+						html_temp += "				<div class=\"thisItems\">";
+						html_temp += "					<ul>";
+					}
+					
+					//発売予定日の判定
+					if (release_date != ""){
+						html_temp += "<li class=\"not\"><a href=\"" + link_url + "\">" + item_name + "<span class=\"annotation\">" + release_date + "</span></a></li>";
+					} else {
+						//リンクの有無判定
+						if (link_url != ""){
+							html_temp += "<li><a href=\"" + link_url + "\">" + item_name + "</a></li>";
+						} else {
+							html_temp += "<li class=\"not\"><a href=\"" + link_url + "\">" + item_name + "</a></li>";
+						}
+					}
+					
+					//初期化
+					img_url = "";
+					link_url = "";
+					item_name = "";
+					release_date = "";
+					
+				});
+				
+				//最終タグの出力
+				html_temp += "			</ul>";
+				html_temp += "		</div>";
+				html_temp += "	</div>";
+				html_temp += "</div>";
+				
+				//$("#insert_csv_data").html(html_temp);
+				$(".flipsnap").html(html_temp);
+			
+			//csv処理が終了したら起動
+			}).done(function() {
+				
+ 				//wool.jsの中身を転載
+				
+				
+			    if (navigator.userAgent.indexOf('iPhone') > 0 ||
+				navigator.userAgent.indexOf('iPad') > 0 || 
+				navigator.userAgent.indexOf('iPod') > 0 || 
+    			navigator.userAgent.indexOf('Android') > 0) {
+					$('.viewport .flipsnap .item').on("click",function(){
+						$(this).find('.mask').slideToggle();
+						$('.info').toggle();
+						$('.mobileOpen').toggle();
+					});
+				} else {
+					$('.item .open').on("click",function(){
+						$(this).siblings('.mask').fadeIn('fast');
+						$(this).fadeOut('fast');
+					});
+					$('.mask .close').on("click",function(){
+						$('.mask').fadeOut('slow');
+						$('.item .open').fadeIn('fast');
+					});
+				}
+				
+				
+				//フワッと表示する処理
+				$('body').fadeMover();
+				
+				var $win = $(window),
+					$viewport = $(".viewport"),
+					$flipsnap = $(".flipsnap"),
+					$item = $(".item");
+				
+				// Flipsnapの初期化を行います
+				function initialize(){
+					
+					// Flipsnapを実行 (インスタンスを取得)
+					var fs = Flipsnap( $flipsnap.get(0) );
+					
+					var $next = $('.next').click(function() {
+						fs.toNext();
+					});
+					var $prev = $('.prev').click(function() {
+						fs.toPrev();
+					});
+					
+					fs.element.addEventListener('fspointmove',function(){
+						$(".number span").eq(0).html(fs.currentPoint+1);
+						$next.attr('disabled', !fs.hasNext());
+						$prev.attr('disabled', !fs.hasPrev());
+						$('.mask').fadeOut();
+						$('.info').fadeIn();
+						
+						if (navigator.userAgent.indexOf('iPhone') > 0 ||
+							navigator.userAgent.indexOf('iPad') > 0 || 
+							navigator.userAgent.indexOf('iPod') > 0 || 
+							navigator.userAgent.indexOf('Android') > 0) {
+							$('.item .open').hide();
+							$('.mobileOpen').fadeIn();
+						} else {
+							$('.item .open').fadeIn('fast');
+							$('.item .mobileOpen').hide();
+						}
+						
+					},false);
+					
+					// 実行したセレクタのdataにFlipsnapのインスタンスを持たせる
+					$flipsnap.data("fs", fs);
+					
+					// リサイズイベントを設定、サイズを調整
+					$win.bind("resize", function(){
+						refresh();
+					}).trigger("resize");
+				}
+				
+				
+				//スライド部分のサイズを調整します
+				function refresh(){
+					
+					// viewportを横幅いっぱいに広げます
+					$viewport.css("width", "100%");
+					
+					// 広がった横幅を取得します
+					var w = $viewport.width();
+					
+					// itemのサイズを調整します
+					$item.width( w );
+					
+					// Flicksnap の distance を変更してリフレッシュします
+					var fs = $flipsnap.data("fs");
+					fs.distance = w;
+					fs.refresh();
+					
+				}
+				
+				initialize();
+				
+				$(".number span").eq(1).html($(".item").length);
+				
+			});
+		});
+	</script>
+	
+	<script src="//assets.adobedtm.com/a6e9b8b912d51aecbc12256558ef49a48670b2e5/satelliteLib-0ee6efacab25f71dbf0d60112bcc38c1c8bdffae.js"></script>
+</head>
+
+<body id="lookbook">
+
+<div class="modal wd1">
+    <div class="modalBody">
+        <p class="close">× CLOSE</p>
+        <ul>
+            <li><a href="/no/garment/2015ss/">Cotton of MUJI</a></li>
+			<li><a href="/no/garment/2015ss/lookbook/">Lookbook</a></li>
+			<li><a href="/no/garment/2015ss/album/">Showroom</a></li>
+        </ul>
+    </div>
+    <div class="modalBK"></div>
+</div>
+
+<nav id="nav">
+	<div id="brandLogo"><a href="/no/"><img src="/img/feature/garment/2015ss/logo.png" alt="MUJI"></a></div>
+	<ul id="navigation">
+        <li><a href="/no/garment/2015ss/">Cotton of MUJI</a></li>
+		<li><a href="/no/garment/2015ss/lookbook/">Lookbook</a></li>
+		<li><a href="/no/garment/2015ss/album/">Showroom</a></li>
+	</ul>
+	<div id="mobileMenu"><a href="#" data-tgt="wd1" class="btns"><img src="/img/feature/garment/2015ss/menu.png" alt=""></a></div>
+</nav>
+
+<div class="ie8Lead">
+	<h1>Your browser is not supported.</h1> 
+	<p>Please use the latest version of browsers.</p>
+</div>
+
+<div id="main">
+	<div class="viewport">
+		<div class="flipsnap">
+			
+			<!-- CSV DATA INSERT -->
+			
+		</div>
+		<div class="info"><div class="number"><span class="current">1</span><span class="all">39</span></div></div>
+		<div class="controls">
+			<button class="prev" disabled>prev</button>
+			<button class="next">next</button>
+		</div>
+	</div>
+</div>
+
+<script>_satellite.pageBottom();</script>
+
+</body>
+</html>

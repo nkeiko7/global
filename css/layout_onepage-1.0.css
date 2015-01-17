@@ -11,7 +11,7 @@ p.lead {line-height: 2; margin-bottom: 40px;}
 .outsideWrap.gr {background-color: #f7f7f7;}
 .annotation {font-size: 12px;}
 
-.wrapper {display: block; overflow: hidden; width: 80%; margin: 0 auto; box-sizing: border-box; max-width: 1024px; padding: 40px 0;}
+.wrapper {display: block; overflow: hidden; width: 80%; margin: 0 auto; box-sizing: border-box; max-width: 980px; padding: 40px 0;}
 .wrapper .wrapper {margin: 0 auto; padding: 20px 0 0; width: 100%;}
 
 .price {font-size: 12px;}
@@ -84,6 +84,7 @@ figure:after {content: ""; clear: both; display: block;}
 	.col2_2 img,
 	.col2_3 > img {width: 100%; float: none;}
 	.col2_3  .itemList ul,
+	ul.col3 {margin-right:0;}
 	.col3 li {margin: 0;}
 	.col2_3 .itemList li {display: block; width: 100%; padding: 10px 0; box-sizing: border-box;}
 	.col2_3 .itemList .thumb img {width: 60px; float: left; margin-right: 10px;}	

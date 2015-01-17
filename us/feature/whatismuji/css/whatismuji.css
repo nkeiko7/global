@@ -1,0 +1,8 @@
+#main {color: #191919;}
+#main h1 {text-align: left; font-size: 60px; font-weight: normal;}
+@media screen and (max-width: 420px) {
+	#main h1 {font-size: 42px;}
+}
+.lead p {line-height: 2;}
+.lead ol {max-width: 800px; margin: 20px auto 40px; padding: 0;}
+.lead li {margin: 0 0 5px 2em; padding: 0;}

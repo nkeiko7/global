@@ -1,16 +1,12 @@
-#main #mainCampaign {background: url(/au/img/panel/main/main_newyear2015.jpg);}
-#mainCampaign a {cursor: default;}
-#mainCampaign .titleContainer h1 {position: absolute; width: 100%; max-width: 100%; top: 50px; left: 0; font-size: 55px; color: #fff; text-align: center; margin: 0;}
-#mainCampaign .titleContainer h1 img {width: 600px; max-width: 100%;}
+#main #mainCampaign {background: url(/au/img/panel/main/main_whatismuji_bg.jpg) center; margin-bottom: 40px;}
+#mainCampaign .titleContainer h1 {position: absolute; width: 100%; max-width: 100%; top: 170px; left: 0; font-size: 55px; color: #191919; text-align: center; margin: 0;}
+#mainCampaign .titleContainer h1 img {max-width: 100%;}
 
 @media screen and (max-width: 480px){
-	#mainCampaign .titleContainer h1 {top: 100px;}
-  #mainCampaign .titleContainer h1 img {width: 90%;}
+  #mainCampaign .titleContainer h1 {top: 172px;}
+  #mainCampaign .titleContainer h1 img {width: 80%; max-width: 220px;}
+  #main #mainCampaign .titleContainer h1 {color: #191919;}
 }
 
 
 #main #mainCampaign {margin-bottom: 40px;}
-.venue {font-size: 12px; font-weight: normal;}
-.footerNav2,
-.footerNav3,
-.footerNav4 {display: none;}

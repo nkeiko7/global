@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Showroom | Cotton of MUJI | MUJI</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes" name="viewport">
+
+	<link rel="stylesheet" href="http://www.muji.net/css/normalize.css">
+	<link rel="stylesheet" href="/css/feature/garment/2015ss/style.css?v=181920">
+
+	<script src="//assets.adobedtm.com/a6e9b8b912d51aecbc12256558ef49a48670b2e5/satelliteLib-0ee6efacab25f71dbf0d60112bcc38c1c8bdffae.js"></script>
+</head>
+
+<body id="album">
+
+<div class="modal wd1">
+    <div class="modalBody">
+        <p class="close">× CLOSE</p>
+        <ul>
+            <li><a href="/th/garment/2015ss/">Cotton of MUJI</a></li>
+			<li><a href="/th/garment/2015ss/lookbook/">Lookbook</a></li>
+			<li><a href="/th/garment/2015ss/album/">Showroom</a></li>
+        </ul>
+    </div>
+    <div class="modalBK"></div>
+</div>
+
+<nav id="nav">
+	<div id="brandLogo"><a href="/th/"><img src="/img/feature/garment/2015ss/logo.png" alt="MUJI"></a></div>
+	<ul id="navigation">
+        <li><a href="/th/garment/2015ss/">Cotton of MUJI</a></li>
+		<li><a href="/th/garment/2015ss/lookbook/">Lookbook</a></li>
+		<li><a href="/th/garment/2015ss/album/">Showroom</a></li>
+	</ul>
+	<div id="mobileMenu"><a href="#" data-tgt="wd1" class="btns"><img src="/img/feature/garment/2015ss/menu.png" alt=""></a></div>
+</nav>
+
+<div class="ie8Lead">
+	<h1>Your browser is not supported.</h1> 
+	<p>Please use the latest version of browsers.</p>
+</div>
+
+<div id="main">
+
+<header style="background-image: url(/img/feature/garment/2015ss/album/top.jpg);"></header>
+<p class="lead">Photos from MUJI spring/summer 2015 womenswear and menswear presentation.</p>
+
+<div id="photoList">
+	<ul>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/28.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/04.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/30.jpg" alt=""></li>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/22.jpg" alt=""></li>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/12.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/15.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/01.jpg" alt=""></li>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/09.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/08.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/13.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/18.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/17.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/02.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/19.jpg" alt=""></li>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/23.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/25.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/16.jpg" alt=""></li>
+		<li class="landscape"><img src="/img/feature/garment/2015ss/album/24.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/14.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/27.jpg" alt=""></li>
+		<li class="portrait"><img src="/img/feature/garment/2015ss/album/20.jpg" alt=""></li>
+	</ul>
+
+</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="http://www.muji.net/js/lib/jquery-1.11.1.min.js"><\/script>')</script>
+	<script src="http://www.muji.net/js/lib/fastclick.js"></script>
+	<script src="/js/feature/garment/2015ss/masonry.pkgd.min.js"></script>
+	
+	<script src="/js/feature/garment/2015ss/jquery.fademover.js"></script>
+	<script>
+	$(function(){
+		$('body').fadeMover();
+	});
+	</script>
+	
+	<script>
+		var container = document.querySelector('#photoList');
+		var msnry = new Masonry( container, {
+		  // options
+		  columnWidth: 200,
+		  itemSelector: '.portrait','.landscape',
+		});
+	</script>
+	
+	<script>
+	$(function(){
+		if( window.navigator.standalone ) {
+			var aTags = $('a'); 
+				aTags.each(function(){
+					var url = $(this).attr('href');
+					$(this).removeAttr('href');
+					$(this).on("click",function(){
+					location.href = url;
+				});
+			});
+		}
+		FastClick.attach(document.body);
+	});
+	</script>
+
+<script>_satellite.pageBottom();</script>
+
+</body>
+
+</html>
